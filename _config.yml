@@ -8,7 +8,7 @@ kramdown:
  syntax_highlighter: rouge
 
 # Permalinks
-permalink:        :category/:title
+permalink:        pretty
 #relative_permalinks: true
 
 # Setup
