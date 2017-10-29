@@ -8,13 +8,12 @@ kramdown:
  syntax_highlighter: rouge
 
 # Permalinks
-permalink:        pretty
+permalink:        :category/:title
 relative_permalinks: true
 
 # Setup
 title:            ferrell.io
-#tagline:          ''
-description:      'Adventures in code, photography and life.'
+description:      'Adventures in code, photography and life with Nate and Lauren Ferrell.'
 url:              http://ferrell.io
 baseurl:          /
 
