@@ -9,7 +9,7 @@ kramdown:
 
 # Permalinks
 permalink:        :category/:title
-relative_permalinks: true
+#relative_permalinks: true
 
 # Setup
 title:            ferrell.io
