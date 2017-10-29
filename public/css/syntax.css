@@ -2,7 +2,9 @@
 pre.highlight {
     background: #31343f;
     color: #56b6c2;
-    font-family: 'Droid Sans Mono', monospace
+    font-family: 'Droid Sans Mono', monospace;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .highlight pre {
