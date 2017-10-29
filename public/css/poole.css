@@ -161,10 +161,10 @@ code {
 }
 pre {
   display: block;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 1rem;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0rem;
+  margin-right: 0rem;
   padding: 1rem;
   font-size: .8rem;
   line-height: 1.4;
@@ -179,6 +179,9 @@ pre code {
   font-size: 100%;
   color: inherit;
   background-color: transparent;
+  overflow-x: auto;
+  display: block;
+  line-height: 1.75em;
 }
 
 /* Pygments via Jekyll */
