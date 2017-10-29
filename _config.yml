@@ -1,11 +1,14 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
-kramdown:
- input:           GFM
- auto_ids:        true
- hard_wrap:       false
- syntax_highlighter: rouge
+#markdown:         kramdown
+#highlighter:      rouge
+#kramdown:
+# input:           GFM
+# auto_ids:        true
+# hard_wrap:       false
+# syntax_highlighter: rouge
+
+markdown:         redcarpet
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
