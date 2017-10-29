@@ -1,26 +1,27 @@
-# Hydejack
-[![Gem Version](https://badge.fury.io/rb/jekyll-theme-hydejack.svg)](https://badge.fury.io/rb/jekyll-theme-hydejack)
+---
+layout: about
+title: About
+menu: true
+order: 3
+---
 
-**Hydejack** is a Jekyll theme with JavaScript powers, combining the best of static sites and modern web apps.
-It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility,
-page-load speed or SEO.
+## Hydejack
+Hydejack is a cutting-edge Jekyll theme that combines the best of static sites and modern web apps. It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility, page-load speed or SEO.
 
-> Your presence on the web — A [blog], a [portfolio] and a [resume].
+> Your presence on the web --- A [blog], a [portfolio] and a [resume].
+{:.lead}
 
 **Hydejack** aims to be the complete package for professionals on the web.
 It features a blog suitable for both prose and technical documentation,
 a showcase for your projects, and a resume that fits with the rest of the design.
 
-![Screenshot](https://qwtel.com/assets/img/projects/default.jpg)
-
-## Demo
-It's best to just [see it in action](https://qwtel.com/hydejack/).
+Open `about.md` to edit this text.
 
 ## Features
 Both versions include *all* of these features:
 
-* Full in-app page loading, powered by [hy-push-state]
-* A customizable sidebar that turns into a drawer menu on mobile, powered by [hy-drawer]
+* Full in-app page loading, powered by [hy-push-state]{:.external}
+* A customizable sidebar that turns into a drawer menu on mobile, powered by [hy-drawer]{:.external}
 * Advanced FLIP animations, inspired by Material Design
 * Good [Google PageSpeed Score][gpss][^2]
 * High *perceived speed* thanks to pre-fetching
@@ -30,7 +31,6 @@ Both versions include *all* of these features:
 * Author section below each article and multiple authors
 * Progressive enhancement — sacrifice features, not content
 * Google Analytics and Google Fonts support
-* Blog layout with pagination
 * Syntax highlighting
 * Math formulas via LaTeX
 * Disqus comments
@@ -40,13 +40,17 @@ Both versions include *all* of these features:
 * Blog layout with pagination via `jekyll-paginate` (optional)
 * SEO meta tags via `jekyll-seo-tag` (optional)
 
-## Documentation
+Open `about.md` to edit this text.
+
+### Documentation
 Hydejack is well documented. You can read it [on the Jekyll site][docs], or [on GitHub][wiki], or [download the PDF][pdf].
 
-## Download
-There are two versions of **Hydejack**: The *free version* includes basic blogging functionality,
+Open `about.md` to edit this text.
+
+### Download
+There are two versions of Hydejack: The Free Version includes basic blogging functionality,
 as did previous versions of the theme.
-The *PRO version* includes additional features for professionals:
+The new PRO Version includes additional features for professionals:
 A [portfolio], a [resume] layout and a [welcome] page to feature your favorite projects and posts.
 
 This table details what is and isn't included in each respective version.
@@ -63,23 +67,13 @@ This table details what is and isn't included in each respective version.
 | License                             | [GPL-3.0][license] | [PRO]              |
 | Price                               | Free               | $39                |
 || [Download on GitHub][github]<br/> – or – <br/>[Use the RubyGem][gem] | [Buy Now – $39][buy] [^3] |
+{:.stretch-table}
 
+Open `about.md` to edit this text.
 
 [^1]: Applies after the initial page load.  
-[^2]: Actual page load speed depends on your hosting provider, resolution of embedded images and usage of 3rd party plugins.  
-[^3]: Transactions secured by [Stripe](https://stripe.com). Downloads handled by [Simple Goods](https://simplegoods.co/).  
-
-~~~
- __  __                __                                     __
-/\ \/\ \              /\ \             __                    /\ \
-\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
- \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
-  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
-   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
-    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
-                /\___/                \ \____/
-                \/__/                  \/___/
-~~~
+[^2]: Actual page load speed depends on your hosting provider as well as discipline regarding resolution of images and usage of 3rd party plugins.
+[^3]: Transactions secured by [Stripe](https://stripe.com). Downloads handled by [Simple Goods](https://simplegoods.co/).
 
 [blog]: https://qwtel.com/hydejack/blog/
 [portfolio]: https://qwtel.com/hydejack/projects/
