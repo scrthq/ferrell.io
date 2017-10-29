@@ -1,6 +1,11 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
+highlighter:      rouge
+kramdown:
+ input:           GFM
+ auto_ids:        true
+ hard_wrap:       false
+ syntax_highlighter: rouge
 
 # Permalinks
 permalink:        pretty
@@ -8,19 +13,19 @@ permalink:        pretty
 
 # Setup
 title:            ferrell.io
-tagline:          'Adventures in the future'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+#tagline:          ''
+description:      'Adventures in code, photography and life.'
 url:              http://ferrell.io
 baseurl:          /
 
 author:
   name:           'Nate Ferrell'
-  url:            https://twitter.com/scrthq
+  url:            https://github.com/scrthq
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+#version:          2.1.0
 
 github:
   repo:           https://github.com/scrthq
