@@ -8,8 +8,7 @@ kramdown:
  syntax_highlighter: rouge
 
 # Permalinks
-permalink:        date
-#relative_permalinks: true
+permalink:        pretty
 
 # Setup
 title:            ferrell.io
