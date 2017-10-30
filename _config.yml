@@ -28,7 +28,7 @@ tagline:               >
 
 # A list of keywords for your blog, will be used as fallback
 # for pages that don't have `keywords` in their front matter.
-keywords:              []
+keywords:              [PowerShell,photography,code,javascript,python,ruby,C#,typescript,technology,AWS,CloudFormation,Azure,Google Cloud Platform,Amazon Web Services,JSON,SDK]
 
 # A (optional) logo for the page. Used by jekyll-seo-tag.
 logo:                  /assets/icons/icon.png
@@ -63,7 +63,7 @@ font:                  "'Noto Sans', Helvetica, Arial, sans-serif"
 font_heading:          "'Roboto Slab', Helvetica, Arial, sans-serif"
 
 # Fallback image and color
-accent_image:          /hydejack/assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/sidebar-bg.jpg
 accent_color:          '#4fb1ba'
 
 # 3rd Party Integrations
