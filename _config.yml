@@ -91,10 +91,10 @@ accent_image:
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-disqus:                scrthq
+disqus:                ferrell-io
 
 # Setting a tinyletter username will enable the newsletter subscription box.
-tinyletter:            <tinyletter_username>
+tinyletter:            ferrell-io
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
