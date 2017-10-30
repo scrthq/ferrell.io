@@ -53,9 +53,18 @@ paginate_path:         '/page-:num/'
 # ========================================================================================
 
 # HYDE FONT SETTINGS
+#google_fonts: Abril+Fatface:400|PT+Sans:400,400i,700,700i
+#font:         "'PT Sans', Helvetica, Arial, sans-serif"
+#font_heading: "'PT Sans', Helvetica, Arial, sans-serif"
+#accent_color: '#268bd2'
+#accent_image:
+#  background: '#202020'
+#  overlay:    false
+
+# HYDE + ORIGINAL
 google_fonts: Abril+Fatface:400|PT+Sans:400,400i,700,700i
-font:         "'PT Sans', Helvetica, Arial, sans-serif"
-font_heading: "'PT Sans', Helvetica, Arial, sans-serif"
+font:         "'Noto Sans', Helvetica, Arial, sans-serif"
+font_heading: "'Roboto Slab', Helvetica, Arial, sans-serif"
 accent_color: '#268bd2'
 accent_image:
   background: '#202020'
