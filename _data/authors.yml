@@ -1,9 +1,9 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
-qwtel:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+nferrell:
+  name:              Nate Ferrell
+  email:             n@ferrell.io
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -26,10 +26,10 @@ qwtel:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
-    email:           mailto:<mail@domain.tld>
-    rss:             https://<url>/feed.xml
+    twitter:         scrthq
+    github:          scrthq
+    email:           mailto:n@ferrell.io
+    # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
@@ -37,7 +37,7 @@ qwtel:
     # vimeo:           <username>
     # vine:            <username>
     # spotify:         <user>/<number>
-    # soundcloud:      <username>
+    soundcloud:      nonfuture
     # lastfm:          <username>
     # instagram:       <username>
     # flickr:          <string@string>
@@ -48,7 +48,7 @@ qwtel:
     # ello:            <username>
     # twitch:          <username>
     # steam:           <number>
-    # reddit:          <username>
+    reddit:          scrthq
     # tumblr:          <username>
     # pinterest:       <username>
     # foursquare:      <number>
@@ -66,12 +66,12 @@ qwtel:
     # download:        https://github.com/qwtel/hydejack/archive/v6.6.1.zip
 
   # Used by `jekyll-seo-tag`:
-  twitter:           <username>
+  twitter:           scrthq
 
 # Another author
-mdo:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
+lferrell:
+  name:              Lauren Ferrell
+  email:             l@ferrell.io
   about:             |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -79,8 +79,8 @@ mdo:
 
     Open `_data/authors.yml` to edit this text.
   picture:           https://placehold.it/128x128
-  twitter:           <username>
-  github:            <username>
+  #twitter:           <username>
+  #github:            <username>
   accent_color:      '#268bd2'
   accent_image:
     background:      '#202020'
