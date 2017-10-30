@@ -65,7 +65,7 @@ paginate_path:         '/page-:num/'
 google_fonts: Abril+Fatface:400|PT+Sans:400,400i,700,700i
 font:         "'Noto Sans', Helvetica, Arial, sans-serif"
 font_heading: "'Roboto Slab', Helvetica, Arial, sans-serif"
-accent_color: '#268bd2'
+accent_color: '#4fb1ba'
 accent_image:
   background: '#202020'
   overlay:    false
@@ -84,6 +84,8 @@ accent_image:
 ## Fallback image and color
 #accent_image:          /assets/img/sidebar-bg.jpg
 #accent_color:          '#4fb1ba'
+
+
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
