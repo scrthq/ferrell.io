@@ -1,4 +1,5 @@
 // Uncomment below to remove border radius on projects and pagination items (pre v6.5)
+
 /*
 .card, .pagination-item {
   border-radius: 0!important;
@@ -6,6 +7,7 @@
 */
 
 // Uncomment below to restore the old (pre v6.5) sidebar
+
 /*
 @media screen {
   .sidebar-sticky {
@@ -14,3 +16,8 @@
   }
 }
 */
+
+.sidebar h2 {
+    font-family: 'Abril Fatface', serif!important;
+    font-size: 3rem;
+}
