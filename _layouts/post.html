@@ -12,8 +12,12 @@ layout: base
   {% case addon %}
   {% when 'about' %}
      {% include about.html %}
+  {% when 'newsletter' %}
+    {% include pro/newsletter.html %}
   {% when 'related' %}
     {% include related-posts.html post=post %}
+  {% when 'random' %}
+    {% include pro/random-posts.html post=post %}
   {% else %}
   {% endcase %}
 {% endfor %}

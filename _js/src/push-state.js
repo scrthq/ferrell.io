@@ -60,8 +60,7 @@ import { takeUntil } from 'rxjs/operator/takeUntil';
 import { zipProto as zip } from 'rxjs/operator/zip';
 
 // Some of our own helper functions and classes.
-import { animate, empty, getResolvablePromise, hasFeatures, isSafari, isFirefoxIOS }
-  from './common';
+import { animate, empty, getResolvablePromise, hasFeatures, isSafari } from './common';
 import CrossFader from './cross-fader';
 import upgradeMathBlocks from './katex';
 import setupFLIP from './flip';
@@ -241,7 +240,7 @@ function setupVanilla(pushStateEl) {
 // ## Main
 // First, we determine if push state is enabled,
 // and if the current user agent meets our requirements.
-if (!window._noPushState && hasFeatures(REQUIREMENTS) && !isFirefoxIOS) {
+if (!window._noPushState && hasFeatures(REQUIREMENTS)) {
   // ### Setup
   // We save some variables and setup the DOM:
   const isStandalone =

@@ -24,6 +24,11 @@
   @import "hydejack/__link/katex";
   @import "hydejack/__link/footer";
 
+  @import "pro/projects";
+  @import "pro/resume";
+  @import "pro/bootstrap-mod/bootstrap";
+  @import "pro/message-newsletter";
+
   {% unless site.hydejack.no_mark_external or site.no_mark_external %}
     @import "hydejack/__link/mark-external";
   {% endunless %}
@@ -57,6 +62,11 @@
   @import "hydejack/_avatar.pre.scss";
   @import "hydejack/_katex.pre.scss";
   @import "hydejack/_footer.pre.scss";
+
+  @import "pro/projects";
+  @import "pro/resume";
+  @import "pro/bootstrap-mod/bootstrap";
+  @import "pro/message-newsletter";
 
   {% unless site.hydejack.no_mark_external or site.no_mark_external %}
     @import "hydejack/_mark-external.pre.scss";
