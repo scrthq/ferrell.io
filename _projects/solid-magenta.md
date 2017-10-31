@@ -5,13 +5,13 @@ title:        Solid Magenta
 caption:      A solid magenta sidebar
 description:  >
   This flavor of Hydejack changes the accent color and sidebar color to the same magenta as the "0e"-theme of the original Hyde Jekyll theme.
-image:        /hydejack/assets/img/projects/base-magenta.jpg
+image:        /assets/img/projects/base-magenta.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/base-magenta.jpg
+  src:        /assets/img/projects/base-magenta.jpg
   srcset:   
-    1920w:    /hydejack/assets/img/projects/base-magenta.jpg
-    960w:     /hydejack/assets/img/projects/base-magenta@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/base-magenta@0,25x.jpg
+    1920w:    /assets/img/projects/base-magenta.jpg
+    960w:     /assets/img/projects/base-magenta@0,5x.jpg
+    480w:     /assets/img/projects/base-magenta@0,25x.jpg
 accent_color: '#aa759f'
 accent_image: none
 ---

@@ -5,13 +5,13 @@ title:        Solid Cyan
 caption:      A solid cyan sidebar
 description:  >
   This flavor of Hydejack changes the accent color and sidebar color to the same cyan as the "0c"-theme of the original Hyde Jekyll theme.
-image:        /hydejack/assets/img/projects/base-cyan.jpg
+image:        /assets/img/projects/base-cyan.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/base-cyan.jpg
+  src:        /assets/img/projects/base-cyan.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/base-cyan.jpg
-    960w:     /hydejack/assets/img/projects/base-cyan@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/base-cyan@0,25x.jpg
+    1920w:    /assets/img/projects/base-cyan.jpg
+    960w:     /assets/img/projects/base-cyan@0,5x.jpg
+    480w:     /assets/img/projects/base-cyan@0,25x.jpg
 accent_color: '#75b5aa'
 accent_image: none
 ---

@@ -5,13 +5,13 @@ title:        Solid Green
 caption:      A solid green sidebar
 description:  >
   This flavor of Hydejack changes the accent color and sidebar color to the same green as the "0b"-theme of the original Hyde Jekyll theme.
-image:        /hydejack/assets/img/projects/base-green.jpg
+image:        /assets/img/projects/base-green.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/base-green.jpg
+  src:        /assets/img/projects/base-green.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/base-green.jpg
-    960w:     /hydejack/assets/img/projects/base-green@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/base-green@0,25x.jpg
+    1920w:    /assets/img/projects/base-green.jpg
+    960w:     /assets/img/projects/base-green@0,5x.jpg
+    480w:     /assets/img/projects/base-green@0,25x.jpg
 accent_color: '#90a959'
 accent_image: none
 ---

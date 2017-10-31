@@ -5,13 +5,13 @@ title:        Solid Red
 caption:      A solid red sidebar
 description:  >
   This flavor of Hydejack changes the accent color and sidebar color to the same red as the "08"-theme of the original Hyde Jekyll theme.
-image:        /hydejack/assets/img/projects/base-red.jpg
+image:        /assets/img/projects/base-red.jpg
 screenshot:
-  path:       /hydejack/assets/img/projects/base-red.jpg
+  path:       /assets/img/projects/base-red.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/base-red.jpg
-    960w:     /hydejack/assets/img/projects/base-red@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/base-red@0,25x.jpg
+    1920w:    /assets/img/projects/base-red.jpg
+    960w:     /assets/img/projects/base-red@0,5x.jpg
+    480w:     /assets/img/projects/base-red@0,25x.jpg
 accent_color: '#ac4142'
 accent_image: none
 ---

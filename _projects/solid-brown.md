@@ -5,13 +5,13 @@ title:        Solid Brown
 caption:      A solid brown sidebar
 description:  >
   This flavor of Hydejack changes the accent color and sidebar color to the same brown as the "0f"-theme of the original Hyde Jekyll theme.
-image:        /hydejack/assets/img/projects/base-brown.jpg
+image:        /assets/img/projects/base-brown.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/base-brown.jpg
+  src:        /assets/img/projects/base-brown.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/base-brown.jpg
-    960w:     /hydejack/assets/img/projects/base-brown@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/base-brown@0,25x.jpg
+    1920w:    /assets/img/projects/base-brown.jpg
+    960w:     /assets/img/projects/base-brown@0,5x.jpg
+    480w:     /assets/img/projects/base-brown@0,25x.jpg
 accent_color: '#8f5536'
 accent_image: none
 ---

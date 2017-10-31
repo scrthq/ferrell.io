@@ -5,19 +5,19 @@ title:        Default
 caption:      So fresh and young.
 description:  >
   This theme is so fresh and young, it's basically overpriced apple cider for the web.
-image:        /hydejack/assets/img/projects/default.jpg
+image:        /assets/img/projects/default.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/default.jpg
+  src:        /assets/img/projects/default.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/default.jpg
-    960w:     /hydejack/assets/img/projects/default@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/default@0,25x.jpg
+    1920w:    /assets/img/projects/default.jpg
+    960w:     /assets/img/projects/default@0,5x.jpg
+    480w:     /assets/img/projects/default@0,25x.jpg
 links:
   - title:    Demo
     url:      https://qwtel.com/hydejack/
 big_project:  true
 accent_color: '#4fb1ba'
-accent_image: /hydejack/assets/img/sidebar-bg.jpg
+accent_image: /assets/img/sidebar-bg.jpg
 ---
 
 ![Typeface](../assets/img/default-1.jpg){:.lead}

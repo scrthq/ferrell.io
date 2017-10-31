@@ -5,13 +5,13 @@ title:        Solid Yellow
 caption:      A solid yellow sidebar
 description:  >
   This flavor of Hydejack changes the accent color and sidebar color to the same yellow as the "0a"-theme of the original Hyde Jekyll theme.
-image:        /hydejack/assets/img/projects/base-yellow.jpg
+image:        /assets/img/projects/base-yellow.jpg
 screenshot:
-  path:       /hydejack/assets/img/projects/base-yellow.jpg
+  path:       /assets/img/projects/base-yellow.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/base-yellow.jpg
-    960w:     /hydejack/assets/img/projects/base-yellow@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/base-yellow@0,25x.jpg
+    1920w:    /assets/img/projects/base-yellow.jpg
+    960w:     /assets/img/projects/base-yellow@0,5x.jpg
+    480w:     /assets/img/projects/base-yellow@0,25x.jpg
 accent_color: '#f4bf75'
 accent_image: none
 ---

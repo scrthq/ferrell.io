@@ -5,19 +5,19 @@ title:        Oldschool
 caption:      Who needs CSS when you got the power of *HTML*?
 description:  >
   Who needs CSS when you got the power of *HTML*? These were the good ol' days when website were just documents.
-image:        /hydejack/assets/img/projects/oldschool.jpg
+image:        /assets/img/projects/oldschool.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/oldschool.jpg
+  src:        /assets/img/projects/oldschool.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/oldschool.jpg
-    960w:     /hydejack/assets/img/projects/oldschool@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/oldschool@0,25x.jpg
+    1920w:    /assets/img/projects/oldschool.jpg
+    960w:     /assets/img/projects/oldschool@0,5x.jpg
+    480w:     /assets/img/projects/oldschool@0,25x.jpg
 links:
   - title:    Demo
     url:      https://qwtel.com/hydejack-oldschool/
 big_project:  true
 accent_color: '#00e'
-accent_image: /hydejack/assets/img/oldschool-bg.jpg
+accent_image: /assets/img/oldschool-bg.jpg
 ---
 
 ![Typeface](../assets/img/oldschool-1.jpg){:.lead}
@@ -33,7 +33,7 @@ font:         serif
 font_heading: serif
 
 accent_color: '#00e'
-accent_image: /hydejack/assets/img/oldschool-bg.jpg
+accent_image: /assets/img/oldschool-bg.jpg
 
 hydejack:
   no_google_fonts: true

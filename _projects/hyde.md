@@ -5,13 +5,13 @@ title:        Hyde
 caption:      Capturing the magic of the original Hyde theme.
 description:  >
   Capturing the magic of the original Hyde theme, complete with Abril Fatface title font and PT Serif for regular text.
-image:        /hydejack/assets/img/projects/hyde.jpg
+image:        /assets/img/projects/hyde.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/hyde.jpg
+  src:        /assets/img/projects/hyde.jpg
   srcset:   
-    1920w:    /hydejack/assets/img/projects/hyde.jpg
-    960w:     /hydejack/assets/img/projects/hyde@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/hyde@0,25x.jpg
+    1920w:    /assets/img/projects/hyde.jpg
+    960w:     /assets/img/projects/hyde@0,5x.jpg
+    480w:     /assets/img/projects/hyde@0,25x.jpg
 links:
   - title:    Demo
     url:      https://qwtel.com/hydejack-hyde/

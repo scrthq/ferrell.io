@@ -5,13 +5,13 @@ title:        Solid Orange
 caption:      A solid orange sidebar
 description:  >
   This flavor of Hydejack changes the accent color and sidebar color to the same orange as the "09"-theme of the original Hyde Jekyll theme.
-image:        /hydejack/assets/img/projects/base-orange.jpg
+image:        /assets/img/projects/base-orange.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/base-orange.jpg
+  src:        /assets/img/projects/base-orange.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/base-orange.jpg
-    960w:     /hydejack/assets/img/projects/base-orange@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/base-orange@0,25x.jpg
+    1920w:    /assets/img/projects/base-orange.jpg
+    960w:     /assets/img/projects/base-orange@0,5x.jpg
+    480w:     /assets/img/projects/base-orange@0,25x.jpg
 accent_color: '#d28445'
 accent_image: none
 ---

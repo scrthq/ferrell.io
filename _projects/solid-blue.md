@@ -5,13 +5,13 @@ title:        Solid Blue
 caption:      A solid blue sidebar
 description:  >
   This flavor of Hydejack changes the accent color and sidebar color to the same blue as the "0d"-theme of the original Hyde Jekyll theme.
-image:        /hydejack/assets/img/projects/base-blue.jpg
+image:        /assets/img/projects/base-blue.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/base-blue.jpg
+  src:        /assets/img/projects/base-blue.jpg
   srcset:   
-    1920w:    /hydejack/assets/img/projects/base-blue.jpg
-    960w:     /hydejack/assets/img/projects/base-blue@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/base-blue@0,25x.jpg
+    1920w:    /assets/img/projects/base-blue.jpg
+    960w:     /assets/img/projects/base-blue@0,5x.jpg
+    480w:     /assets/img/projects/base-blue@0,25x.jpg
 accent_color: '#6a9fb5'
 accent_image: none
 ---

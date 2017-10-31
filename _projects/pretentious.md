@@ -8,19 +8,19 @@ description:  >
   stolen by [@qwtel](https://twitter.com/qwtel)
   from [Hyde](http://hyde.getpoole.com). You could say it was..
   [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
-image:        /hydejack/assets/img/projects/pretentious.jpg
+image:        /assets/img/projects/pretentious.jpg
 screenshot:
-  src:        /hydejack/assets/img/projects/pretentious.jpg
+  src:        /assets/img/projects/pretentious.jpg
   srcset:
-    1920w:    /hydejack/assets/img/projects/pretentious.jpg
-    960w:     /hydejack/assets/img/projects/pretentious@0,5x.jpg
-    480w:     /hydejack/assets/img/projects/pretentious@0,25x.jpg
+    1920w:    /assets/img/projects/pretentious.jpg
+    960w:     /assets/img/projects/pretentious@0,5x.jpg
+    480w:     /assets/img/projects/pretentious@0,25x.jpg
 links:
   - title:    Demo
     url:      https://qwtel.com/hydejack-pretentious/
 big_project:  true
 accent_color: '#a85641'
-accent_image: /hydejack/assets/img/pretentious-bg.jpg
+accent_image: /assets/img/pretentious-bg.jpg
 ---
 
 ![Typeface](../assets/img/pretentious-1.jpg){:.lead}
