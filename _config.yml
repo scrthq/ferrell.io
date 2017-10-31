@@ -172,6 +172,7 @@ exclude:
   - package-lock.json
   - Gemfile
   - Gemfile.lock
+  - project.html
 include:
   - LICENSE.md
 
