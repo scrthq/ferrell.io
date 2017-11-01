@@ -24,9 +24,10 @@ nferrell:
   social:
     twitter:         ferrell_io
     github:          scrthq
+    stackoverflow:   ferrell_io
     soundcloud:      nonfuture
     email:           mailto:n@ferrell.io
-    rss:             http://ferrell.io/feed.xml
+    # rss:             http://ferrell.io/feed.xml
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
@@ -49,7 +50,6 @@ nferrell:
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
-    # stackoverflow:   <number/username>
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
