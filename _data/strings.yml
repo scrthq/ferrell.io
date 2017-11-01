@@ -45,11 +45,10 @@
     placeholder:         mail@example.com
     button:              Subscribe
     message:             |
-      Subscribe to my newsletter.
+      Subscribe to our newsletter.
 
       <!--form-->
 
-      Open `_data/strings.yml` to edit this text.
       {:.faded}
 
   not_found:
