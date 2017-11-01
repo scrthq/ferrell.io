@@ -7,6 +7,6 @@ description: >
   It is intended to build your portfolio,
   but here it is used to showcase different customizations of Hydejack.
   Open `projects.md` to edit this text.
-menu: true
+menu: false
 order: 2
 ---

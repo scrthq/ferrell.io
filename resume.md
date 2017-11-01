@@ -6,7 +6,7 @@ description: >
   Open `resume.md` to edit this text.
   You can hide it (only visible to search engines) by setting `no_description` to `true`.
 no_description: false
-menu: true
+menu: false
 order: 3
 rel: me
 ---
