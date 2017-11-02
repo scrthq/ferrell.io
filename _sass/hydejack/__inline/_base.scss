@@ -43,7 +43,7 @@ html {
 
 // @media print { html { font-size: $root-font-size; } } 
 // Link styles
-a, .a {
+hy-push-state a, .a {
   position: relative; 
   padding-bottom: .15rem; 
   border-bottom: 1px solid; 
@@ -51,8 +51,7 @@ a, .a {
   
 }
 
-// .author { margin-top: 3rem; } 
-.img {
+.content .img {
   overflow: hidden; 
   background-color: $gray-bg; 
   
@@ -88,6 +87,7 @@ a, .a {
 .mb6 { margin-bottom: 6rem }
 .mt0 { margin-top: 0 }
 .mt3 { margin-top: 3rem }
+.mt4 { margin-top: 4rem }
 .pb0 { padding-bottom: 0 }
 
 

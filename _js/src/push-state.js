@@ -60,7 +60,8 @@ import { takeUntil } from 'rxjs/operator/takeUntil';
 import { zipProto as zip } from 'rxjs/operator/zip';
 
 // Some of our own helper functions and classes.
-import { animate, empty, getResolvablePromise, hasFeatures, isSafari } from './common';
+import { animate, empty, getResolvablePromise, hasFeatures, isSafari, isFirefoxIOS }
+  from './common';
 import CrossFader from './cross-fader';
 import upgradeMathBlocks from './katex';
 import setupFLIP from './flip';
@@ -240,7 +241,7 @@ function setupVanilla(pushStateEl) {
 // ## Main
 // First, we determine if push state is enabled,
 // and if the current user agent meets our requirements.
-if (!window._noPushState && hasFeatures(REQUIREMENTS)) {
+if (!window._noPushState && hasFeatures(REQUIREMENTS) && !isFirefoxIOS) {
   // ### Setup
   // We save some variables and setup the DOM:
   const isStandalone =
@@ -410,9 +411,11 @@ if (!window._noPushState && hasFeatures(REQUIREMENTS)) {
     ::tap(upgradeMathBlocks)
 
     // Finally, after some debounce time, send a `pageview` to Google Analytics (if applicable).
+    ::filter(() => !!window.ga)
     ::debounceTime(GA_DELAY)
     ::subscribe(() => {
-      if (window.ga) window.ga('send', 'pageview', window.location.pathname);
+      window.ga('set', 'page', window.location.pathname);
+      window.ga('send', 'pageview');
     });
 
   // ### Show error page

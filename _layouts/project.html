@@ -41,7 +41,7 @@ layout: base
       {% endif %}
     </div>
 
-    {% include message.html text=project.description hide=page.no_description property="description" alt="" %}
+    {% include message.html text=project.description hide=page.hide_description property="description" alt="" %}
     {% if project.caption %}<meta property="disambiguatingDescription" content="{{ project.caption }}"/>{% endif %}
   </header>
 
