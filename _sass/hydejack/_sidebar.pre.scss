@@ -1,11 +1,11 @@
 .sidebar {
-  color: rgba(105, 187, 255); // inline
+  color: rgba(255,255,255,.75); // inline
   text-align: left; // inline
 
   // Sidebar links
   a {
     color: #fff; // inline
-    border-bottom-color: rgba(105, 187, 255); // inline
+    border-bottom-color: rgba(255, 255, 255, 0.2); // inline
     &:hover { border-bottom-color: #fff; } // link
   }
 }
@@ -127,7 +127,7 @@ a.sidebar-nav-item {
   display: block;
   line-height: 1.75;
   padding: .25rem 0;
-  border-bottom: 1px solid rgba(105, 187, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 // >>>>>
