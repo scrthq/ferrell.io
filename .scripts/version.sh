@@ -8,9 +8,10 @@ const fs = require('fs');
 const vPrev = require('../assets/version.json').version;
 const vNext = require('../package.json').version;
 
+const execFile = promisify(require('child_process').execFile);
+
 const readdir = promisify(fs.readdir);
 const rename = promisify(fs.rename);
-const unlink = promisify(fs.unlink);
 const stat = promisify(fs.stat);
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
@@ -45,7 +46,7 @@ async function getFiles(dir) {
     const prev = vPrev.replace(/\./g, '\\.');
     const prevRegExp = new RegExp(prev, 'g');
 
-    const pFiles = Promise.all(FILES
+    await Promise.all(FILES
       .map(f => [f, readFile(f, ENC)])
       .map(async ([f, p]) => {
         const content = await p;
@@ -56,17 +57,7 @@ async function getFiles(dir) {
         return writeFile(f, content, ENC);
       }));
 
-    const pJSCSS = Promise.all([
-      unlink(
-        resolve(`./assets/js/hydejack-${vPrev}.js`),
-      ),
-      rename(
-        resolve(`./assets/css/hydejack-${vPrev}.css`),
-        resolve(`./assets/css/hydejack-${vNext}.css`),
-      ),
-    ]);
-
-    await Promise.all([pFiles, pJSCSS]);
+    await execFile('git', ['add', '.']);
 
     process.exit(0);
   } catch (e) {

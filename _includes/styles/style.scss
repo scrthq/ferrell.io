@@ -2,7 +2,6 @@
 {% assign font =         site.font         | default:"'Noto Sans', Helvetica, Arial, sans-serif" %}
 
 @import "variables";
-@import "my-variables";
 @import "mixins";
 
 @import "reboot-mod";

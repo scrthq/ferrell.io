@@ -30,7 +30,6 @@ import 'core-js/fn/string/includes';
 // We include our main component, hy-push-state,
 // in both the vanilla JS and the WebComponent version (will decide later which one to use).
 // Since they share most of their code, it's not a big deal in terms of file size.
-import { Set } from 'hy-push-state/src/common';
 import { PushState, VANILLA_FEATURE_TESTS } from 'hy-push-state/src/vanilla';
 import { HTMLPushStateElement } from 'hy-push-state/src/webcomponent';
 
@@ -69,7 +68,7 @@ import setupFLIP from './flip';
 
 // ## Constants
 // A list of Modernizr feature tests that are required for the push state feature to work.
-const REQUIREMENTS = new Set([
+const REQUIREMENTS = [
   ...VANILLA_FEATURE_TESTS,
   'classlist',
   'cssanimations',
@@ -82,7 +81,7 @@ const REQUIREMENTS = new Set([
   'queryselector',
   'requestanimationframe',
   'template',
-]);
+];
 
 const REPLACE_IDS = '_main';
 const LINK_SELECTOR = 'a[href]:not(.external):not(.no-push-state)';
