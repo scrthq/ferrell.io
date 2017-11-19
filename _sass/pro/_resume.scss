@@ -6,6 +6,7 @@
   .h4 {
     margin-top: 0;
     font-family: unset!important;
+    font-weight: $font-weight-bold;
   }
 
   .bc {
@@ -18,7 +19,7 @@
   }
 
   .bold {
-    font-weight: bold;
+    font-weight: $font-weight-bold;
   }
 
   header > p {

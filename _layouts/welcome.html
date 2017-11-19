@@ -14,11 +14,11 @@ layout: about
   <div class="columns">
   {% for project_path in page.selected_projects %}
     {% assign project = site.projects | where:"path",project_path | first %}
-    {% assign big_project = page.big_project | default:project.big_project %}
+    {% assign featured = page.featured | default:project.featured | default:page.big_project | default:project.big_project %}
 
-    <div class="column {% if big_project %}column-1{% else %}column-1-2{% endif %}">
+    <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
       {% if project %}
-        {% include pro/project-card.html project=project big_project=big_project %}
+        {% include pro/project-card.html project=project featured=featured %}
       {% else %}
         Project with path <code>{{ project_path }}</code> not found.
       {% endif %}
@@ -30,10 +30,10 @@ layout: about
   <div class="columns">
   {% assign ordered_projects = site.projects | sort:"date" | reverse %}
   {% for project in ordered_projects limit:2 %}
-    {% assign big_project = page.big_project | default:project.big_project %}
+    {% assign featured = page.featured | default:project.featured | default:page.big_project | default:project.big_project %}
 
-    <div class="column {% if big_project %}column-1{% else %}column-1-2{% endif %}">
-      {% include pro/project-card.html project=project big_project=big_project %}
+    <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+      {% include pro/project-card.html project=project featured=featured %}
     </div>
   {% endfor %}
   </div>
