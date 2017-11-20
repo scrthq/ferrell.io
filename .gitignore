@@ -44,4 +44,3 @@ vendor/bundle
 .sass-cache
 .jekyll-metadata
 *.gem
-blog.md
