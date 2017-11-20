@@ -17,7 +17,7 @@
   templates:             Templates (for web app)
 
   category_start:        "in "
-  category_spearator:    " / "
+  category_separator:    " / "
   tag_start:             "on "
   tag_separator:         ", "
 
