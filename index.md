@@ -7,20 +7,15 @@ description: >
   without sacrificing backwards-compatibility, page-load speed or SEO.
   Open `index.md` to edit this text.
 selected_projects:
-  - _projects/default.md
-  - _projects/pretentious.md
-  - _projects/hyde.md
-  - _projects/oldschool.md
-  - _projects/solid-red.md
-  - _projects/solid-orange.md
-selected_posts:
-  - _posts/2017-07-27-better-gem-support.md
-  - _posts/2017-06-21-related-projects-and-data-tables.md
-  - _posts/2017-06-06-third-party-scripts.md
-  - _posts/2017-05-03-javascripten.md
-  - _posts/2012-02-07-example-content.md
-more_projects: projects.md
-more_posts: posts.md
+  - _projects/vaporshell.md
+#selected_posts:
+#  - _posts/2017-07-27-better-gem-support.md
+#  - _posts/2017-06-21-related-projects-and-data-tables.md
+#  - _posts/2017-06-06-third-party-scripts.md
+#  - _posts/2017-05-03-javascripten.md
+#  - _posts/2012-02-07-example-content.md
+#more_projects: projects.md
+#more_posts: posts.md
 content_separator: <!--more-->
 ---
 
