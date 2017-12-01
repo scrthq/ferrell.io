@@ -8,7 +8,7 @@ nferrell:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: |
-    Nate is passionate about DevOps, mechanical keyboards, gaming, sound engineering and new technology in general. Outside of the office, he's typically stuck in an IDE or playing with his pups. 
+    Nate is passionate about PowerShell development, DevOps culture, mechanical keyboards, gaming, sound engineering and new technology in general. Outside of the office, he's typically stuck in an IDE or playing with his pups. 
 
   # This photo will be used in the about section
   picture:
@@ -26,6 +26,7 @@ nferrell:
     github:          scrthq
     stackoverflow:   5302680
     soundcloud:      nonfuture
+    linkedin:        scrthq
     email:           mailto:n@ferrell.io
     # rss:             http://ferrell.io/feed.xml
     # facebook:        <username>
@@ -53,7 +54,6 @@ nferrell:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
