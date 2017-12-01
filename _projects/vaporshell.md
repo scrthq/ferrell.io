@@ -10,8 +10,8 @@ screenshot:
   src:        /assets/img/projects/vaporshell/Watch-Stacks.gif
   srcset:
     1920w:    /assets/img/projects/vaporshell/Watch-Stacks.gif
-    960w:     /assets/img/projects/default@0,5x.jpg
-    480w:     /assets/img/projects/default@0,25x.jpg
+    960w:     /assets/img/projects/vaporshell/Watch-Stacks.gif
+    480w:     /assets/img/projects/vaporshell/Watch-Stacks.gif
 links:
   - title:    VaporShell.io
     url:      http://vaporshell.io/
