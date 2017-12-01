@@ -108,7 +108,7 @@ hydejack:
   post_addons:         [related, about]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other]
+  project_addons:      [about, other]
 
   # If you do not use Google Fonts, set to `true`.
   no_google_fonts:     false
