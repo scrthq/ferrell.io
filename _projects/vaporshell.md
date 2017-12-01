@@ -17,7 +17,7 @@ links:
     url:      http://vaporshell.io/
 big_project:  true
 accent_color: '#484D89'
-accent_image: /assets/img/projects/vaporshell/banner.png
+accent_image: /assets/img/projects/vaporshell/banner.jpg
 ---
 
 ![Typeface](../assets/img/projects/vaporshell/Watch-Stacks.gif){:.lead}
