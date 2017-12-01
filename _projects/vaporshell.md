@@ -20,7 +20,7 @@ accent_color: '#4fb1ba'
 accent_image: /assets/img/sidebar-bg.jpg
 ---
 
-![Typeface](../assets/img/default-1.jpg){:.lead}
+![Typeface](../assets/img/projects/vaporshell/pic02.jpg){:.lead}
 
 It features everything that's hot right now:
 * Aerial shot of a beach
