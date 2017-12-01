@@ -170,6 +170,7 @@ exclude:
   - package-lock.json
   - Gemfile
   - Gemfile.lock
+  - _drafts/
 include:
   - LICENSE.md
 
