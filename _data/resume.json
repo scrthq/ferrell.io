@@ -55,55 +55,151 @@
       ]
     }
   ],
-  "education": [
-    {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
   "awards": [
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
+      "title": "Certified Performance Pro",
+      "date": "2017-11-06",
+      "awarder": "New Relic",
+      "summary": "License 10979094"
+    },
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "title": "Certified Solutions Architect - Associate",
+      "date": "2017-04-19",
+      "awarder": "AWS",
+      "summary": "License AWS-ASA-35494"
+    },
+    {
+      "title": "Certified Administrator",
+      "date": "2015-12-03",
+      "awarder": "G Suite",
+      "summary": ""
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "Powershell",
       "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
+      "keywords": []
     },
     {
-      "name": "Compression",
+      "name": "Google Apps",
       "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
-      ]
+      "keywords": []
+    },
+    {
+      "name": "VMware",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows Server",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Telecommunications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Virtualization",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Support",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Troubleshooting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Active Directory",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "RESTful WebServices",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "RESTful architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Transact-SQL (T-SQL)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Gmail API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon EC2",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon S3",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon RDS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon EBS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon VPC",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Route53",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "",
+      "keywords": []
     }
   ],
   "languages": [
@@ -114,17 +210,12 @@
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Rescuing Dogs",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Pit Bulls",
+        "American Staffordshire Terriers",
+        "American Bulldogs"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
     }
   ]
 }
