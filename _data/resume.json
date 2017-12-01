@@ -8,9 +8,9 @@
     "website": "http://ferrell.io/",
     "summary": "Nate is originally from Los Angeles but is now based in Dallas. While not working in office as a full time DevOps engineer, he spends his time working on Open Source projects. His favorite language to work with is PowerShell, but he's constantly switching between Ruby, Python and JavaScript as well. He other interests outside of work include wrestling with his dogs and figuring out what should be in the world's best hot sauce.",
     "location": {
-      "address": "6732 Manitowoc Dr",
-      "postalCode": "75023",
-      "city": "Plano",
+      "address": "",
+      "postalCode": "",
+      "city": "Dallas/Plano",
       "countryCode": "US",
       "region": "Texas"
     },
