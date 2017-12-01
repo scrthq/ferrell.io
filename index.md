@@ -15,7 +15,7 @@ comments: true
 
 I love spending my free time tinkering with PowerShell module development, 
 extending Visual Studio Code, and automating everything I can. I hope to bring 
-my passions to "paper" here and share the knowledge I pick up along the way.
+my passions to "paper" here and share the knowledge I pick up along the my journey.
 
 You may see some posts here and think...
 
