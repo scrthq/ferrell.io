@@ -10,6 +10,7 @@ selected_posts:
 more_projects: projects.md
 more_posts: posts.md
 content_separator: <!--more-->
+comments: true
 ---
 
 I love spending my free time tinkering with PowerShell module development, 
