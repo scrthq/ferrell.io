@@ -7,11 +7,11 @@ description:  >
   Build your CloudFormation templates dynamically, then deploy and manage your stacks. All with VaporShell.
 image:        /assets/img/projects/vaporshell/banner.png
 screenshot:
-  src:        /assets/img/projects/vaporshell/bw.png
+  src:        /assets/img/projects/vaporshell/banner.png
   srcset:
-    1920w:    /assets/img/projects/vaporshell/bw.png
-    960w:     /assets/img/projects/vaporshell/bw.png
-    480w:     /assets/img/projects/vaporshell/bw.png
+    1920w:    /assets/img/projects/vaporshell/banner.png
+    960w:     /assets/img/projects/vaporshell/banner.png
+    480w:     /assets/img/projects/vaporshell/banner.png
 links:
   - title:    VaporShell.io
     url:      http://vaporshell.io/
@@ -19,6 +19,8 @@ big_project:  true
 accent_color: '#4fb1ba'
 accent_image: /assets/img/sidebar-bg.jpg
 ---
+
+![Typeface](../assets/img/projects/vaporshell/Watch-Stacks.gif){:.lead}
 
 ![Typeface](../assets/img/projects/vaporshell/pic02.jpg){:.lead}
 
