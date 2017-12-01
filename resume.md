@@ -2,11 +2,9 @@
 layout: resume
 title: Résumé*
 description: >
-  This is the description of your resume page as it will be shown on search engines.
-  Open `resume.md` to edit this text.
-  You can hide it (only visible to search engines) by setting `no_description` to `true`.
+  PowerShell development, DevOps culture, constant forward motion. I will never believe that I have learned enough; complacency is death.
 no_description: false
-menu: false
-order: 3
+menu: true
+order: 5
 rel: me
 ---
