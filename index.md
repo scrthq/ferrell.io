@@ -22,7 +22,7 @@ You may see some posts here and think...
 > "...but, that's not the best way to do it! It's at least now how **I** would do it!!"
 {:.lead}
 
-This site's content is written from _my_ viewpoint built from _my_ experiences. 
+These posts are written from _my_ viewpoint built from _my_ experiences. 
 If you see something wrong in a code snippet that I post or can think of a way 
 to do it better, I would love to hear it in the comments! One of the best parts 
 about technology is that there is always room to grow your skill set and make 
