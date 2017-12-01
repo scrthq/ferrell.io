@@ -64,8 +64,8 @@
       Sorry, an error occurred while loading <!--link-->.
 
   welcome:
-    selected_projects:   Selected Projects
-    selected_posts:      Selected Posts
+    selected_projects:   Highlighted Projects
+    selected_posts:      Highlighted Posts
     recent_projects:     Recent Projects
     recent_posts:        Recent Posts
     more_projects:       See <!--projects_title--> for more
