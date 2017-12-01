@@ -16,7 +16,7 @@ links:
   - title:    VaporShell.io
     url:      http://vaporshell.io/
 big_project:  true
-accent_color: '#4fb1ba'
+accent_color: '#484D89'
 accent_image: /assets/img/projects/vaporshell/banner.png
 ---
 
