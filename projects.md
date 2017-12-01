@@ -8,5 +8,5 @@ description: >
   but here it is used to showcase different customizations of Hydejack.
   Open `projects.md` to edit this text.
 menu: false
-order: 2
+# order: 2
 ---
