@@ -17,9 +17,7 @@ baseurl:               ""
 
 # A short description of the page used for the meta description tag.
 description:           >
-  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
-  Combines the best of static sites and modern web apps.
-  Open `_config.yml` to edit this text.
+  DevOps, photography, dogs, exploration.
 
 # A shorter description for the sidebar.
 tagline:               >
