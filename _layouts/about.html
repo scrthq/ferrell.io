@@ -16,7 +16,9 @@ layout: base
 
   <h1 class="page-title hr">{{ page.title }}</h1>
 
-<!--   {{ author.about | markdownify }} -->
+  {% if page.title == 'About' %}
+    {{ author.about | markdownify }}
+  {% endif %}
 
   {% include message.html text=page.description hide=page.hide_description alt="" %}
 
