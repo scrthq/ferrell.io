@@ -4,7 +4,7 @@ layout: base
 
 {% assign plugins = site.plugins | default:site.gems %}
 {% if plugins contains 'jekyll-paginate' %}
-  {% include list.html %}
+  {% include blog.html %}
 {% else %}
   {% capture text %}To use this layout,
 include the `jekyll-paginate` plugin in your `Gemfile` and in your `_config.yml` under `plugins`.
