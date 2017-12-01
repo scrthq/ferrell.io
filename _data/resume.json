@@ -78,37 +78,37 @@
   "skills": [
     {
       "name": "Powershell",
-      "level": "Master",
+      "level": "Expert",
       "keywords": []
     },
     {
       "name": "Google Apps",
-      "level": "Master",
+      "level": "Expert",
       "keywords": []
     },
     {
       "name": "VMware",
-      "level": "",
+      "level": "Advanced",
       "keywords": []
     },
     {
       "name": "Windows Server",
-      "level": "",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "System Architecture",
+      "level": "Competent",
       "keywords": []
     },
     {
       "name": "System Administration",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Telecommunications",
-      "level": "",
+      "level": "Advanced",
       "keywords": []
     },
     {
       "name": "Virtualization",
-      "level": "",
+      "level": "Advanced",
       "keywords": []
     },
     {
@@ -118,84 +118,49 @@
     },
     {
       "name": "Troubleshooting",
-      "level": "",
+      "level": "Advanced",
       "keywords": []
     },
     {
       "name": "Active Directory",
-      "level": "",
+      "level": "Advanced",
       "keywords": []
     },
     {
       "name": "RESTful WebServices",
-      "level": "",
+      "level": "Expert",
       "keywords": []
     },
     {
-      "name": "Google API",
-      "level": "",
+      "name": "G Suite Admin SDK",
+      "level": "Expert",
+      "keywords": []
+    },
+    {
+      "name": "Google APIs",
+      "level": "Expert",
       "keywords": []
     },
     {
       "name": "SQL",
-      "level": "",
+      "level": "Competent",
       "keywords": []
     },
     {
       "name": "Transact-SQL (T-SQL)",
-      "level": "",
+      "level": "Competent",
       "keywords": []
     },
     {
       "name": "Amazon Web Services (AWS)",
-      "level": "",
+      "level": "Advanced",
       "keywords": []
     },
     {
       "name": "Microsoft SQL Server",
-      "level": "",
+      "level": "Competent",
       "keywords": []
     },
-    {
-      "name": "Gmail API",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon EC2",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon S3",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon RDS",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon EBS",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon VPC",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon Route53",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Cloud Computing",
-      "level": "",
-      "keywords": []
-    }
   ],
   "languages": [
     {
