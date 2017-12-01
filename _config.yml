@@ -105,7 +105,7 @@ google_analytics:      UA-101420411-2
 hydejack:
   # Configure the order of complementary content on blog posts
   #post_addons:         [about, newsletter, related, random]
-  post_addons:         [related, about, newsletter, random]
+  post_addons:         [related, about]
 
   # Configure the order of complementary content on project pages
   project_addons:      [about, newsletter, other]
