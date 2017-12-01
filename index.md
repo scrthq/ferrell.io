@@ -86,7 +86,7 @@ a [welcome] page to introduce yourself to visitors.
 
 [Buy Now - $59][buy]{:.btn.btn-primary} [^3]
 
-{% include author.html author=site.data.authors.nferrell heading="Contact" heading_id="contact" %}
+{% include author.html author=site.data.authors.nferrell heading="About" heading_id="contact" %}
 
 [^1]: Applies after the initial page load.  
 [^2]: Actual page load speed depends on your hosting provider, resolution of embedded images and usage of 3rd party plugins.  
