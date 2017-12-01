@@ -9,6 +9,42 @@ layout: about
 {{ content_split[0] }}
 
 <section>
+{% if page.selected_posts %}
+  <h2 id="selected-posts" class="hr">{{ strings.welcome.selected_posts | default:"Selected Posts" }}</h2>
+  <ul class="related-posts">
+    {% for post_path in page.selected_posts %}
+      {% assign post = site.posts | where:"path", post_path | first %}
+      {% if post %}
+        {% include post-list-item.html post=post %}
+      {% else %}
+        <li>Post with path <code>{{ post_path }}</code> not found.</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% elsif site.posts.size > 1 %}
+  <h2 id="recent-posts" class="hr">{{ strings.welcome.recent_posts | default:"Recent Posts" }}</h2>
+  <ul class="related-posts">
+    {% for post in site.posts limit:5 %}
+      {% include post-list-item.html post=post %}
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if page.more_posts %}
+  {% assign more_posts = site.pages | where:"path", page.more_posts | first %}
+  {% if more_posts %}
+    {% capture posts_title %}<a class="heading flip-title" href="{{ more_posts.url | relative_url }}">{{ more_posts.title }}</a>{% endcapture %}
+    {% assign text = strings.welcome.more_posts | default:"See <!--posts_title--> for more" %}
+    <p class="read-more">
+      {{ text | replace:"<!--posts_title-->", posts_title }}
+    </p>
+  {% else %}
+    Page with path <code>{{ page.more_posts }}</code> not found.
+  {% endif  %}
+{% endif %}
+</section>
+
+<section>
 {% if page.selected_projects %}
   <h2 id="selected-projects">{{ strings.welcome.selected_projects | default:"Selected Projects" }}</h2>
   <div class="columns">
@@ -46,42 +82,6 @@ layout: about
     {% assign text = strings.welcome.more_projects | default:"See <!--projects_title--> for more" %}
     <p class="read-more mt0">
       {{ text | replace:"<!--projects_title-->", projects_title }}
-    </p>
-  {% else %}
-    Page with path <code>{{ page.more_posts }}</code> not found.
-  {% endif  %}
-{% endif %}
-</section>
-
-<section>
-{% if page.selected_posts %}
-  <h2 id="selected-posts" class="hr">{{ strings.welcome.selected_posts | default:"Selected Posts" }}</h2>
-  <ul class="related-posts">
-    {% for post_path in page.selected_posts %}
-      {% assign post = site.posts | where:"path", post_path | first %}
-      {% if post %}
-        {% include post-list-item.html post=post %}
-      {% else %}
-        <li>Post with path <code>{{ post_path }}</code> not found.</li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% elsif site.posts.size > 1 %}
-  <h2 id="recent-posts" class="hr">{{ strings.welcome.recent_posts | default:"Recent Posts" }}</h2>
-  <ul class="related-posts">
-    {% for post in site.posts limit:5 %}
-      {% include post-list-item.html post=post %}
-    {% endfor %}
-  </ul>
-{% endif %}
-
-{% if page.more_posts %}
-  {% assign more_posts = site.pages | where:"path", page.more_posts | first %}
-  {% if more_posts %}
-    {% capture posts_title %}<a class="heading flip-title" href="{{ more_posts.url | relative_url }}">{{ more_posts.title }}</a>{% endcapture %}
-    {% assign text = strings.welcome.more_posts | default:"See <!--posts_title--> for more" %}
-    <p class="read-more">
-      {{ text | replace:"<!--posts_title-->", posts_title }}
     </p>
   {% else %}
     Page with path <code>{{ page.more_posts }}</code> not found.
