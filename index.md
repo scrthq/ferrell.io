@@ -1,6 +1,6 @@
 ---
 layout: welcome
-title: ferrell.io
+title: Welcome!
 description: >
   **Hydejack** is a cutting-edge Jekyll theme that combines the best of static sites and modern web apps.
   It features a suite of JavaScript that makes the page feel like an app,
