@@ -78,89 +78,84 @@
   "skills": [
     {
       "name": "Powershell",
-      "level": "Expert",
+      "level": "Master",
       "keywords": []
     },
     {
       "name": "Google Apps",
-      "level": "Expert",
+      "level": "Master",
       "keywords": []
     },
     {
       "name": "VMware",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "Windows Server",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "System Architecture",
-      "level": "Competent",
-      "keywords": []
-    },
-    {
-      "name": "System Administration",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "Virtualization",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "Technical Support",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Troubleshooting",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "Active Directory",
-      "level": "Advanced",
-      "keywords": []
-    },
-    {
-      "name": "RESTful WebServices",
-      "level": "Expert",
-      "keywords": []
-    },
-    {
-      "name": "G Suite Admin SDK",
-      "level": "Expert",
-      "keywords": []
-    },
-    {
-      "name": "Google APIs",
-      "level": "Expert",
-      "keywords": []
-    },
-    {
-      "name": "SQL",
-      "level": "Competent",
-      "keywords": []
-    },
-    {
-      "name": "Transact-SQL (T-SQL)",
-      "level": "Competent",
+      "level": "Intermediate",
       "keywords": []
     },
     {
       "name": "Amazon Web Services (AWS)",
-      "level": "Advanced",
+      "level": "Master",
       "keywords": []
     },
     {
-      "name": "Microsoft SQL Server",
-      "level": "Competent",
+      "name": "Windows Server",
+      "level": "Intermediate",
       "keywords": []
     },
+    {
+      "name": "System Architecture",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "System Administration",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Virtualization",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Technical Support",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Troubleshooting",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Active Directory",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "RESTful WebServices",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "G Suite Admin SDK",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "Google APIs",
+      "level": "Master",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "Beginner",
+      "keywords": []
+    },
+    {
+      "name": "Transact-SQL (T-SQL)",
+      "level": "Intermediate",
+      "keywords": []
+    }
   ],
   "languages": [
     {
