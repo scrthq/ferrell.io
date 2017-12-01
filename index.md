@@ -28,6 +28,6 @@ to do it better, I would love to hear it in the comments! One of the best parts
 about technology is that there is always room to grow your skill set and make 
 your processes that much better.
 
-**Let's grow together. Enjoy!**
+**Let's grow together.**
 
 <!--more-->
