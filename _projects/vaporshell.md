@@ -5,15 +5,15 @@ title:        VaporShell
 caption:      Build, deploy and manage CloudFormation using PowerShell.
 description:  >
   Build your CloudFormation templates dynamically, then deploy and manage your stacks. All with VaporShell.
-image:        /assets/img/projects/default.jpg
+image:        /assets/img/projects/vaporshell/Watch-Stacks.gif
 screenshot:
-  src:        /assets/img/projects/default.jpg
+  src:        /assets/img/projects/vaporshell/Watch-Stacks.gif
   srcset:
-    1920w:    /assets/img/projects/default.jpg
+    1920w:    /assets/img/projects/vaporshell/Watch-Stacks.gif
     960w:     /assets/img/projects/default@0,5x.jpg
     480w:     /assets/img/projects/default@0,25x.jpg
 links:
-  - title:    Website
+  - title:    VaporShell.io
     url:      http://vaporshell.io/
 big_project:  true
 accent_color: '#4fb1ba'
