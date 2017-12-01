@@ -8,14 +8,14 @@ description: >
   Open `index.md` to edit this text.
 selected_projects:
   - _projects/vaporshell.md
-#selected_posts:
-#  - _posts/2017-07-27-better-gem-support.md
+selected_posts:
+  - _posts/2017-11-30-new-blog.md
 #  - _posts/2017-06-21-related-projects-and-data-tables.md
 #  - _posts/2017-06-06-third-party-scripts.md
 #  - _posts/2017-05-03-javascripten.md
 #  - _posts/2012-02-07-example-content.md
-#more_projects: projects.md
-#more_posts: posts.md
+more_projects: projects.md
+more_posts: posts.md
 content_separator: <!--more-->
 ---
 
