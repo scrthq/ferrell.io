@@ -7,17 +7,13 @@ tags: [powershell, VSCode, devops]
 comments: true
 ---
 
-# Migrating from PowerShell ISE to Visual Studio Code, pt 1
-
-_My experience exploring new editor territory_
-
-### A Need for Extensibility
+## A Need for Extensibility
 
 PowerShell ISE was _my_ perfect comfort zone. I knew the keyboard shortcuts and could spot errors by glancing at the syntax highlighting. I felt a _sense of ease_ when writing PowerShell in the ISE; **rock solid** in reliability. What it lacked for me was the _limited_ scope in which you could customize it.
 
 I tried using Sublime Text for editing with a PowerShell build system like [this one](https://gist.github.com/joshearl/4518262). Editing wasn't too bad, but launching scripts directly from the editor was painful, so Sublime was not the editor for me. I kept it around for note taking, as I still preferred it to Notepad++, but I was back on the hunt for something better.
 
-### First Impressions
+## First Impressions
 
 About 2 years ago (right after reading [this blog post](https://blogs.msdn.microsoft.com/powershell/2015/11/16/announcing-powershell-language-support-for-visual-studio-code-and-more/), actually), I heard about Visual Studio Code. I thought this was mainly going to be a light version of Visual Studio, at first; something geared towards GUI application development. When I found out about the PowerShell support for it, I decided to give it a try.
 * Intellisense seemed peppy, which was a big deal to me. 
