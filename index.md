@@ -34,5 +34,3 @@ your processes that much better.
 **Let's grow together.**
 
 <!--more-->
-
-{% include pro/newsletter.html %}
