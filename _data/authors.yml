@@ -8,7 +8,7 @@ nferrell:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: |
-    Nate is passionate about PowerShell development, DevOps culture, mechanical keyboards, gaming, sound engineering and new technology in general. Outside of the office, he's typically stuck in an IDE or playing with his pups. 
+    Nate lives in Dallas, TX with his wife and their 4 ~~fur babies~~ dogs. He is passionate about PowerShell development, DevOps culture, mechanical keyboards, gaming, sound engineering and new technology in general. Outside of the office, he's typically stuck in an IDE or playing with his pups. 
 
   # This photo will be used in the about section
   picture:
