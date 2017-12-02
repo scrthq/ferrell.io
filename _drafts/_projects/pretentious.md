@@ -35,7 +35,7 @@ google_fonts:          Playfair+Display+SC:700|PT+Serif:400,400i,700,700i
 font:                  "'PT Serif', Georgia, serif"
 font_heading:          "'Playfair Display SC', Georgia, serif"
 
-accent_image:          /hydejack-pretentious/assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/pretentious-bg.jpg
 accent_color:          '#a85641'
 ~~~
 

@@ -6,8 +6,6 @@ menu: true
 order: 3
 description: >
   Git, Chef, PowerShell DSC, Jenkins, Rundeck; any and all things DevOps.
-#accent_color: '#268bd2'
-#accent_image:
-#  background: '#202020'
-#  overlay:    false
+accent_color: '#75b5aa'
+accent_image: none
 ---
