@@ -3,7 +3,7 @@ layout: post
 title: Migrating from PowerShell ISE to Visual Studio Code, pt 1
 description: >
   The start of an everlasting journey
-tags: [powershell, vscode, devops]
+tags: [powershell, VSCode, devops]
 comments: true
 ---
 
