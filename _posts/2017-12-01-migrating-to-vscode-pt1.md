@@ -7,9 +7,10 @@ tags: [powershell, vscode, devops]
 comments: true
 ---
 
-### Migrating from PowerShell ISE to Visual Studio Code, pt 1
 
-_My experience exploring new editor territory_
+```powershell
+[System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('SQBuACAAcwBlAGEAcgBjAGgAIABvAGYAIABzAG8AbQBlAHQAaABpAG4AZwAgAGcAcgBlAGEAdABlAHIALgAuAC4A'))
+```
 
 #### A Need for Extensibility
 
