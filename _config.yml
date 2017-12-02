@@ -46,6 +46,13 @@ permalink:             pretty
 paginate:              5
 paginate_path:         '/blog/page-:num/'
 
+# Default front matter
+defaults:
+  - scope:
+      type: posts
+    values:
+      comments: true
+
 # Customizaton
 # ========================================================================================
 
