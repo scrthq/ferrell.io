@@ -7,6 +7,10 @@ tags: [powershell, VSCode, devops]
 comments: true
 ---
 
+# Migrating from PowerShell ISE to Visual Studio Code, pt 1
+
+_My experience exploring new editor territory_
+
 ### A Need for Extensibility
 
 PowerShell ISE was _my_ perfect comfort zone. I knew the keyboard shortcuts and could spot errors by glancing at the syntax highlighting. I felt a _sense of ease_ when writing PowerShell in the ISE; **rock solid** in reliability. What it lacked for me was the _limited_ scope in which you could customize it.
