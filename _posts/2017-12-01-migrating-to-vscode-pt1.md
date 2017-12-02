@@ -7,7 +7,7 @@ tags: [powershell, vscode, devops]
 comments: true
 ---
 
-# Migrating from PowerShell ISE to Visual Studio Code, pt 1
+### Migrating from PowerShell ISE to Visual Studio Code, pt 1
 
 _My experience exploring new editor territory_
 
