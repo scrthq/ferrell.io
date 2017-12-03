@@ -214,8 +214,8 @@ plugins:
 #   yandex:              <verification-id>
 
 # Used for Twitter cards
-# twitter:
-#   username:            <shortname>
+twitter:
+  username:            ferrell_io
 
 # Used for Facebook open graph
 # facebook:
@@ -224,11 +224,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+  name:                Nate Ferrell
+  links:
+    - https://twitter.com/ferrell_io
+    - https://github.com/scrthq
 
 
 # Other Plugins
