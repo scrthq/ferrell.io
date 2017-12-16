@@ -7,7 +7,6 @@ tags: [powershell, vscode, devops, explorations]
 comments: true
 ---
 
-
 ```powershell
 [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('SQBuACAAcwBlAGEAcgBjAGgAIABvAGYAIABzAG8AbQBlAHQAaABpAG4AZwAgAGcAcgBlAGEAdABlAHIALgAuAC4A'))
 ```
@@ -21,7 +20,8 @@ I tried using Sublime Text for editing with a PowerShell build system like [this
 #### First Impressions
 
 About 2 years ago (right after reading [this blog post](https://blogs.msdn.microsoft.com/powershell/2015/11/16/announcing-powershell-language-support-for-visual-studio-code-and-more/), actually), I heard about Visual Studio Code. I thought this was mainly going to be a light version of Visual Studio, at first; something geared towards GUI application development. When I found out about the PowerShell support for it, I decided to give it a try.
-* Intellisense seemed peppy, which was a big deal to me. 
+
+* Intellisense seemed peppy, which was a big deal to me.
   * I was clearing my PowerShell cache every 2-3 days to keep PowerShell ISE's Intellisense usable, this was a _very_ welcome change.
 * Syntax highlighting in Code was lacking dramatically
   * Code (at the time of this writing) uses TextMate for syntax highlighting, which is RegEx based
