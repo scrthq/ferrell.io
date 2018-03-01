@@ -9,7 +9,7 @@ lang:                  en-us
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages.
-url:                   http://ferrell.io
+url:                   https://ferrell.io
 
 # Set to '' when hosting on GitHub Pages, like `//<username>.github.io`.
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository.
