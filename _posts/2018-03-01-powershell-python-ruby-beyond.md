@@ -6,6 +6,13 @@ description: >
 tags: [powershell, devops, explorations]
 comments: true
 ---
+# PowerShell <> Python <> Ruby <> beyond: Syntax Journeys
+
+```powershell
+PS > Get-CommandEquivalent -Language Ruby -Command '$array = @()'
+
+array = []
+```
 
 ## Why?
 
