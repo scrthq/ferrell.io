@@ -6,7 +6,6 @@ description: >
 tags: [powershell, devops, explorations]
 comments: true
 ---
-# PowerShell <> Python <> Ruby <> beyond: Syntax Journeys
 
 ```powershell
 PS > Get-CommandEquivalent -Language Ruby -Command '$array = @()'
@@ -14,7 +13,7 @@ PS > Get-CommandEquivalent -Language Ruby -Command '$array = @()'
 array = []
 ```
 
-## Why?
+#### Why?
 
 I love PowerShell and would probably be perfectly fine with staying in my comfort zone, but I'm too curious not to explore (it probably helps a bit that my day to day job necessitates learning other scripting languages typically involved with DevOps roles too).
 
