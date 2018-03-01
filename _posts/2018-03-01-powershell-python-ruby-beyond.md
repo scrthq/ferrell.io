@@ -8,9 +8,7 @@ comments: true
 ---
 
 ```powershell
-Get-CommandEquivalent -Language Ruby -Command '$array = @()'
-
-array = []
+Get-CommandEquivalent -Language Ruby -Command "$array = @()"
 ```
 
 #### Why?
