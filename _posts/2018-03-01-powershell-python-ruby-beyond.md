@@ -8,7 +8,7 @@ comments: true
 ---
 
 ```powershell
-PS > Get-CommandEquivalent -Language Ruby -Command '$array = @()'
+Get-CommandEquivalent -Language Ruby -Command '$array = @()'
 
 array = []
 ```
