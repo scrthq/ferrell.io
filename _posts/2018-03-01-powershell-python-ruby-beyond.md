@@ -27,6 +27,8 @@ If you find this post helpful, feel free to bookmark it! I intend to update it o
 
 The following blocks show how to create variables a few different ways in PowerShell, Ruby and Python.
 
+##### PowerShell
+
 ```powershell
 PS > $basic = 'my basic var value' # This sets a string of 'my basic var value' as the variable '$basic'.
 
@@ -56,6 +58,8 @@ At line:1 char:1
     + CategoryInfo          : WriteError: (Constant:String) [Set-Variable], SessionStateUnauthorizedAccessException
     + FullyQualifiedErrorId : VariableNotWritable,Microsoft.PowerShell.Commands.SetVariableCommand
 ```
+
+##### Ruby
 
 ```ruby
 irb(main):001:0> basic = 'sdfsd' # This sets a string of 'sdfsd as the variable 'basic'.
