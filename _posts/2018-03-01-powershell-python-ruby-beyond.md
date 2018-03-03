@@ -6,7 +6,7 @@ description: >
 tags: [powershell, devops, explorations]
 comments: true
 ---
-
+ 
 ```powershell
 Get-CommandEquivalent -Language Ruby -Command "$array = @()"
 ```
