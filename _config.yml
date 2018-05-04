@@ -105,6 +105,9 @@ tinyletter:            ferrell-io
 # To remove Google Anaylics from your page, remove the line below.
 google_analytics:      UA-101420411-2
 
+# Flattr ID for meta tag
+flattr:                knpdqj
+
 
 # Hydejack Flags
 # ----------------------------------------------------------------------------------------
