@@ -18,7 +18,7 @@
       {
         "network": "Twitter",
         "username": "ferrell_io",
-        "url": "https://twitter.com/ferrell_io"
+        "url": "https://twitter.com/scrthq"
       },
       {
         "network": "LinkedIn",
@@ -57,19 +57,31 @@
   ],
   "awards": [
     {
+      "title": "AWS Certified Developer - Associate",
+      "date": "2017-01-20",
+      "awarder": "AWS",
+      "summary": "Validation Number: Z076ERWKJN4411SR"
+    },
+    {
+      "title": "AWS Certified SysOps Administrator - Associate",
+      "date": "2018-01-20",
+      "awarder": "AWS",
+      "summary": "Validation Number: 0F95E11KB1BQ175E"
+    },
+    {
+      "title": "AWS Certified Solutions Architect - Associate",
+      "date": "2017-04-19",
+      "awarder": "AWS",
+      "summary": "Validation Number: 9MEFH7TC12VQ1151"
+    },
+    {
       "title": "Certified Performance Pro",
       "date": "2017-11-06",
       "awarder": "New Relic",
       "summary": "License 10979094"
     },
     {
-      "title": "Certified Solutions Architect - Associate",
-      "date": "2017-04-19",
-      "awarder": "AWS",
-      "summary": "License AWS-ASA-35494"
-    },
-    {
-      "title": "Certified Administrator",
+      "title": "Certified G Suite Administrator",
       "date": "2015-12-03",
       "awarder": "G Suite",
       "summary": ""
@@ -82,7 +94,7 @@
       "keywords": []
     },
     {
-      "name": "Google Apps",
+      "name": "G Suite / Google APIs",
       "level": "Master",
       "keywords": []
     },
@@ -93,7 +105,7 @@
     },
     {
       "name": "Amazon Web Services",
-      "level": "Master",
+      "level": "Intermediate",
       "keywords": []
     },
     {
@@ -153,7 +165,7 @@
     },
     {
       "name": "Transact-SQL (T-SQL)",
-      "level": "Intermediate",
+      "level": "Begineer",
       "keywords": []
     }
   ],
