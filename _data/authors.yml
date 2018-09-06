@@ -22,13 +22,13 @@ nferrell:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         ferrell_io
+    twitter:         scrthq
     github:          scrthq
     stackoverflow:   5302680
     # soundcloud:      nonfuture
     linkedin:        scrthq
     email:           mailto:n@ferrell.io
-    # rss:             https://ferrell.io/feed.xml
+    rss:             https://ferrell.io/feed.xml
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
@@ -65,19 +65,19 @@ nferrell:
   twitter:           scrthq
 
 # Another author
-lferrell:
-  name:              Lauren Ferrell
-  email:             l@ferrell.io
-  about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-    Open `_data/authors.yml` to edit this text.
-  picture:           https://placehold.it/128x128
-  #twitter:           <username>
-  #github:            <username>
-  accent_color:      '#268bd2'
-  accent_image:
-    background:      '#202020'
-    overlay:         false
+#lferrell:
+#  name:              Lauren Ferrell
+#  email:             l@ferrell.io
+#  about:             |
+#    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+#    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+#
+#    Open `_data/authors.yml` to edit this text.
+#  picture:           https://placehold.it/128x128
+#  #twitter:           <username>
+#  #github:            <username>
+#  accent_color:      '#268bd2'
+#  accent_image:
+#    background:      '#202020'
+#    overlay:         false
