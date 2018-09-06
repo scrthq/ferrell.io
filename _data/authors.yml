@@ -22,13 +22,13 @@ nferrell:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         scrthq
     github:          scrthq
     stackoverflow:   5302680
-    # soundcloud:      nonfuture
+    twitter:         scrthq
     linkedin:        scrthq
-    #email:           mailto:n@ferrell.io
     rss:             https://ferrell.io/feed.xml
+    # soundcloud:      nonfuture
+    # email:           mailto:n@ferrell.io
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
