@@ -18,6 +18,25 @@
   <meta name="flattr:id" content="{{ site.flattr }}">
 {% endif %}
 
+<!-- facebook open graph tags -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ page.url }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:image" content="{{ "/assets/img/projects/vaporshell/banner.jpg" | prepend: site.url }}" />
+
+<!-- twitter card tags additive with the og: tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:domain" value="{{ page.url }}" />
+<meta name="twitter:title" value="{{ page.title }}" />
+<meta name="twitter:description" value="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+<meta name="twitter:image" content="{{ "/assets/img/projects/vaporshell/banner.jpg" | prepend: site.url }}" />
+<meta name="twitter:url" value="{{ page.url }}" /> {% if page.label1 %}
+<meta name="twitter:label1" content="{{ page.label1 }}" /> {% endif %} {% if page.data1 %}
+<meta name="twitter:data1" content="{{ page.data1 }}" /> {% endif %} {% if page.label2 %}
+<meta name="twitter:label2" content="{{ page.label2 }}" /> {% endif %} {% if page.data2 %}
+<meta name="twitter:data2" content="{{ page.data2 }}" /> {% endif %}
+
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="apple-mobile-web-app-capable" content="yes">
