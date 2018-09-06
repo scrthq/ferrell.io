@@ -17,11 +17,11 @@ baseurl:               ""
 
 # A short description of the page used for the meta description tag.
 description:           >
-  PowerShell, DevOps, photography, dogs.
+  PowerShell, Google Cloud, AWS, life.
 
 # A shorter description for the sidebar.
 tagline:               >
-  PowerShell, DevOps, photography, dogs.
+  PowerShell, Google Cloud, AWS, life.
 
 # A list of keywords for your blog, will be used as fallback
 # for pages that don't have `keywords` in their front matter.
