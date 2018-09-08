@@ -7,6 +7,6 @@ no_description: false
 menu: true
 order: 6
 rel: me
-accent_image: /assets/img/mountain-snow-bg.jpg
+accent_image: /assets/img/wave-grid-bg.png
 accent_color: '#2D4D62'
 ---
