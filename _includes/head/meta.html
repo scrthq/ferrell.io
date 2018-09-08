@@ -23,14 +23,14 @@
 <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-<meta property="og:image" content="{{ "/assets/img/projects/vaporshell/banner.jpg" | prepend: site.url }}" />
+<meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% else %}{{ "/assets/img/twitter-card-image.png" | prepend: site.url }}{% endif %}" />
 
 <!-- twitter card tags additive with the og: tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:domain" value="{{ page.url | prepend: site.url }}" />
 <meta name="twitter:title" value="{{ page.title }}" />
 <meta name="twitter:description" value="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-<meta name="twitter:image" content="{{ "/assets/img/projects/vaporshell/banner.jpg" | prepend: site.url }}" />
+<meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% else %}{{ "/assets/img/twitter-card-image.png" | prepend: site.url }}{% endif %}" />
 <meta name="twitter:url" value="{{ page.url | prepend: site.url }}" /> {% if page.label1 %}
 <meta name="twitter:label1" content="{{ page.label1 }}" /> {% endif %} {% if page.data1 %}
 <meta name="twitter:data1" content="{{ page.data1 }}" /> {% endif %} {% if page.label2 %}
