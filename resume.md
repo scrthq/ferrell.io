@@ -7,4 +7,6 @@ no_description: false
 menu: true
 order: 6
 rel: me
+accent_image: /assets/img/pretentious-bg.jpg
+accent_color: '#a85641'
 ---
