@@ -9,6 +9,8 @@
       {% if link_title %}</a>{% endif %}
     </h1>
     {% include read_time.html %}
+    <br/>
+    <br/>
     <p class="post-date heading">
       {% assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" %}
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
