@@ -8,5 +8,5 @@ menu: true
 order: 6
 rel: me
 accent_image: /assets/img/mountain-snow-bg.jpg
-accent_color: '#4F6837'
+accent_color: '#2D4D62'
 ---
