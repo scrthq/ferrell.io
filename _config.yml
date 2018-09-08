@@ -194,7 +194,7 @@ plugins:
   - jekyll-avatar
   # - jekyll-default-layout
   - jekyll-feed
-  # - jekyll-gist
+  - jekyll-gist
   # - jekyll-optional-front-matter
   - jekyll-paginate
   # - jekyll-readme-index
@@ -218,8 +218,8 @@ plugins:
 #   yandex:              <verification-id>
 
 # Used for Twitter cards
-twitter:
-  username:            scrthq
+# twitter:
+#   username:            scrthq
 
 # Used for Facebook open graph
 # facebook:
