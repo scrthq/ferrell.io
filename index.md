@@ -12,8 +12,6 @@ more_projects: projects.md
 more_posts: posts.md
 content_separator: <!--more-->
 comments: false
-accent_image: /assets/img/bw-forest-bg.png
-accent_color: '#00b000'
 ---
 
 ### Hello there!
