@@ -7,6 +7,6 @@ no_description: false
 menu: true
 order: 6
 rel: me
-accent_image: /assets/img/mountain-snow-bg.jpg
+accent_image: /assets/img/sky-trees-2-bg.jpg
 accent_color: '#2D4D62'
 ---

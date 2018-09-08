@@ -12,7 +12,7 @@ more_projects: projects.md
 more_posts: posts.md
 content_separator: <!--more-->
 comments: false
-accent_image: /assets/img/sky-trees-bg.jpg
+accent_image: /assets/img/mountain-snow-bg.jpg
 ---
 
 ### Hello there!
