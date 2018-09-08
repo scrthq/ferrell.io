@@ -6,8 +6,8 @@ description: >
 selected_projects:
   - _projects/vaporshell.md
 selected_posts:
-  - _posts/2017-11-30-new-blog.md
   - _posts/2018-09-05-blog-commit-push.md
+  - _posts/2017-11-30-new-blog.md
 more_projects: projects.md
 more_posts: posts.md
 content_separator: <!--more-->
