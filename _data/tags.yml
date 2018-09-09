@@ -1,18 +1,18 @@
-- slug: aws
+aws:
   name: AWS
-- slug: dev-env
+dev-env:
   name: Dev Environment
-- slug: explorations
+explorations:
   name: Explorations
-- slug: google-apps-script
+google-apps-script:
   name: Google Apps Script
-- slug: googlisms
+googlisms:
   name: Googlisms
-- slug: javascript
+javascript:
   name: JavaScript
-- slug: life
+life:
   name: Life
-- slug: powershell
+powershell:
   name: PowerShell
-- slug: vscode
+vscode:
   name: Visual Studio Code
