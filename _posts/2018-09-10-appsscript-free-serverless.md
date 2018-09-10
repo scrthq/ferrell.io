@@ -3,7 +3,7 @@ layout: post
 title: 'Going Serverless for free with Google Apps Script + Google Sheets'
 description: >
   Building APIs, Message Queues, and simple databases for free with Google Apps Script
-tags: ['Google Apps Script', JavaScript, Googlisms, PowerShell]
+tags: [google-apps-script, javascript, googlisms, powershell]
 comments: true
 excerpt_separator: <!--more-->
 ---
