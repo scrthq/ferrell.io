@@ -74,11 +74,11 @@ First thing you will want to do is create a [new Google Sheet](https://sheets.go
 
 Once the Sheet is created, let's hop over to the Script Editor for the Sheet by navigating to `Tools > Script Editor` in the Sheets menu bar. This will open up the Script Editor a new browser tab with the default `Code.gs` file open containing a starter function wrapper:
 
-~~~js
+```js
 function myFunction() {
   
 }
-~~~
+```
 
 Once open, let's give the Apps Script project a useful name as well like _Awesome Apps Script API_.
 
@@ -89,14 +89,14 @@ Apps Script comes with a manifest file, `appsscript.json`, which is hidden by de
 <details><summary><b>Click here to show the code</b></summary>
 <p>
 
-~~~json
+```json
 {
   "timeZone": "America/Mexico_City",
   "dependencies": {
   },
   "exceptionLogging": "STACKDRIVER"
 }
-~~~
+```
 
 </p>
 </details>
@@ -114,7 +114,7 @@ Copy/paste the following in your `appsscript.json` to get it set up as needed, t
 <details><summary><b>Click here to show the code</b></summary>
 <p>
 
-~~~json
+```json
 {
   "timeZone": "America/Mexico_City",
   "dependencies": {
@@ -138,7 +138,7 @@ Copy/paste the following in your `appsscript.json` to get it set up as needed, t
     "access": "ANYONE"
   }
 }
-~~~
+```
 
 </p>
 </details>
@@ -163,7 +163,7 @@ In Script Editor, switch back over to the `Code.gs` file and overwrite the defau
 <details><summary><b>Click here to show the code</b></summary>
 <p>
 
-~~~js
+```js
 Logger = BetterLog.useSpreadsheet(SpreadsheetApp.getActiveSpreadsheet().getId());
 
 function doGet(e) {
@@ -179,7 +179,7 @@ function doPost(e) {
     processPost(e, sender, config);
     return ContentService.createTextOutput('{}').setMimeType(ContentService.MimeType.JSON);
 }
-~~~
+```
 
 </p>
 </details>
@@ -198,7 +198,7 @@ Paste the following contents in the new `Config.gs` file to build your config sk
 <details><summary><b>Click here to show the code</b></summary>
 <p>
 
-~~~js
+```js
 function getConfig() {
   var CONF = {
     "APIKey": "paste your own custom API key here", // Example: 9cd356da-3b1b-4ab5-9569-2f8e421c02a6
@@ -288,7 +288,7 @@ function getConfig() {
   };
   return CONF;
 }
-~~~
+```
 
 </p>
 </details>
@@ -307,7 +307,7 @@ Paste the following into `EventHandler.gs` then save:
 <details><summary><b>Click here to show the code</b></summary>
 <p>
 
-~~~js
+```js
 function parseSender(event, config) {
     var tracker = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Tracker");
     var dlq = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Dead Letters");
@@ -602,7 +602,7 @@ function processGet(event, config) {
         throw err;
     }
 }
-~~~
+```
 
 </p>
 </details>
@@ -621,7 +621,7 @@ Paste the following into `MessageHandler.gs` and save:
 <details><summary><b>Click here to show the code</b></summary>
 <p>
 
-~~~js
+```js
 function sendSlackMsg(message, webhook, username, iconUrl, channel, color, existingPayload) {
     var payload = {};
     if (typeof existingPayload !== 'undefined') {
@@ -780,7 +780,7 @@ function parseMessage(postData, sender, config) {
         throw err;
     }
 }
-~~~
+```
 
 </p>
 </details>
@@ -794,7 +794,7 @@ Paste the following on the new `QueueMgmt.gs` file and save:
 <details><summary><b>Click here to show the code</b></summary>
 <p>
 
-~~~js
+```js
 /**
  * Cleans up the Sheet and removes any Acked or empty rows
  */
@@ -895,7 +895,7 @@ function cleanupSheet() {
   }
   Logger.log("Cleaned up " + deleteCount + " rows.");
 }
-~~~
+```
 
 </p>
 </details>
@@ -967,7 +967,7 @@ Since Google Apps Script cannot parse message headers (😲), this enables the r
 <details><summary><b>Click here to show the code</b></summary>
 <p>
 
-~~~yaml
+```yaml
 language: cpp
 python:
 - '3.4'
@@ -981,7 +981,7 @@ notifications:
   webhooks:
     urls:
       secure: Rj3QNQEkj1JlByH1YG9baSXyUrNZfPffAYYYTLVxNc9jJ5fTkexqRL28PFVfLqg5vzk7qDBzL2I5AS8eWpwaUMeq20YLCNK5PDre6mGtwMK9nvBQGH5vN0mKwPcmFindr6e81VmnbEPI+IO4KRBI7tW3PnKH4+ag9+MHcBhbsB/frMJoP9I0tgmw4GWUpvkyGNRoa4pUdIxbk7AsOqO//R/FX24NDrOgVvaqJCoHTD7zRfbW8IL5ul8nQq/gxh/3GjK2sQqcuPcxx6kzI8OaZwWS0xlF+nYider6PbjhUi+M5EUeY3aXlblZjXIpqrKk1EOXqncOLZg5h9s4dZWO3QKK7UEdK6qPVq+MkrishRYF6uVOMIvr9he50/g+UueUp2t5Al5k2jUGUGQsGgO5gSaBzWRJq3nMkYNvfQrD786/Bg/ZtHBgvrSj2NDSY65kp2pwbtufkLy3muvnBQbRIVf9aeywGjNrmvgOle+aZWjlwRvsav4u5Ont44jwkto81aYnE/7YYn4PekUd5Kc9SAH+vD2wfhejQfTU44IYbPt4jQUNCt0Fo4oyamUYEzn+0LqKlFHY4U++AwdruxmvPPY7vHzeSkOkrjYZpgJsnwdp9iq+jGm9cptvmSL2c3CnN2uX//pzS38zPCPRcbmPvnWlxkhLkA+OAqk1mFoTRk8=
-~~~
+```
 
 </p>
 </details>
@@ -1004,14 +1004,14 @@ Now that everything is set up for POSTing messages, here's a quick runthrough on
 
 GET requests leverage the following URL query parameters to get the unacked messages we need from the Sheet Queue:
 
-~~~yml
+```yml
 parameter: token
 description: The token to validate the request with
 required: true
 example: https://script.google.com/macros/s/oBs4c7sCfz_2kCjrCN3OvbKh36_ZmYXhIpToeidKt_sdazF7yxbwpj4/exec?token=mySuperSecretApiKey
-~~~
+```
 
-~~~yml
+```yml
 parameter: dequeue
 description: Set this to no to retrieve events from the queue without removing them
 values: 
@@ -1020,9 +1020,9 @@ values:
 default: yes
 required: false
 example: https://script.google.com/macros/s/oBs4c7sCfz_2kCjrCN3OvbKh36_ZmYXhIpToeidKt_sdazF7yxbwpj4/exec?token=mySuperSecretApiKey&dequeue=no
-~~~
+```
 
-~~~yml
+```yml
 parameter: source
 description: The source name you would like to retrieve messages for. You can set multiple values to retrieve multiple source types in one call, as seen in the example below.
 values:
@@ -1035,15 +1035,15 @@ values:
 default: GChat
 required: false
 example: https://script.google.com/macros/s/oBs4c7sCfz_2kCjrCN3OvbKh36_ZmYXhIpToeidKt_sdazF7yxbwpj4/exec?token=mySuperSecretApiKey&source=GChat&source=Slack
-~~~
+```
 
 PowerShell example showing retrieval of Google Chat messages, with `dequeue` set to `no` to test message retrieval without removing from the queue:
 
-~~~powershell
+```powershell
 $uri = [Uri]"https://script.google.com/macros/s/oBs4c7sCfz_2kCjrCN3OvbKh36_ZmYXhIpToeidKt_sdazF7yxbwpj4/exec?token=mySuperSecretApiKey&dequeue=no"
 $messages = Invoke-RestMethod -Uri $uri -Method Get -ContentType 'application/json'
 # rest of code to handle message processing
-~~~
+```
 
 ## Wrapping up
 
