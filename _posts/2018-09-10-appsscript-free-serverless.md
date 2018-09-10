@@ -86,9 +86,6 @@ Once open, let's give the Apps Script project a useful name as well like _Awesom
 
 Apps Script comes with a manifest file, `appsscript.json`, which is hidden by default. We're going to want to update this to tell Apps Script what Google Services and other resources the Script will need. To show the manifest, navigate to `View > Show manifest file` from Apps Script's menu bar. You should see a new file appear named `appsscript.json` with the following default content:
 
-<details><summary><b>Click here to show the code</b></summary>
-<p>
-
 ```json
 {
   "timeZone": "America/Mexico_City",
@@ -97,9 +94,6 @@ Apps Script comes with a manifest file, `appsscript.json`, which is hidden by de
   "exceptionLogging": "STACKDRIVER"
 }
 ```
-
-</p>
-</details>
 
 We're going to want to update that so our Apps Script project contains the following:
 1. The Sheets advanced service
@@ -110,9 +104,6 @@ We're going to want to update that so our Apps Script project contains the follo
 Copy/paste the following in your `appsscript.json` to get it set up as needed, then save:
 > You may update the `timeZone` to your preference as well if you'd like; [here is a list of all valid `timeZone`'s that Apps Script supports](https://gist.github.com/mhawksey/8673e904a03a91750c26c2754fe0977a).
 > If you do not want to send logs to StackDriver, replace `STACKDRIVER` with `NONE` next to `exceptionLogging` below.
-
-<details><summary><b>Click here to show the code</b></summary>
-<p>
 
 ```json
 {
@@ -140,9 +131,6 @@ Copy/paste the following in your `appsscript.json` to get it set up as needed, t
 }
 ```
 
-</p>
-</details>
-
 #### Adding the GET and POST method handlers
 
 Let's keep our primary code file clean and add the essentials:
@@ -159,9 +147,6 @@ Let's keep our primary code file clean and add the essentials:
   5. return a blank JSON object `{}` so the sender knows the POST was successful
 
 In Script Editor, switch back over to the `Code.gs` file and overwrite the default contents with the following, then save:
-
-<details><summary><b>Click here to show the code</b></summary>
-<p>
 
 ```js
 Logger = BetterLog.useSpreadsheet(SpreadsheetApp.getActiveSpreadsheet().getId());
@@ -181,9 +166,6 @@ function doPost(e) {
 }
 ```
 
-</p>
-</details>
-
 #### Adding your config
 
 In Script Editor, create a new file named `Config.gs`. The sample config skeleton below contains the following configuration elements:
@@ -194,9 +176,6 @@ In Script Editor, create a new file named `Config.gs`. The sample config skeleto
 
 
 Paste the following contents in the new `Config.gs` file to build your config skeleton and fill in the relevant portions:
-
-<details><summary><b>Click here to show the code</b></summary>
-<p>
 
 ```js
 function getConfig() {
@@ -290,9 +269,6 @@ function getConfig() {
 }
 ```
 
-</p>
-</details>
-
 #### Adding the event handlers
 
 Let's create another file in our Apps Script project named `EventHandler.gs`. The functions in this file will focus on processing the event data. Here are the functions and their purpose for reference:
@@ -303,9 +279,6 @@ Let's create another file in our Apps Script project named `EventHandler.gs`. Th
 * `processGet(event, config)`: The function called once GETs are validated. This will be used to dequeue messages from the Sheets Queue.
 
 Paste the following into `EventHandler.gs` then save:
-
-<details><summary><b>Click here to show the code</b></summary>
-<p>
 
 ```js
 function parseSender(event, config) {
@@ -604,9 +577,6 @@ function processGet(event, config) {
 }
 ```
 
-</p>
-</details>
-
 #### Adding the message handlers
 
 We'll also need a way to send messages to Slack and Google Chat as well as parse out the received POSTs into the necessary format. Create a new file named `MessageHandler.gs` in your Apps Script project.
@@ -617,9 +587,6 @@ Functions included here and their purpose for reference:
 * `parseMessage(postData, sender, config)`: This parses out the message details into an object with common formatting usable by both Slack and Google Chat.
 
 Paste the following into `MessageHandler.gs` and save:
-
-<details><summary><b>Click here to show the code</b></summary>
-<p>
 
 ```js
 function sendSlackMsg(message, webhook, username, iconUrl, channel, color, existingPayload) {
@@ -782,17 +749,11 @@ function parseMessage(postData, sender, config) {
 }
 ```
 
-</p>
-</details>
-
 #### Adding in Queue Management helper functions
 
 On to the last file we'll need in our project, the `QueueMgmt.gs` file. This will contain one core function, `cleanupSheet()`, which cleans the acked rows from the Queue sheet, adds any Sheets it finds missing (i.e. Dead Letters and Tracker sheets), and sets some formatting on each Sheet to increase readability.
 
 Paste the following on the new `QueueMgmt.gs` file and save:
-
-<details><summary><b>Click here to show the code</b></summary>
-<p>
 
 ```js
 /**
@@ -897,9 +858,6 @@ function cleanupSheet() {
 }
 ```
 
-</p>
-</details>
-
 ## Final steps
 
 Alright, there are just a few final steps before we can start leveraging this endpoint:
@@ -964,9 +922,6 @@ Since Google Apps Script cannot parse message headers (😲), this enables the r
 1. Open your `.travis.yml` file in your project
 2. Add the webhook under `notifications.webhooks.urls`. It should look similar to this once done, if storing as an encrypted string:
 
-<details><summary><b>Click here to show the code</b></summary>
-<p>
-
 ```yaml
 language: cpp
 python:
@@ -982,9 +937,6 @@ notifications:
     urls:
       secure: Rj3QNQEkj1JlByH1YG9baSXyUrNZfPffAYYYTLVxNc9jJ5fTkexqRL28PFVfLqg5vzk7qDBzL2I5AS8eWpwaUMeq20YLCNK5PDre6mGtwMK9nvBQGH5vN0mKwPcmFindr6e81VmnbEPI+IO4KRBI7tW3PnKH4+ag9+MHcBhbsB/frMJoP9I0tgmw4GWUpvkyGNRoa4pUdIxbk7AsOqO//R/FX24NDrOgVvaqJCoHTD7zRfbW8IL5ul8nQq/gxh/3GjK2sQqcuPcxx6kzI8OaZwWS0xlF+nYider6PbjhUi+M5EUeY3aXlblZjXIpqrKk1EOXqncOLZg5h9s4dZWO3QKK7UEdK6qPVq+MkrishRYF6uVOMIvr9he50/g+UueUp2t5Al5k2jUGUGQsGgO5gSaBzWRJq3nMkYNvfQrD786/Bg/ZtHBgvrSj2NDSY65kp2pwbtufkLy3muvnBQbRIVf9aeywGjNrmvgOle+aZWjlwRvsav4u5Ont44jwkto81aYnE/7YYn4PekUd5Kc9SAH+vD2wfhejQfTU44IYbPt4jQUNCt0Fo4oyamUYEzn+0LqKlFHY4U++AwdruxmvPPY7vHzeSkOkrjYZpgJsnwdp9iq+jGm9cptvmSL2c3CnN2uX//pzS38zPCPRcbmPvnWlxkhLkA+OAqk1mFoTRk8=
 ```
-
-</p>
-</details>
 
 **GitHub**:  
 1. Open your repo on GitHub, then go to Settings
