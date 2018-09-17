@@ -166,6 +166,7 @@ Open up the new `SecretsManagerCustomResource.ps1` file in your favorite editor 
         }
     }
     ```
+
 You can find the full Lambda code here for brevity:
 
 ```powershell
@@ -352,6 +353,7 @@ Now that our Lambda is deployed and our secret is stored in Secrets Manager, we 
     ```powershell
     New-VSStack -TemplateBody $template -StackName "my-sql-express-stack" -Confirm:$false
     ```
+
 Full VaporShell script to create the template and deploy it as a new stack:
 
 ```powershell
