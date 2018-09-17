@@ -102,75 +102,70 @@ Open up the new `SecretsManagerCustomResource.ps1` file in your favorite editor 
 
 1. We will need to use the `AWSPowerShell.NetCore` module within our Lambda to get secrets from Secrets Manager, so let's include the `#Requires` section on top:
 
-```powershell
-#Requires -Modules @{ModuleName='AWSPowerShell.NetCore';ModuleVersion='3.3.343.0'}
-```
-
+    ```powershell
+    #Requires -Modules @{ModuleName='AWSPowerShell.NetCore';ModuleVersion='3.3.343.0'}
+    ```
 2. We may be sending CloudFormation events across accounts via SNS, so let's get the actual CloudFormation event details if the source is SNS and store it in the `$CFNEvent` variable:
 
-```powershell
-$CFNEvent = if ($null -ne $LambdaInput.Records) {
-    Write-Host 'Parsing CloudFormation event from SNS message'
-    $LambdaInput.Records[0].Sns.Message
-}
-else {
-    $LambdaInput
-}
-```
-
+    ```powershell
+    $CFNEvent = if ($null -ne $LambdaInput.Records) {
+        Write-Host 'Parsing CloudFormation event from SNS message'
+        $LambdaInput.Records[0].Sns.Message
+    }
+    else {
+        $LambdaInput
+    }
+    ```
 3. We need to send the response back to CloudFormation via web request (`Invoke-WebRequest`/`Invoke-RestMethod`), so we'll add a request body base and store that in the `$body` variable. We'll assume the request was successful and overwrite it if a failure does occur:
 
-```powershell
-$body = @{
-    Status             = "SUCCESS"
-    Reason             = "See the details in CloudWatch Log Stream:`n[Group] $($LambdaContext.LogGroupName)`n[Stream] $($LambdaContext.LogStreamName)"
-    PhysicalResourceId = $LambdaContext.LogStreamName
-    StackId            = $CFNEvent.StackId
-    RequestId          = $CFNEvent.RequestId
-    LogicalResourceId  = $CFNEvent.LogicalResourceId
-}
-```
-
+    ```powershell
+    $body = @{
+        Status             = "SUCCESS"
+        Reason             = "See the details in CloudWatch Log Stream:`n[Group] $($LambdaContext.LogGroupName)`n[Stream] $($LambdaContext.LogStreamName)"
+        PhysicalResourceId = $LambdaContext.LogStreamName
+        StackId            = $CFNEvent.StackId
+        RequestId          = $CFNEvent.RequestId
+        LogicalResourceId  = $CFNEvent.LogicalResourceId
+    }
+    ```
 4. Next, we'll take action based on the RequestType `[Delete|Update|Create]`. For this Lambda's use-case, we'll skip action if the RequestType is `Delete` to signal success immediately, since this Lambda is only for retrieving secrets during `Create` or `Update` requests. We'll update our `$body` contents with the results and set the status to `FAILED` if we hit any errors during secret retrieval (i.e. Secret or Key does not exist). We'll also wrap this in a `try/catch` statement for error handling:
 
-```powershell
-try {
-    switch ($CFNEvent.RequestType) {
-        Delete {
-        }
-        default {
-            $secretString = ConvertFrom-Json (Get-SECSecretValue -SecretId $CFNEvent.ResourceProperties.SecretId -ErrorAction Stop -Verbose).SecretString -ErrorAction Stop
-            if ($secret = $secretString."$($CFNEvent.ResourceProperties.SecretKey)") {
-                $body.Data = @{Secret = $secret}
-            }
-            else {
-                Write-Error "Key [$($CFNEvent.ResourceProperties.SecretKey)] not found on secret [$($CFNEvent.ResourceProperties.SecretId)]"
-                $body.Status = "FAILED"
-                $body.Data = @{Secret = $null}
-            }
-        }
-    }
-}
-catch {
-    Write-Error $_
-    $body.Status = "FAILED"
-}
-```
-
-5. Finally, we'll signal back to CloudFormation with the results using `Invoke-WebRequest`. The body needs to be a JSON string and the request method must be `Put` in order for this to work as needed. We wrap this in a `finally` statement so that the response will be sent to CloudFormation even if there is a terminating error when retrieving the Secret, preventing the stack creation or update from hanging due to no response from Lambda:
-
-```powershell
-finally {
+    ```powershell
     try {
-        Write-Host "Sending response back to CloudFormation"
-        Invoke-WebRequest -Uri $([Uri]$CFNEvent.ResponseURL) -Method Put -Body $($body|ConvertTo-Json -Depth 5)
+        switch ($CFNEvent.RequestType) {
+            Delete {
+            }
+            default {
+                $secretString = ConvertFrom-Json (Get-SECSecretValue -SecretId $CFNEvent.ResourceProperties.SecretId -ErrorAction Stop -Verbose).SecretString -ErrorAction Stop
+                if ($secret = $secretString."$($CFNEvent.ResourceProperties.SecretKey)") {
+                    $body.Data = @{Secret = $secret}
+                }
+                else {
+                    Write-Error "Key [$($CFNEvent.ResourceProperties.SecretKey)] not found on secret [$($CFNEvent.ResourceProperties.SecretId)]"
+                    $body.Status = "FAILED"
+                    $body.Data = @{Secret = $null}
+                }
+            }
+        }
     }
     catch {
         Write-Error $_
+        $body.Status = "FAILED"
     }
-}
-```
+    ```
+5. Finally, we'll signal back to CloudFormation with the results using `Invoke-WebRequest`. The body needs to be a JSON string and the request method must be `Put` in order for this to work as needed. We wrap this in a `finally` statement so that the response will be sent to CloudFormation even if there is a terminating error when retrieving the Secret, preventing the stack creation or update from hanging due to no response from Lambda:
 
+    ```powershell
+    finally {
+        try {
+            Write-Host "Sending response back to CloudFormation"
+            Invoke-WebRequest -Uri $([Uri]$CFNEvent.ResponseURL) -Method Put -Body $($body|ConvertTo-Json -Depth 5)
+        }
+        catch {
+            Write-Error $_
+        }
+    }
+    ```
 You can find the full Lambda code here for brevity:
 
 ```powershell
@@ -322,47 +317,41 @@ Now that our Lambda is deployed and our secret is stored in Secrets Manager, we 
 
 1. Initialize the template:
 
-```powershell
-$template = Initialize-Vaporshell -Description "My SQL Server RDS stack"
-```
-
+    ```powershell
+    $template = Initialize-Vaporshell -Description "My SQL Server RDS stack"
+    ```
 2. Add the custom resource and store the call to `GetAtt` in a variable for re-use:
 
-```powershell
-$customResource = New-VaporResource -LogicalId "SecretsManagerCustomResource" -Type "Custom::SecretsManager" -Properties @{
-    ServiceToken = (Add-FnJoin -Delimiter "" -ListOfValues 'arn:aws:lambda:',(Add-FnRef $_AWSRegion),':',(Add-FnRef $_AWSAccountId),':function:SecretsManagerCustomResource')
-    SecretId = 'development/RDS'
-    SecretKey = 'RDSMasterPassword'
-    UpdateTrigger = $true
-}
-$secretValue = Add-FnGetAtt $customResource -AttributeName 'Secret'
-```
-
+    ```powershell
+    $customResource = New-VaporResource -LogicalId "SecretsManagerCustomResource" -Type "Custom::SecretsManager" -Properties @{
+        ServiceToken = (Add-FnJoin -Delimiter "" -ListOfValues 'arn:aws:lambda:',(Add-FnRef $_AWSRegion),':',(Add-FnRef $_AWSAccountId),':function:SecretsManagerCustomResource')
+        SecretId = 'development/RDS'
+        SecretKey = 'RDSMasterPassword'
+        UpdateTrigger = $true
+    }
+    $secretValue = Add-FnGetAtt $customResource -AttributeName 'Secret'
+    ```
 3. Add the security group and its ingress rules. We'll use a handy call to `http://ipinfo.io/json` to get our current public IP so the instance is accessible from your local host once launched:
 
-```powershell
-$securityGroupIngress = Add-VSEC2SecurityGroupIngress -CidrIp "$(Invoke-RestMethod http://ipinfo.io/json | Select-Object -ExpandProperty IP)/32" -FromPort '1433' -ToPort '1433' -IpProtocol 'tcp'
-$ec2SecurityGroup = New-VSEC2SecurityGroup -LogicalId 'RDSSecurityGroup' -GroupDescription 'Port 1433 access to RDS from local only' -SecurityGroupIngress $securityGroupIngress
-```
-
+    ```powershell
+    $securityGroupIngress = Add-VSEC2SecurityGroupIngress -CidrIp "$(Invoke-RestMethod http://ipinfo.io/json | Select-Object -ExpandProperty IP)/32" -FromPort '1433' -ToPort '1433' -IpProtocol 'tcp'
+    $ec2SecurityGroup = New-VSEC2SecurityGroup -LogicalId 'RDSSecurityGroup' -GroupDescription 'Port 1433 access to RDS from local only' -SecurityGroupIngress $securityGroupIngress
+    ```
 4. Add the RDS instance. We'll want to use `DependsOn` to ensure the security group is created before the RDS instance, otherwise the RDS instance will fail to create. Since I'll be accessing this instance over public internet, I set `-PubliclyAccessible` to `$true`; if you are only accessing your instance from your own VPC/LAN, please set this to `$false` to keep your RDS instance secure:
 
-```powershell
-$rdsInstance = New-VSRDSDBInstance -LogicalId "SqlServerExpress" -MasterUsername 'rdsmaster' -MasterUserPassword $secretValue -DBInstanceClass 'db.t2.micro' -PubliclyAccessible $true -Engine 'sqlserver-ex' -MultiAZ $false -StorageType 'gp2' -EngineVersion "13.00.4451.0.v1" -DBInstanceIdentifier 'cf-sqlserver-ex-1' -AllocatedStorage '25' -AvailabilityZone 'us-west-2a' -VPCSecurityGroups (Add-FnGetAtt $ec2SecurityGroup 'GroupId') -DependsOn $ec2SecurityGroup
-```
-
+    ```powershell
+    $rdsInstance = New-VSRDSDBInstance -LogicalId "SqlServerExpress" -MasterUsername 'rdsmaster' -MasterUserPassword $secretValue -DBInstanceClass 'db.t2.micro' -PubliclyAccessible $true -Engine 'sqlserver-ex' -MultiAZ $false -StorageType 'gp2' -EngineVersion "13.00.4451.0.v1" -DBInstanceIdentifier 'cf-sqlserver-ex-1' -AllocatedStorage '25' -AvailabilityZone 'us-west-2a' -VPCSecurityGroups (Add-FnGetAtt $ec2SecurityGroup 'GroupId') -DependsOn $ec2SecurityGroup
+    ```
 5. Add the resource objects to the template:
 
-```powershell
-$template.AddResource($customResource,$ec2SecurityGroup,$rdsInstance)
-```
-
+    ```powershell
+    $template.AddResource($customResource,$ec2SecurityGroup,$rdsInstance)
+    ```
 6. Lastly, deploy the template as a new stack:
 
-```powershell
-New-VSStack -TemplateBody $template -StackName "my-sql-express-stack" -Confirm:$false
-```
-
+    ```powershell
+    New-VSStack -TemplateBody $template -StackName "my-sql-express-stack" -Confirm:$false
+    ```
 Full VaporShell script to create the template and deploy it as a new stack:
 
 ```powershell
