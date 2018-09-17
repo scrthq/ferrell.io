@@ -362,7 +362,6 @@ $customResource = New-VaporResource -LogicalId "SecretsManagerCustomResource" -T
     ServiceToken = (Add-FnJoin -Delimiter "" -ListOfValues 'arn:aws:lambda:',(Add-FnRef $_AWSRegion),':',(Add-FnRef $_AWSAccountId),':function:SecretsManagerCustomResource')
     SecretId = 'development/RDS'
     SecretKey = 'RDSMasterPassword'
-    UpdateTrigger = $true
 }
 $secretValue = Add-FnGetAtt $customResource -AttributeName 'Secret'
 $securityGroupIngress = Add-VSEC2SecurityGroupIngress -CidrIp "$(Invoke-RestMethod http://ipinfo.io/json | Select-Object -ExpandProperty IP)/32" -FromPort '1433' -ToPort '1433' -IpProtocol 'tcp'
