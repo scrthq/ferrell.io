@@ -22,15 +22,18 @@ Lambda-backed custom resources have been a huge help for performing tasks that a
 
 ***
 
+* [excerpt_separator: ](#excerptseparator)
 * [What are we building?](#what-are-we-building)
 * [Prerequisites](#prerequisites)
 * [The Lambda](#the-lambda)
-    * [Creating the PowerShell Lambda script from template](#creating-the-powershell-lambda-script-from-template)
-    * [Adding our Lambda code](#adding-our-lambda-code)
-    * [Creating an IAM Role for our Lambda](#creating-an-iam-role-for-our-lambda)
-    * [Publishing the Lambda to AWS](#publishing-the-lambda-to-aws)
+  * [Creating the PowerShell Lambda script from template](#creating-the-powershell-lambda-script-from-template)
+  * [Adding our Lambda code](#adding-our-lambda-code)
+  * [Creating an IAM Role for our Lambda](#creating-an-iam-role-for-our-lambda)
+  * [Publishing the Lambda to AWS](#publishing-the-lambda-to-aws)
 * [Adding our secret to Secrets Manager](#adding-our-secret-to-secrets-manager)
 * [The CloudFormation stack](#the-cloudformation-stack)
+  * [Resulting JSON](#resulting-json)
+  * [Resulting YAML](#resulting-yaml)
 * [Wrapping up](#wrapping-up)
 {:toc}
 
@@ -369,6 +372,133 @@ $ec2SecurityGroup = New-VSEC2SecurityGroup -LogicalId 'RDSSecurityGroup' -GroupD
 $rdsInstance = New-VSRDSDBInstance -LogicalId "SqlServerExpress" -MasterUsername 'rdsmaster' -MasterUserPassword $secretValue -DBInstanceClass 'db.t2.micro' -PubliclyAccessible $true -Engine 'sqlserver-ex' -MultiAZ $false -StorageType 'gp2' -EngineVersion "13.00.4451.0.v1" -DBInstanceIdentifier 'cf-sqlserver-ex-1' -AllocatedStorage '25' -AvailabilityZone 'us-west-2a' -VPCSecurityGroups (Add-FnGetAtt $ec2SecurityGroup 'GroupId') -DependsOn $ec2SecurityGroup
 $template.AddResource($customResource,$ec2SecurityGroup,$rdsInstance)
 New-VSStack -TemplateBody $template -StackName "my-sql-express-stack" -Confirm:$false
+```
+
+### Resulting JSON
+
+```json
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "My SQL Server RDS stack",
+  "Resources": {
+    "SecretsManagerCustomResource": {
+      "Type": "Custom::SecretsManager",
+      "Properties": {
+        "SecretKey": "RDSMasterPassword",
+        "ServiceToken": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:aws:lambda:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":function:SecretsManagerCustomResource"
+            ]
+          ]
+        },
+        "SecretId": "development/RDS"
+      }
+    },
+    "RDSSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "Port 1433 access to RDS from local only",
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "xxx.xxx.xxx.xxx/32",
+            "FromPort": 1433,
+            "ToPort": 1433,
+            "IpProtocol": "tcp"
+          }
+        ]
+      }
+    },
+    "SqlServerExpress": {
+      "Type": "AWS::RDS::DBInstance",
+      "Properties": {
+        "MasterUsername": "rdsmaster",
+        "MasterUserPassword": {
+          "Fn::GetAtt": [
+            "SecretsManagerCustomResource",
+            "Secret"
+          ]
+        },
+        "DBInstanceClass": "db.t2.micro",
+        "PubliclyAccessible": true,
+        "Engine": "sqlserver-ex",
+        "MultiAZ": false,
+        "StorageType": "gp2",
+        "EngineVersion": "13.00.4451.0.v1",
+        "DBInstanceIdentifier": "cf-sqlserver-ex-1",
+        "AllocatedStorage": "25",
+        "AvailabilityZone": "us-west-2a",
+        "VPCSecurityGroups": [
+          {
+            "Fn::GetAtt": [
+              "RDSSecurityGroup",
+              "GroupId"
+            ]
+          }
+        ]
+      },
+      "DependsOn": [
+        "RDSSecurityGroup"
+      ]
+    }
+  }
+}
+```
+
+### Resulting YAML
+
+```yml
+AWSTemplateFormatVersion: '2010-09-09'
+Description: My SQL Server RDS stack
+Resources:
+  SecretsManagerCustomResource:
+    Type: Custom::SecretsManager
+    Properties:
+      SecretKey: RDSMasterPassword
+      ServiceToken: !Join
+        - ''
+        - - 'arn:aws:lambda:'
+          - !Ref 'AWS::Region'
+          - ':'
+          - !Ref 'AWS::AccountId'
+          - :function:SecretsManagerCustomResource
+      SecretId: development/RDS
+  RDSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Port 1433 access to RDS from local only
+      SecurityGroupIngress:
+        - CidrIp: xxx.xxx.xxx.xxx/32
+          FromPort: 1433
+          ToPort: 1433
+          IpProtocol: tcp
+  SqlServerExpress:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      MasterUsername: rdsmaster
+      MasterUserPassword: !GetAtt 'SecretsManagerCustomResource.Secret'
+      DBInstanceClass: db.t2.micro
+      PubliclyAccessible: true
+      Engine: sqlserver-ex
+      MultiAZ: false
+      StorageType: gp2
+      EngineVersion: 13.00.4451.0.v1
+      DBInstanceIdentifier: cf-sqlserver-ex-1
+      AllocatedStorage: '25'
+      AvailabilityZone: us-west-2a
+      VPCSecurityGroups:
+        - !GetAtt 'RDSSecurityGroup.GroupId'
+    DependsOn:
+      - RDSSecurityGroup
 ```
 
 ## Wrapping up
