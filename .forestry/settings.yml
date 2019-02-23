@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: assets
+  label: Assets
+  create: all
+  match: "**assets/**/*"
+- type: directory
   path: _featured_categories
   label: Featured categories
   create: all
