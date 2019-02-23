@@ -1,10 +1,7 @@
 ---
 layout: post
 title: 'TEMPLATE: BLOG POST'
-description: 'Building APIs, Message Queues, and simple databases for free with Google
-  Apps Script
-
-'
+description: 'TEMPLATE: BLOG POST'
 tags:
 - google-apps-script
 - javascript
