@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Going Serverless for free with Google Apps Script + Google Sheets
+title: 'TEMPLATE: BLOG POST'
 description: 'Building APIs, Message Queues, and simple databases for free with Google
   Apps Script
 
