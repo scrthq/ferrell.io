@@ -13,7 +13,7 @@ sections:
   path: assets
   label: Assets
   create: all
-  match: "**assets/**/*"
+  match: "**/*"
 - type: directory
   path: _featured_tags
   label: Featured tags
