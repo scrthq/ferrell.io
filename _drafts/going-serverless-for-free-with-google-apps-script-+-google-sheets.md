@@ -12,13 +12,17 @@ tags:
 - powershell
 comments: true
 excerpt_separator: "<!--more-->"
+code_snippet: Get-Process | Stop-Process
+code_language: powershell
+quote: Do or do not, there is no try.
+quote_author: Yoda
 
 ---
-> "We don't take advantage of our position. We keep saying no to free stuff, as we can afford it now." Lukas Forchhammer
+> "{{ page.quote }}" - {{ page.quote_author }}
 
 <!--more-->
 
-```powershell
+```{{ page.code_language }}
 {{ page.code_snippet }}
 ```
 
