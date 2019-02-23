@@ -42,3 +42,20 @@ fields:
   hidden: true
   description: The separator string defining where the post excerpt should end.
   default: "<!--more-->"
+- type: textarea
+  hidden: true
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Funny Code Snippet
+  description: A whimsical snippet of usually fake code related to the post in some
+    way.
+  name: funny_code
+- type: text
+  name: inspirational_quote
+  label: Inspirational Quote
+  config:
+    required: true
+  description: 'A random inspirational quote that is added at the top of the post.
+    Format is: > "Quote contents." - Author Person'
