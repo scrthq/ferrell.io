@@ -79,4 +79,4 @@ fields:
     required: true
   default: Yoda
 pages:
-- _posts/going-serverless-for-free-with-google-apps-script-+-google-sheets.md
+- _posts/2019-02-23-going-serverless-for-free-with-google-apps-script-+-google-sheets.md
