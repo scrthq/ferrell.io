@@ -4,3 +4,10 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
+  name: layout
+  label: layout
+  description: post
+  hidden: true
+  config:
+    required: true
+  default: post
