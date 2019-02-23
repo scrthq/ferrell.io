@@ -29,11 +29,15 @@ fields:
   label: Tags
   description: 'Tags to add to the post. Common options are: [powershell, aws, cloudformation,
     lambda, vaporshell]'
-  default: []
+  default:
+  - powershell
+  - aws
+  - c#
 - type: boolean
   name: comments
   label: Comments enabled
   description: Whether or not comments are enabled on this post.
+  default: true
 - type: text
   name: excerpt_separator
   label: Excerpt Separator
@@ -43,21 +47,36 @@ fields:
   description: The separator string defining where the post excerpt should end.
   default: "<!--more-->"
 - type: textarea
-  hidden: true
+  hidden: false
   config:
     wysiwyg: false
     schema:
       format: markdown
-  label: Funny Code Snippet
+    required: true
+  label: code snippet
   description: A whimsical snippet of usually fake code related to the post in some
     way.
-  name: funny_code
+  name: code_snippet
+  default: Get-Process | Stop-Process
 - type: text
-  name: inspirational_quote
-  label: Inspirational Quote
+  name: code_language
+  label: code language
+  description: The language of the code snippet
+  default: powershell
+- type: text
+  name: quote
+  label: quote
   config:
     required: true
   description: 'A random inspirational quote that is added at the top of the post.
     Format is: > "Quote contents." - Author Person'
+  default: Do or do not, there is no try.
+- type: text
+  name: quote_author
+  label: quote author
+  description: The author of the quote
+  config:
+    required: true
+  default: Yoda
 pages:
 - _posts/going-serverless-for-free-with-google-apps-script-+-google-sheets.md
