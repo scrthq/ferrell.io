@@ -19,7 +19,7 @@ excerpt_separator: "<!--more-->"
 <!--more-->
 
 ```powershell
-Invoke-RestMethod -Uri $googleAppsScriptUri -Method Post -Body (@{sender="Slack";text="Hello!";token=$token}|ConvertTo-Json)
+{{ page.code_snippet }}
 ```
 
 * [Background](#background)
