@@ -60,4 +60,4 @@ fields:
   description: 'A random inspirational quote that is added at the top of the post.
     Format is: > "Quote contents." - Author Person'
 pages:
-- _posts/test-post-from-forestry.md
+- _posts/2019-02-23-test-post-from-forestry.md
