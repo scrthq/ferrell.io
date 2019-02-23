@@ -9,5 +9,5 @@ fields:
   description: post
   hidden: true
   config:
-    required: true
+    required: false
   default: post
