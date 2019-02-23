@@ -1,0 +1,114 @@
+---
+label: Project
+hide_body: 
+is_partial: 
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: textarea
+  hidden: false
+  default: ''
+- name: accent_color
+  label: Accent color
+  type: text
+  hidden: false
+  default: ''
+- name: accent_image
+  label: Accent image
+  type: field_group
+  fields:
+  - name: background
+    label: Background
+    type: text
+    hidden: false
+    default: ''
+  - name: overlay
+    label: Overlay
+    type: boolean
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: caption
+  label: Caption
+  type: text
+  hidden: false
+  default: ''
+- name: image
+  label: Image
+  type: file
+  hidden: false
+  default: ''
+- name: screenshot
+  label: Screenshot
+  type: field_group
+  fields:
+  - name: src
+    label: Src
+    type: file
+    hidden: false
+    default: ''
+  - name: srcset
+    label: Srcset
+    type: field_group
+    fields:
+    - name: 1920w
+      label: 1920w
+      type: file
+      hidden: false
+      default: ''
+    - name: 960w
+      label: 960w
+      type: file
+      hidden: false
+      default: ''
+    - name: 480w
+      label: 480w
+      type: file
+      hidden: false
+      default: ''
+    hidden: false
+    default: ''
+  - name: path
+    label: Path
+    type: file
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: links
+  label: Links
+  type: field_group_list
+  fields:
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - name: url
+    label: Url
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: big_project
+  label: Big project
+  type: boolean
+  hidden: false
+  default: ''
