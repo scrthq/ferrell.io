@@ -59,3 +59,5 @@ fields:
     required: true
   description: 'A random inspirational quote that is added at the top of the post.
     Format is: > "Quote contents." - Author Person'
+pages:
+- _posts/test-post-from-forestry.md
