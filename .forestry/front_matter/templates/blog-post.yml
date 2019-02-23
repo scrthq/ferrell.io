@@ -5,9 +5,40 @@ is_partial: false
 fields:
 - type: text
   name: layout
-  label: layout
-  description: post
+  label: Layout
+  description: The layout to use during page rendering. Needs to be set to default
+    value of "post" for blog posts.
   hidden: true
   config:
     required: false
   default: post
+- type: text
+  name: title
+  label: Title
+  description: The title of the post
+  config:
+    required: true
+- type: text
+  name: description
+  label: Description
+  description: The description of the blog post.
+  config:
+    required: true
+- type: tag_list
+  name: tags
+  label: Tags
+  description: 'Tags to add to the post. Common options are: [powershell, aws, cloudformation,
+    lambda, vaporshell]'
+  default: []
+- type: boolean
+  name: comments
+  label: Comments enabled
+  description: Whether or not comments are enabled on this post.
+- type: text
+  name: excerpt_separator
+  label: Excerpt Separator
+  config:
+    required: false
+  hidden: true
+  description: The separator string defining where the post excerpt should end.
+  default: "<!--more-->"
