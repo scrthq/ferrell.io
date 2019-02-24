@@ -1,31 +1,18 @@
 if (getCookie("theme") == "dark") {
-    $('main').addClass("dark");
-} else if (getCookie("theme") == "code") {
-    $('main').addClass("code");
-} else {
-    $('main').addClass("light");
+    $('article').addClass("dark");
 }
 
 $(document).ready(function() {
-    $(".theme-toggle").click(function(e) {
-        e.preventDefault();
-        if ($('main').hasClass("dark")) {
-            document.cookie = "theme=light;path=/";
-            $("main").toggleClass("light",null,true);
-            $("main").toggleClass("code",null,false);
-            $("main").toggleClass("dark");
-        } else if ($('main').hasClass("code")) {
-            document.cookie = "theme=dark;path=/";
-            $("main").toggleClass("dark",null,true);
-            $("main").toggleClass("light",null,false);
-            $("main").toggleClass("code");
-        } else {
-            document.cookie = "theme=light;path=/";
-            $("main").toggleClass("code",null,true);
-            $("main").toggleClass("dark",null,false);
-            $("main").toggleClass("light",null,false);
-        }
-    });
+    $(".theme-toggle").click(function(e){
+		e.preventDefault();
+		$('html').toggleClass("dark");
+		if ($('html').hasClass("dark")){
+			document.cookie = "theme=dark;path=/";
+		}
+		else {
+			document.cookie = "theme=light;path=/";
+		}
+	});
 });
 
 function getCookie(cname) {
