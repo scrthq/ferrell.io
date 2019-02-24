@@ -3,6 +3,7 @@ if (getCookie("theme") == "dark") {
 }
 
 $(document).ready(function() {
+    document.cookie = "theme=light;path=/";
     $(".theme-toggle").click(function(e){
 		e.preventDefault();
 		$('html').toggleClass("dark");
