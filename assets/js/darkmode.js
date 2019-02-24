@@ -1,21 +1,21 @@
+var host = "ferrell.io";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+
 if (getCookie("theme") == "dark") {
     $('html').addClass("dark");
-} else {
-    $('html').addClass("light");
 }
 
 $(document).ready(function() {
-    document.cookie = "theme=light;path=/";
-    $(".theme-toggle").click(function(e){
-		e.preventDefault();
-		$('html').toggleClass("dark");
-		if ($('html').hasClass("dark")){
-			document.cookie = "theme=dark;path=/";
-		}
-		else {
-			document.cookie = "theme=light;path=/";
-		}
-	});
+    $(".theme-toggle").click(function(e) {
+        e.preventDefault();
+        $('html').toggleClass("dark");
+        if ($('html').hasClass("dark")) {
+            document.cookie = "theme=dark;path=/";
+        } else {
+            document.cookie = "theme=light;path=/";
+        }
+    });
 });
 
 function getCookie(cname) {
