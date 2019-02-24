@@ -17,4 +17,10 @@
   {% for link in include.author.social %}
     {% include social-list-item.html platform=link.first username=link.last %}
   {% endfor %}
+  <li>
+    <a href="#" title="Toggle Theme" class="toggle-them">
+      <span class="icon-contrast"></span>
+      <span class="sr-only">Toggle Dark Mode</span>
+    </a>
+  </li>
 </ul>
