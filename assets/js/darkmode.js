@@ -1,5 +1,7 @@
 if (getCookie("theme") == "dark") {
     $('html').addClass("dark");
+} else {
+    $('html').addClass("light");
 }
 
 $(document).ready(function() {
