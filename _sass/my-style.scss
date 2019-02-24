@@ -2,7 +2,7 @@
  * Dark Theme - https://github.com/joebuhlig/joebuhlig.com/blob/master/_sass/_layout.scss#L1167
 */
 
-main.dark {
+html.dark {
     body {
         background-color: #333333;
         color: #eeeeee;
@@ -210,7 +210,7 @@ main.dark {
 }
 
 
-main.code {
+html.code {
     .highlight,
     pre.highlight {
         background: #31343f;
@@ -413,7 +413,7 @@ main.code {
     }
 }
 
-main.light {
+html.light {
     body {
         color: #333;
         background-color: #fff;
