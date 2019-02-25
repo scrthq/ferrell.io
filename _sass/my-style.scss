@@ -42,6 +42,10 @@ html.dark {
         color: #61afef;
         border-color: rgba(72, 77, 137, 0.2);
     }
+
+    .content a:hover {
+        color: #c678dd;
+    }
     ::selection {
         background: #61afef;
     }
