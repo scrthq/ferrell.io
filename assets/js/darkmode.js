@@ -3,35 +3,35 @@ console.log("Dark Mode theme toggle online @ ferrell.io (╯°□°)╯︵ ┻�
 
 if (getCookie("theme") == "dark") {
     $('html').addClass("dark");
-    $('#toggleicon').toggleClass("fa-sun",true);
-    $('#toggleicon').toggleClass("fa-code",false);
-    $('#toggleicon').toggleClass("fa-moon",false);
+    $('#toggleicon').addClass("fa-sun");
+    $('#toggleicon').removeClass("fa-code");
+    $('#toggleicon').removeClass("fa-moon");
 } else if (getCookie("theme") == "code") {
     $('html').addClass("code");
-    $('#toggleicon').toggleClass("fa-moon",true);
-    $('#toggleicon').toggleClass("fa-code",false);
-    $('#toggleicon').toggleClass("fa-sun",false);
+    $('#toggleicon').addClass("fa-moon");
+    $('#toggleicon').removeClass("fa-code");
+    $('#toggleicon').removeClass("fa-sun");
 } else {
     $('html').addClass("light");
-    $('#toggleicon').toggleClass("fa-code",true);
-    $('#toggleicon').toggleClass("fa-sun",false);
-    $('#toggleicon').toggleClass("fa-moon",false);
+    $('#toggleicon').addClass("fa-code");
+    $('#toggleicon').removeClass("fa-sun");
+    $('#toggleicon').removeClass("fa-moon");
 }
 
 $(document).ready(function() {
     $(".theme-toggle").click(function(e) {
         e.preventDefault();
         if ($('html').hasClass("dark")) {
-            $('html').toggleClass("dark",false);
-            $('html').toggleClass("light",true);
+            $('html').removeClass("dark");
+            $('html').addClass("light");
             document.cookie = "theme=light;path=/";
         } else if ($('html').hasClass("code")) {
-            $('html').toggleClass("code",false);
-            $('html').toggleClass("dark",true);
+            $('html').removeClass("code");
+            $('html').addClass("dark");
             document.cookie = "theme=dark;path=/";
         } else {
-            $('html').toggleClass("light",false);
-            $('html').toggleClass("code",true);
+            $('html').removeClass("light");
+            $('html').addClass("code");
             document.cookie = "theme=code;path=/";
         }
     });
