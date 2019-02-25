@@ -1,5 +1,31 @@
 /**
  * Dark Theme - https://github.com/joebuhlig/joebuhlig.com/blob/master/_sass/_layout.scss#L1167
+ * PowerShell syntax keys:
+    - s1 / s2 = single and double quoted strings
+    - nv = variables
+    - nb = commands in block
+    - o = special character like = or { or }
+    - k = modifier character like $ or ( or )
+    - se = special escape strings like `n or `t
+    - c1 = comments
+   Json syntax keys:
+    - p = punctuation : , = .
+    - w = white space
+    - s1 / s2 = single and double quoted strings
+    - mi = integer
+    - kc = boolean
+   Yaml syntax keys:
+    - na = keys on left-hand side
+    - pi = separating colon :
+    - s / s1 / s2 = single and double quoted strings
+    - kt = function
+   JavaScript syntax keys:
+    - nx = Class names and methods
+    - o = special character
+    - p = punctuation : , = .
+    - kd = key word, i.e. function
+    - s / s1 / s2 = single and double quoted strings
+    -
 */
 
 html.dark {

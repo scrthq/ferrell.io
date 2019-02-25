@@ -3,19 +3,19 @@ console.log("Dark Mode theme toggle online @ ferrell.io (╯°□°)╯︵ ┻�
 
 if (getCookie("theme") == "dark") {
     $('html').addClass("dark");
-    $('#toggleicon').toggleClass("fas fa-sun",true);
-    $('#toggleicon').toggleClass("fas fa-code",false);
-    $('#toggleicon').toggleClass("fas fa-moon",false);
+    $('#toggleicon').toggleClass("fa-sun",true);
+    $('#toggleicon').toggleClass("fa-code",false);
+    $('#toggleicon').toggleClass("fa-moon",false);
 } else if (getCookie("theme") == "code") {
     $('html').addClass("code");
-    $('#toggleicon').toggleClass("fas fa-moon",true);
-    $('#toggleicon').toggleClass("fas fa-code",false);
-    $('#toggleicon').toggleClass("fas fa-sun",false);
+    $('#toggleicon').toggleClass("fa-moon",true);
+    $('#toggleicon').toggleClass("fa-code",false);
+    $('#toggleicon').toggleClass("fa-sun",false);
 } else {
     $('html').addClass("light");
-    $('#toggleicon').toggleClass("fas fa-code",true);
-    $('#toggleicon').toggleClass("fas fa-sun",false);
-    $('#toggleicon').toggleClass("fas fa-moon",false);
+    $('#toggleicon').toggleClass("fa-code",true);
+    $('#toggleicon').toggleClass("fa-sun",false);
+    $('#toggleicon').toggleClass("fa-moon",false);
 }
 
 $(document).ready(function() {
