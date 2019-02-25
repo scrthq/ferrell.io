@@ -7,22 +7,25 @@ if (getCookie("theme") == "dark") {
     $('html').addClass("code");
 } else {
     $('html').addClass("light");
+    //$('#toggleicon').toggleClass("icon-star-half",true);
+    //$('#toggleicon').toggleClass("icon-star-empty",false);
+    //$('#toggleicon').toggleClass("icon-star-full",false);
 }
 
 $(document).ready(function() {
     $(".theme-toggle").click(function(e) {
         e.preventDefault();
         if ($('html').hasClass("dark")) {
-            $('html').toggleClass("dark",null,false);
-            $('html').toggleClass("light",null,true);
+            $('html').toggleClass("dark",false);
+            $('html').toggleClass("light",true);
             document.cookie = "theme=light;path=/";
         } else if ($('html').hasClass("code")) {
-            $('html').toggleClass("code",null,false);
-            $('html').toggleClass("dark",null,true);
+            $('html').toggleClass("code",false);
+            $('html').toggleClass("dark",true);
             document.cookie = "theme=dark;path=/";
         } else {
-            $('html').toggleClass("light",null,false);
-            $('html').toggleClass("code",null,true);
+            $('html').toggleClass("light",false);
+            $('html').toggleClass("code",true);
             document.cookie = "theme=code;path=/";
         }
     });
