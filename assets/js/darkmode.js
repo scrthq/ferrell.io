@@ -3,38 +3,19 @@ console.log("Dark Mode theme toggle online @ ferrell.io (╯°□°)╯︵ ┻�
 
 if (getCookie("theme") == "dark") {
     $('html').addClass("dark");
-    //$('#toggleicon').addClass("fa-sun");
-    //$('#toggleicon').removeClass("fa-code");
-    //$('#toggleicon').removeClass("fa-moon");
-} else if (getCookie("theme") == "code") {
-    $('html').addClass("code");
-    //$('#toggleicon').addClass("fa-moon");
-    //$('#toggleicon').removeClass("fa-code");
-    //$('#toggleicon').removeClass("fa-sun");
-} else {
-    $('html').addClass("light");
-    //$('#toggleicon').addClass("fa-code");
-    //$('#toggleicon').removeClass("fa-sun");
-    //$('#toggleicon').removeClass("fa-moon");
 }
 
 $(document).ready(function() {
-    $(".theme-toggle").click(function(e) {
-        e.preventDefault();
-        if ($('html').hasClass("dark")) {
-            $('html').removeClass("dark");
-            $('html').addClass("light");
-            document.cookie = "theme=light;path=/";
-        } else if ($('html').hasClass("code")) {
-            $('html').removeClass("code");
-            $('html').addClass("dark");
-            document.cookie = "theme=dark;path=/";
-        } else {
-            $('html').removeClass("light");
-            $('html').addClass("code");
-            document.cookie = "theme=code;path=/";
-        }
-    });
+    $(".theme-toggle").click(function(e){
+		e.preventDefault();
+		$('html').toggleClass("dark");
+		if ($('html').hasClass("dark")){
+			document.cookie = "theme=dark;path=/";
+		}
+		else {
+			document.cookie = "theme=light;path=/";
+		}
+	});
 });
 
 function getCookie(cname) {
