@@ -1,6 +1,22 @@
-var host = "ferrell.io";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+/*!
+ *                                                                ..       ..           .
+ *   oec :                                                  x .d88"  x .d88"           @88>
+ *  @88888                .u    .      .u    .               5888R    5888R            %8P          u.
+ *  8"*88%       .u     .d88B :@8c   .d88B :@8c       .u     '888R    '888R             .     ...ue888b
+ *  8b.       ud8888.  ="8888f8888r ="8888f8888r   ud8888.    888R     888R           .@88u   888R Y888r
+ * u888888> :888'8888.   4888>'88"    4888>'88"  :888'8888.   888R     888R          ''888E`  888R I888>
+ *  8888R   d888 '88%"   4888> '      4888> '    d888 '88%"   888R     888R            888E   888R I888>
+ *  8888P   8888.+"      4888>        4888>      8888.+"      888R     888R            888E   888R I888>
+ *  *888>   8888L       .d888L .+    .d888L .+   8888L        888R     888R      .     888E  u8888cJ888
+ *  4888    '8888c. .+  ^"8888*"     ^"8888*"    '8888c. .+  .888B .  .888B .  .@8c    888&   "*888*P"
+ *  '888     "88888%       "Y"          "Y"       "88888%    ^*888%   ^*888%  '%888"   R888"    'Y"
+ *   88R       "YP'                                 "YP'       "%       "%      ^*      ""
+ *   88>
+ *   48
+ *   '8
+ *
+ * Dark Mode theme toggle activated!
+ */
 
 if (getCookie("theme") == "dark") {
     $('html').addClass("dark");
