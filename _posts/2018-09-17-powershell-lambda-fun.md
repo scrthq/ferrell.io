@@ -11,17 +11,10 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-{% highlight powershell linenos %}
-Write-Host "Sending response back to CloudFormation"
-Invoke-WebRequest -Uri $([Uri]$CFNEvent.ResponseURL) -Method Put -Body $($body|ConvertTo-Json -Depth 5)
-{% endhighlight %}
-
-<!--
 ```powershell
 Write-Host "Sending response back to CloudFormation"
 Invoke-WebRequest -Uri $([Uri]$CFNEvent.ResponseURL) -Method Put -Body $($body|ConvertTo-Json -Depth 5)
 ```
--->
 
 [Recently](https://aws.amazon.com/blogs/developer/announcing-lambda-support-for-powershell-core/), AWS announced Lambda support for PowerShell Core. Being primarily a PowerShell developer myself, this was incredibly welcomed (and long awaited) news!
 
