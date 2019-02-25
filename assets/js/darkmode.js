@@ -3,19 +3,19 @@ console.log("Dark Mode theme toggle online @ ferrell.io (╯°□°)╯︵ ┻�
 
 if (getCookie("theme") == "dark") {
     $('html').addClass("dark");
-    $('#toggleicon').addClass("fa-sun");
-    $('#toggleicon').removeClass("fa-code");
-    $('#toggleicon').removeClass("fa-moon");
+    //$('#toggleicon').addClass("fa-sun");
+    //$('#toggleicon').removeClass("fa-code");
+    //$('#toggleicon').removeClass("fa-moon");
 } else if (getCookie("theme") == "code") {
     $('html').addClass("code");
-    $('#toggleicon').addClass("fa-moon");
-    $('#toggleicon').removeClass("fa-code");
-    $('#toggleicon').removeClass("fa-sun");
+    //$('#toggleicon').addClass("fa-moon");
+    //$('#toggleicon').removeClass("fa-code");
+    //$('#toggleicon').removeClass("fa-sun");
 } else {
     $('html').addClass("light");
-    $('#toggleicon').addClass("fa-code");
-    $('#toggleicon').removeClass("fa-sun");
-    $('#toggleicon').removeClass("fa-moon");
+    //$('#toggleicon').addClass("fa-code");
+    //$('#toggleicon').removeClass("fa-sun");
+    //$('#toggleicon').removeClass("fa-moon");
 }
 
 $(document).ready(function() {
