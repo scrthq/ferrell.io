@@ -1,7 +1,6 @@
 ---
 label: Blog Post
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: layout
@@ -79,5 +78,5 @@ fields:
     required: true
   default: Yoda
 pages:
-- _posts/testing.md
 - _posts/2019-02-23-template.md
+- _posts/testing.md
