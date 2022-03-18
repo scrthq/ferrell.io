@@ -1,6 +1,5 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
-# Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
 nferrell:
   name:              Nate Ferrell
   email:             n@ferrell.io
@@ -8,7 +7,7 @@ nferrell:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: |
-    Nate lives in Dallas, TX with his wife, son and their 4 ~~fur children~~ dogs. He is passionate about PowerShell development, DevOps culture, mechanical keyboards, gaming, sound engineering and new technology in general. Outside of the office and IDE, he's typically playing PC games, taking photos with his wife or playing with the pups.
+    Nate lives in Dallas, TX with his wife, 2 sons and their 4 ~~fur children~~ dogs. He is passionate about productivity, toolset building, DevOps culture, mechanical keyboards, gaming, sound engineering and new technology in general. Outside of the office and IDE, he's typically playing PC games, taking photos with his wife, or figuring out who makes the best T-Rex impression between his kids.
 
   # This photo will be used in the about section
   picture:
@@ -23,7 +22,7 @@ nferrell:
   # Rearrange to change the order in which they appear
   social:
     github:          scrthq
-    # stackoverflow:   5302680
+    stackoverflow:   5302680
     twitter:         scrthq
     linkedin:        scrthq
     rss:             https://ferrell.io/feed.xml

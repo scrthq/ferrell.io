@@ -40,7 +40,7 @@ Mar 28 2021
 {:.heading.post-date}
 
 ### Added
-* Allow setting custom Google Fonts providers via `google_fonts_url` ([#264](https://github.com/hydecorp/hydejack/issues/264)). Defaults to `https://fonts.googleapis.com`. 
+* Allow setting custom Google Fonts providers via `google_fonts_url` ([#264](https://github.com/hydecorp/hydejack/issues/264)). Defaults to `https://fonts.googleapis.com`.
 
 ### Fixes
 * Merged [#266](https://github.com/hydecorp/hydejack/pull/266) --- Fixed a bug that caused incorrect links to be rendered.
@@ -61,7 +61,7 @@ Feb 11 2021
 * Fix [#258](https://github.com/hydecorp/hydejack/issues/258)
 * Fix [#259](https://github.com/hydecorp/hydejack/issues/259)
 
- 
+
 ## v9.1.1
 Feb 9 2021
 {:.heading.post-date}
@@ -94,12 +94,12 @@ Version 9.1 provides minor design changes, new features, and closes multiple iss
     To add the headers, simply make the first line a comment of the form `file: "dir/filename.ext"`.
 
     * Code blocks now have a copy-to-clipboard button
-  
+
 *   Resumes can now have download buttons.
 
     ![Download Buttons](/assets/img/blog/9.1.0-3.png){:.border.lead width="1776" height="258" loading="lazy"}
 
-    Add the following to the front matter. Note that the PDF needs to be pre-generated. 
+    Add the following to the front matter. Note that the PDF needs to be pre-generated.
     See [the docs](docs/basics.md#downloads) for more.
 
     ```yml
@@ -123,13 +123,13 @@ Version 9.1 provides minor design changes, new features, and closes multiple iss
 
     ![Last modified at](/assets/img/blog/9.1.0-1.png){:.border.lead width="1254" height="218" loading="lazy"}
 
-    To enable this feature, the post needs to have a `last_modified_at` property with a valid date. You can either set it manually in the frontmatter (not recommended), or use the [`jekyll-last-modified-at` plugin](https://github.com/gjtorikian/jekyll-last-modified-at) to set it for you (Not available on GitHub Pages!). 
+    To enable this feature, the post needs to have a `last_modified_at` property with a valid date. You can either set it manually in the frontmatter (not recommended), or use the [`jekyll-last-modified-at` plugin](https://github.com/gjtorikian/jekyll-last-modified-at) to set it for you (Not available on GitHub Pages!).
 
     You can remove this element by setting `hide_last_modified` in the front matter. You can disable it for all posts by setting `hydejack.hide_last_modified` in the config file. Setting `hydejack.hide_dates` (PRO version only) will also remove it, together with all other time-related UI elements.
 
     You can customize the hover text, icon, and date format in `_data/strings.yml` using the following keys: `last_modified_at` (hover text), `last_modified_at_icon` (icon name, default: `icon-history`) and `date_formats.last_modified_at` (date format, default: `%Y-%m-%d`).
 
-* Added option to "invert" / darken the font colors in the sidebar. This enables use of bright sidebar images. 
+* Added option to "invert" / darken the font colors in the sidebar. This enables use of bright sidebar images.
   Set `invert_sidebar: true` in the font matter to enable. Use `defaults` in the config file to enable this for all pages.
 
 * Added a demo of [Clap Button](https://getclaps.app/) during development.
@@ -170,7 +170,7 @@ July 15 2020
 * Fixed image fade in animation for images with `srcset`
 * Slightly increased size of post and project cards
 * Added page margin to print layout
-* Fixed KaTeX when JavaScript is disabled 
+* Fixed KaTeX when JavaScript is disabled
 * Fixed a layout bug in the `resume` layout when changing the content width in variable
 * Fixed table of contents sticky breakpoint
 
@@ -178,11 +178,11 @@ July 15 2020
 July 9 2020
 {:.heading.post-date}
 
-* Updated print resume style  
+* Updated print resume style
 * Updated docs for GitHub Pages
 * Slightly decreased size of dark mode icon
 * Fixed a bug that caused a GitHub Pages build to fail with an empty configuration file
-* Changed default icon so that it less resembles slashdot.org\~\~ 
+* Changed default icon so that it less resembles slashdot.org\~\~
 
 ## v9.0.2
 July 7 2020
@@ -222,7 +222,7 @@ July 15 2020
 * Fixed image fade in animation for images with `srcset`
 * Slightly increased size of post and project cards
 * Added page margin to print layout
-* Fixed KaTeX when JavaScript is disabled 
+* Fixed KaTeX when JavaScript is disabled
 * Fixed a layout bug in the `resume` layout when changing the content width in variable
 * Fixed table of contents sticky breakpoint
 
@@ -230,11 +230,11 @@ July 15 2020
 July 9 2020
 {:.heading.post-date}
 
-* Updated print resume style  
+* Updated print resume style
 * Updated docs for GitHub Pages
 * Slightly decreased size of dark mode icon
 * Fixed a bug that caused a GitHub Pages build to fail with an empty configuration file
-* Changed default icon so that it less resembles slashdot.org\~\~ 
+* Changed default icon so that it less resembles slashdot.org\~\~
 
 ## v9.0.2
 July 7 2020
@@ -263,30 +263,30 @@ July 3 2020
 ### Major
 *   Added Built-In Search Functionality
 
-    Hydejack now has its own built-in search solution, that integrates well with the existing page style and the new navbar. 
-   
-    The solution is entirely browser-based which means it even works while offline and doesn't depend on an 3rd party. 
-    This works, because Hydejack is designed for personal sites that generally have less than 1000 pages. 
+    Hydejack now has its own built-in search solution, that integrates well with the existing page style and the new navbar.
+
+    The solution is entirely browser-based which means it even works while offline and doesn't depend on an 3rd party.
+    This works, because Hydejack is designed for personal sites that generally have less than 1000 pages.
     In my testing, Jekyll build times have been a problem long before search query times.
-   
-    The results of the search are surprisingly good, but have only been tested in English and (somewhat) German. 
-    For better language support, I might build an integration with Algolia at some point, which has the best results, 
-    but requires stable internet connection and an API key. 
+
+    The results of the search are surprisingly good, but have only been tested in English and (somewhat) German.
+    For better language support, I might build an integration with Algolia at some point, which has the best results,
+    but requires stable internet connection and an API key.
     I'd be interested to hear about problems with search in other languages to determine if this is necessary.
 
 *   Added Table of Contents that is prettier, sticky, and dynamic.
 
-    Adding a table of contents is part of kramdown and can be done in all versions of Hydejack. 
-    However, v9 adds a dynamic version that will stick to the 3rd column on large screens and highlight the current section. 
-   
+    Adding a table of contents is part of kramdown and can be done in all versions of Hydejack.
+    However, v9 adds a dynamic version that will stick to the 3rd column on large screens and highlight the current section.
+
     Note that this will reduce the amount of space freed up by the `no_break_layout: false` setting (otherwise the ToC would overlap with code blocks, math blocks, etc).
 
 *   Added a scroll-linked navbar that disappears when scrolling down and re-appears when scrolling up.
 
-*   Math support has been revamped because the old solution stopped working with Jekyll 4. Hydejack now supports both KaTeX and MathJax. 
+*   Math support has been revamped because the old solution stopped working with Jekyll 4. Hydejack now supports both KaTeX and MathJax.
 
     The MathJax implementation is more similar to the old solution. It comes with a client-side runtime (MathJax in this case)
-    and works on GitHub Pages. It is the more heavy-weight of the two and doesn't work without JavaScript enabled. 
+    and works on GitHub Pages. It is the more heavy-weight of the two and doesn't work without JavaScript enabled.
     Due to the size of the complete MathJax package, it only works partially with offline support enabled.
 
     The KaTeX implementation has been changed to pre-render the KaTeX output during site building.
@@ -297,10 +297,10 @@ July 3 2020
     You can switch between the two implementations by changing the `kramdown.math_engine` key to either `katex` or `mathjax` in your config file.
     The KaTeX implementation also requires the `kramdown-math-katex` gem in your `Gemfile`.
 
-*   Drastically improved build times through the use of `jekyll-include-cache`. 
+*   Drastically improved build times through the use of `jekyll-include-cache`.
     Most of the previous tips on [improving page build speed](hydejack/_posts/2019-02-18-improving-site-build-speed.md) should now be obsolete.
 
-*   Added `grid` layout in PRO version that mirrors the `projects` layout, but for posts. 
+*   Added `grid` layout in PRO version that mirrors the `projects` layout, but for posts.
     If you've set `image`s for your posts, it will give your blog a more modern look.
 
 ### Minor
@@ -322,7 +322,7 @@ July 3 2020
 * JavaScript files are now chunked, so that only what is needed is loaded on demand.
 * hy-drawer and hy-push-state have been rewritten in TypeScript and LitHTML, fixing many bugs in the process.
 * Updated to Jekyll 4.1
-* Hydejack now has a dedicated offline page that will be shown when the client is offline and tries to open a page that hasn't been cached. 
+* Hydejack now has a dedicated offline page that will be shown when the client is offline and tries to open a page that hasn't been cached.
   The content of the page can be customized by creating `offline.md` file in the root with `layout: offline`, similar to `404.md`.
 * The code font can now be customized in the config file via the `font_code` key.
 
@@ -421,9 +421,9 @@ This version adds new options to increase production build speed. Read [this pos
 Feb 1 2019
 {:.heading.post-date}
 
-* Added support for custom `related_posts` 
+* Added support for custom `related_posts`
 * Removed footer from print layout
-* Increased photo size in print resume 
+* Increased photo size in print resume
 * Improved `welcome` layout generation performance
 * Fixed a bug that prevented scrolling to headlines with non-ascii characters (Thanks [@ForelaxX](https://github.com/ForelaxX))
 
@@ -804,7 +804,7 @@ Some names have changed and are no longer mentioned in the docs, but they are st
 
 That being said, you should be aware of these (small) breaking changes:
 
-* The favicon is now located in `assets/icons`. To change the favicon of the page, edit `favicon.ico` (png) in the folder.
+* The favicon is now located in `assets/icons`. To change the favicon of the page, edit `favicon.png` (png) in the folder.
 
 * Changed the way tables work, so that they do the right thing more often.
   Tables are now scrollable by default, but small tables are no longer stretched to span the full width.
