@@ -14,6 +14,7 @@ more_posts: posts.md
 content_separator: <!--more-->
 comments: false
 accent_image: /assets/img/mountain-snow-bg.jpg
+cover: true
 ---
 
 ### Hello there!
