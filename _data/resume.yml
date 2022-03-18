@@ -1,18 +1,15 @@
 ---
-title: Résumé
-hide_description: true
----
 basics:
   name: Nate Ferrell
   label: Developer Advocate, Systems Architect, Cloud Platform Engineer
   picture: /assets/img/128x128.png
-  email: n@ferrell.io
+  email: ""
   phone: ""
   website: https://ferrell.io/
   summary: >
-    Nate lives in Dallas, TX with his wife, kids and their 4 fur children.
+    Nate lives in Allen, TX with his wife, kids and their 4 fur children.
     He is passionate about productivity, DevOps culture, and enabling his peers.
-    Outside of the office and IDE, he's typically building mechanical keyboard,
+    Outside of the office and IDE, he's typically building mechanical keyboards,
     taking photos with his wife, or figuring out who makes the best T-Rex impression
     between the boys.
 
@@ -20,8 +17,8 @@ basics:
     address: ""
     postalCode: ""
     city: Allen
-    countryCode: US
-    region: Texas
+    countryCode: "US"
+    region: TX
 
   profiles:
     - network: LinkedIn
@@ -30,6 +27,9 @@ basics:
     - network: Twitter
       username: scrthq
       url: https://twitter.com/scrthq
+    - network: StackOverflow
+      username: scrthq
+      url: https://stackoverflow.com/users/5302680/scrthq
 
 work:
   - company: PennyMac Loan Services, LLC
@@ -195,46 +195,80 @@ awards:
     awarder: Google
     summary: ""
 
+interests:
+  - name: Developer Advocacy
+    keywords:
+      - Enablement
+      - Agility
+      - Tool Building
+  - name: Mentoring
+    keywords:
+      - Coding
+      - Career pathing
+  - name: Continuous Growth
+    keywords:
+      - Sharpening
+      - Learning
+      - Educating
+
 skills:
-  - name: Azure DevOps
+  - name: Programming
+    level: Intermediate
+    keywords:
+      - Python
+      - Ruby
+      - C#
+      - PowerShell
+      - Typescript
+  - name: DevOps
     level: Expert
-    keywords: []
-  - name: Python
+    keywords:
+      - PowerShell DSC
+      - Bash
+      - Chef
+      - SonarQube
+      - YAML
+  - name: Version Control
     level: Expert
-    keywords: []
-  - name: PowerShell
+    keywords:
+      - Git
+      - GitHub
+      - Azure Repos
+      - GitLab
+  - name: CI/CD
     level: Expert
-    keywords: []
-  - name: Amazon Web Services
+    keywords:
+      - Azure Pipelines
+      - GitLab CI
+      - GitHub Actions
+      - AppVeyor
+      - Travis CI
+      - Circle CI
+  - name: Cloud Platforms
     level: Expert
-    keywords: []
-  - name: REST/SOAP APIs
-    level: Expert
-    keywords: []
+    keywords:
+      - Amazon Web Services
+      - Google Cloud Platform
+      - Microsoft Azure
+  - name: Containers
+    level: Intermediate
+    keywords:
+      - Docker
+      - Kubernetes
+      - AWS ECR
+      - AWS ECS
   - name: Serverless Architecture
     level: Expert
-    keywords: []
-  - name: Distributed Systems
-    level: Intermediate
-    keywords: []
-  - name: Ruby
-    level: Intermediate
-    keywords: []
-  - name: Bash
-    level: Intermediate
-    keywords: []
-  - name: T-SQL
-    level: Intermediate
-    keywords: []
-  - name: C#
-    level: Intermediate
-    keywords: []
-  - name: Javascript
-    level: Intermediate
-    keywords: []
+    keywords:
+      - AWS Lambda
+      - AWS API Gateway
+      - Azure Functions
+      - Serverless AuroraDB
+      - Pub/Sub
+      - AWS EventBridge
 
-languages:
-  - language: English
-    fluency: Native
-  - language: Spanish
-    fluency: Beginner
+# languages:
+#   - language: English
+#     fluency: Fluent
+#   - language: Spanish
+#     fluency: Intermediate
