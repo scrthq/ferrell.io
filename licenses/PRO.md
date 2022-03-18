@@ -1,7 +1,7 @@
----
-layout: page
-title: PRO License
----
+# PRO License
+
+* this list will be replaced by the table of contents
+{:toc .large-only}
 
 ## License Summary
 * License concerns use of [Hydejack PRO][1]
@@ -121,7 +121,7 @@ Software’s source code.
     inspected the The Software.
 
 ### 9. No Refunds
-Licensee warrants that he inspected The Software according to clause 8.3 and that it is adequate to
+Licensee warrants that he inspected The Software according to clause 8.2 and that it is adequate to
 his needs. Accordingly, as The Software is intangible goods, Licensee shall not be, ever, entitled to any refund,
 rebate, compensation or restitution for any reason whatsoever, even if The Software contains material flaws.
 
@@ -137,4 +137,4 @@ Licensee hereby agrees not to initiate class-action lawsuits against Licensor in
 relation to this license and to compensate Licensor for any legal fees, cost or attorney fees should any claim
 brought by Licensee against Licensor be denied, in part or in full.
 
-[1]: https://qwtel.com/hydejack/
+[1]: https://hydejack.com/
