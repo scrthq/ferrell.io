@@ -6,49 +6,135 @@ basics:
   email: n@ferrell.io
   phone: ""
   website: https://ferrell.io/
-  summary: Nate is originally from Los Angeles but is now based in Dallas. While
-    not working in office as a full time DevOps engineer, he spends his time
-    working on Open Source projects. His favorite language to work with is
-    PowerShell, but he's constantly switching between Ruby, Python and
-    JavaScript as well. He other interests outside of work include wrestling
-    with his dogs and figuring out what should be in the world's best hot sauce.
+  summary: >
+    Nate lives in Dallas, TX with his wife, kids and their 4 fur children.
+    He is passionate about productivity, DevOps culture, and enabling his peers.
+    Outside of the office and IDE, he's typically building mechanical keyboard,
+    taking photos with his wife, or figuring out who makes the best T-Rex impression
+    between the boys.
+
   location:
     address: ""
     postalCode: ""
-    city: Dallas/Plano
+    city: Allen
     countryCode: US
     region: Texas
+
   profiles:
-    - network: Twitter
-      username: scrthq
-      url: https://twitter.com/scrthq
     - network: LinkedIn
       username: scrthq
       url: https://www.linkedin.com/in/scrthq/
+    - network: Twitter
+      username: scrthq
+      url: https://twitter.com/scrthq
+
 work:
-  - company: PennyMac
-    position: Sr. Systems/DevOps Engineer
-    website: https://pennymacusa.com
-    startDate: 2015-04-13
+  - company: PennyMac Loan Services, LLC
+    position: VP, Architect, Cloud Platform Engineering
+    website: https://www.pennymac.com
+    startDate: 2020-09-01
     endDate: ""
-    summary: As a top direct national mortgage lender, PennyMac is committed to
-      providing its customers with a range of innovative solutions to help them
-      purchase, refinance or simply remain in their homes. Whether they’re
-      first-time buyers who are new to the loan process or someone who is
-      specifically seeking a competitive Conventional, FHA or VA loan, PennyMac
-      is dedicated to offering great rates and unparalleled service.
+    summary: >
+      As a member of the Cloud Platform Engineering team, I am the owner,
+      developer and SME for multiple cloud platforms such as Azure DevOps, Chef,
+      Amazon Web Services, GitLab/GitLab CI, and Google Cloud Platform. As an
+      architect, I am also involved in architectural reviews and system design.
+
+      My daily workload shifts between writing Python, Ruby, PowerShell, and
+      Bash across CI/CD pipelines and infrastructure-as-code. I also work hand-in-hand
+      with development teams across the organization daily, gathering feedback
+      in order to provide the best platforms for them to build upon. When I am not
+      writing code, I am usually mentoring or working on documentation.
+    highlights:
+      - Enabled self-service capabilities for developers to create build and release
+        pipelines that could deploy all the way to production while ensuring all
+        guardrails for security and change management were enforced.
+      - Enabled easier shifting from legacy, monolithic .NET code bases to FaaS
+        and containers running .NET Core / Python via centralized CI/CD pipeline
+        templates.
+      - Migrated the company's largest development division from TFS 2015 to Azure
+        DevOps Server 2020.1.1.
+
+  - company: PennyMac Loan Services, LLC
+    position: Sr. Systems/DevOps Engineer
+    website: https://www.pennymac.com
+    startDate: 2019-01-01
+    endDate: 2020-09-01
+    summary: >
+      As a senior Systems and DevOps engineer, my primary focus was working with
+      development teams building infrastructure-as-code and maintaining CI/CD
+      pipelines. I was also responsible for maintaining our identity platforms such
+      as OneLogin, Active Directory, and AWS IAM, as well as involved with our
+      architectural review committee.
+
+      My daily workload involved heavy Python for infrastructure-as-code and
+      supporting microservices, Ruby for configuration management, and PowerShell and
+      Bash for CI/CD and general automation depending on the OS I am working on.
+
+    highlights:
+      - Built out a multi-tier Azure DevOps Server environment to increase internal
+        development agility.
+      - Built patterns for consuming secrets securely from AWS Secrets Manager from
+        CloudFormation before it was supported.
+      - Established full CloudFormation support for Amazon Connect to enable our
+        Servicing team to treat customer-contact centers as code and align with
+        a traditional SDLC, including routing, bots and queue management as code.
+
+  - company: PennyMac Loan Services, LLC
+    position: Systems Engineer
+    website: https://www.pennymac.com
+    startDate: 2015-10-15
+    endDate: 2019-01-01
+    summary: >
+      As a Systems Engineer, my primary focus was building and maintaining our
+      Windows Server infrastructure across both our on-premises data centers
+      running vSphere as well as AWS. I was also the primary owner/admin for our
+      Google Workspace domain, including automating much of that via PSGSuite.
+
+      My daily workload primarily focused on PowerShell for automating deployments
+      and anything else, Ruby for configuration management via Chef, and Python
+      for writing infrastructure-as-code. I was also heavily involved with automating
+      tasks and reporting surrounding Active Directory.
+
     highlights:
       - Automated malicious email quarantine and notification to dramatically
-        decrease risk of infection to end users
-      - Integrated SQL server job failures with ServiceNow's Event Management
+        decrease risk of infection to end users.
+      - Integrated SQL server job failures with ServiceNow's Event Management.
       - Implemented custom automation to manage entitlement provisioning in
-        various systems where there was no way to accomplish it out-of-the-box
+        various systems where there was no way to accomplish it out-of-the-box.
+
+  - company: PennyMac Loan Services, LLC
+    position: Operations Engineer
+    website: https://www.pennymac.com
+    startDate: 2015-04-13
+    endDate: 2015-10-15
+    summary: >
+      As an Operations Engineer, my primary focus was monitoring, troubleshooting
+      and escalating issues that occurred across our infrastructure. While I was in
+      this role, I moved from graveyard to swing to day shift where the responsibilities
+      differed significantly.
+
+      My time was spent primarily writing PowerShell and Python in order to make the daily
+      manual tasks easier to perform so I could focus on learning more PowerShell and Python.
+      I was in only this initial position for a short period of time until I was promoted
+      to Systems Engineer and had my workload adjusted based on performance.
+
+    highlights:
+      - Developed automation for provisioning/deprovisioning resources in Google and
+        Active Directory to meet SLAs.
+      - Automated email collection via Gmail API for customer-contact tracking and
+        productivity metrics.
+      - Automated multiple processes for my team that were previously manual tasks.
+      - Built a Windows Rundeck node to fill a knowledge gap and enable other team members to easily run
+        jobs and scripts in a safe, contained environment.
+
   - company: SCRT HQ
     position: Founder/Developer
     website: http://vaporshell.io
     startDate: 2015-12-01
     endDate: ""
-    summary: SCRT HQ (Secret Headquarters) is an organization that I started to
+    summary: >
+      SCRT HQ (Secret Headquarters) is an organization that I started to
       house the personal projects that I am developing. These are primarily
       PowerShell modules that I felt would be mutually beneficial for the
       general public as well as myself/my workplace, created out of either a
@@ -58,12 +144,32 @@ work:
       centric tasks.
     highlights:
       - Developed VaporShell, a PowerShell module to assist in AWS
-        CloudFormation template building and stack management
+        CloudFormation template building and stack management.
       - Developed vscode-gitter, the first extension for Visual Studio Code to
         send code snippets/files directly to Gitter from the editor
       - Developed PSGSuite, a PowerShell module that wraps Google's various
         API's, enabling automation capabilities with G Suite / Google Drive for
         system administrators
+
+  - company: Broadvoice
+    position: Enterprise Sales & Support Engineer
+    website: https://www.broadvoice.com/
+    startDate: 2014-02-01
+    endDate: 2015-04-10
+    summary: >
+      As a Sales and Support Engineer for our enterprise customers, I was involved
+      with working with our Sales team to information around the technical
+      implementation of the hardware, software and overall service we provided
+      as a VoIP company. Our customers were ours for the length of their contract as
+      well, we were their dedicated TAMs after signing.
+    highlights:
+      - Originally hired as a Tier I technician, assigned to the routing department while still in the probation period
+        due to skills shown with identifying routing issues with deep packet inspection.
+      - Chosen within the first 6 months of employment to move up to our select business engineering department
+        due to the ability to absorb knowledge quickly and eagerness to learn and expand my skill-set. Chosen out of a
+        pool of ~60 residential technical support agents to move up to the much smaller business department, most of
+        which had been at the company considerably longer than myself at that point.
+
 awards:
   - title: AWS Certified Developer - Associate
     date: 2018-01-20
@@ -85,61 +191,47 @@ awards:
     date: 2015-12-03
     awarder: Google
     summary: ""
+
 skills:
-  - name: Powershell
-    level: Master
+  - name: Azure DevOps
+    level: Expert
     keywords: []
-  - name: G Suite / Google APIs
-    level: Master
+  - name: Python
+    level: Expert
     keywords: []
-  - name: VMware
-    level: Intermediate
+  - name: PowerShell
+    level: Expert
     keywords: []
   - name: Amazon Web Services
+    level: Expert
+    keywords: []
+  - name: REST/SOAP APIs
+    level: Expert
+    keywords: []
+  - name: Serverless Architecture
+    level: Expert
+    keywords: []
+  - name: Distributed Systems
     level: Intermediate
     keywords: []
-  - name: Windows Server
+  - name: Ruby
     level: Intermediate
     keywords: []
-  - name: System Architecture
+  - name: Bash
     level: Intermediate
     keywords: []
-  - name: System Administration
-    level: Master
+  - name: T-SQL
+    level: Intermediate
     keywords: []
-  - name: Virtualization
-    level: Master
+  - name: C#
+    level: Intermediate
     keywords: []
-  - name: Technical Support
-    level: Master
+  - name: Javascript
+    level: Intermediate
     keywords: []
-  - name: Troubleshooting
-    level: Master
-    keywords: []
-  - name: Active Directory
-    level: Master
-    keywords: []
-  - name: RESTful WebServices
-    level: Master
-    keywords: []
-  - name: G Suite Admin SDK
-    level: Master
-    keywords: []
-  - name: Google APIs
-    level: Master
-    keywords: []
-  - name: SQL
-    level: Beginner
-    keywords: []
-  - name: Transact-SQL (T-SQL)
-    level: Begineer
-    keywords: []
+
 languages:
   - language: English
-    fluency: Native speaker
-interests:
-  - name: Rescuing Dogs
-    keywords:
-      - Pit Bulls
-      - American Staffordshire Terriers
-      - American Bulldogs
+    fluency: Native
+  - language: Spanish
+    fluency: Beginner
