@@ -1,30 +1,20 @@
-{% unless page.redirect %}
-  {% if site.google_analytics %}
-  <!--
-  <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', '{{ site.google_analytics }}', 'auto');
-    ga('send', 'pageview');
-    loadJSDeferred('https://www.google-analytics.com/analytics.js');
-  </script>
-  -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
-
-  {% endif %}
-
-  <!--[if gt IE 9]><!---->
-  {% capture js_url %}{% link assets/js/hydejack.js %}?v=7.1.0{% endcapture %}
-  <script>loadJSDeferred('{{ js_url | relative_url }}');</script>
-
+<!--[if gt IE 10]><!---->
+  <script nomodule>{% include scripts/nomodule.min.js %}</script>
+  <script src="{{ '/assets/js/hydejack-9.1.6.js' | relative_url }}" type="module"></script>
+  <script src="{{ '/assets/js/LEGACY-hydejack-9.1.6.js' | relative_url }}" nomodule defer></script>
   {% include my-scripts.html %}
-
-  <!--<![endif]-->
-{% endunless %}
+  {% include body/analytics.html %}
+  <script type="module">
+    if ('serviceWorker' in navigator) {
+      /*{% if site.hydejack.offline.enabled %}*/
+      navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
+        .then(r => r.update())
+        .catch(() => {});
+      /*{% else %}*/
+      navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /*{% endif %}*/
+    }
+  </script>
+<!--<![endif]-->

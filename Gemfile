@@ -8,27 +8,16 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.6"
+gem "jekyll", "~> 3.8"
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
+# Fixes `jekyll serve` in ruby 3
+gem "webrick"
 
-# If you have any plugins, put them here!
 group :jekyll_plugins do
-  # gem "jekyll-avatar", "~> 0.5"
-  # gem "jekyll-default-layout", "~> 0.1"
-  gem "jekyll-feed", "~> 0.9"
-  # gem "jekyll-gist", "~> 1.4"
-  # gem "jekyll-optional-front-matter", "~> 0.2"
-  gem "jekyll-paginate", "~> 1.1"
-  # gem "jekyll-readme-index", "~> 0.1"
-  # gem "jekyll-redirect-from", "~> 0.12"
-  gem "jekyll-relative-links", "~> 0.5"
-  gem "jekyll-seo-tag", "~> 2.3"
-  gem "jekyll-sitemap", "~> 1.1"
-  # gem "jekyll-titles-from-headings", "~> 0.4"
+  gem "github-pages"
+  gem "jekyll-include-cache"
+  gem "jekyll-compose"
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'wdm' if Gem.win_platform?
+gem "tzinfo-data" if Gem.win_platform?

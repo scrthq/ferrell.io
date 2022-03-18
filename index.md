@@ -24,7 +24,7 @@ my passions to "paper" here and share the knowledge I pick up along the my journ
 
 You may see some posts here and think...
 
-> "...but, that's not the best way to do it! It's at least now how **I** would do it!!"
+> "...but, that's not the best way to do it! It's at least now how _I_ would do it!!"
 {:.lead}
 
 These posts are written from _my_ viewpoint built from _my_ experiences.
