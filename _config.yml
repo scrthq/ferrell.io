@@ -172,10 +172,10 @@ kramdown:
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-disqus:                ferrell-io
+# disqus:                ferrell-io
 
 # Setting a tinyletter username will enable the newsletter subscription box.
-tinyletter:            ferrell-io
+# tinyletter:            ferrell-io
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
@@ -183,7 +183,7 @@ tinyletter:            ferrell-io
 # google_ad_client:      ca-pub-3314102410763820
 
 # Flattr ID for meta tag
-flattr:                knpdqj
+# flattr:                knpdqj
 
 
 # Hydejack Settings
