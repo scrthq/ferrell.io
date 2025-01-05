@@ -201,13 +201,14 @@ volunteer:
       - Assisted with planning and execution of migration to right-sized
         infrastructure resources for cost optimization.
 awards:
-  - title: Google Apps Certified Administrator
-    awarder: Google
-    date: "2017-06-30"
-  - title: New Relic Certified Performance Pro
-    awarder: New Relic University
-    date: "2019-11-30"
-    summary: "[Verification Link](https://www.credential.net/ztgluthr)"
+  - title: "HashiCorp Certified: Terraform Associate (002)"
+    awarder: HashiCorp
+    date: "2025-01-31"
+    summary: "[Verification Link](https://www.credly.com/badges/bb3c4d95-56a0-4999-bc5e-e28e9a165b4a/linked_in_profile)"
+  - title: "AWS Learning: Serverless"
+    awarder: Amazon Web Services (AWS)
+    date: "2023-01-31"
+    summary: "[Verification Link](https://www.credly.com/badges/f1301487-2a67-4eca-8afd-3d478c670130/linked_in_profile)"
   - title: AWS Certified Cloud Practitioner
     awarder: Amazon Web Services (AWS)
     date: "2025-11-30"
@@ -248,14 +249,13 @@ awards:
     awarder: Amazon Web Services (AWS)
     date: "2026-01-31"
     summary: "[Verification Link](https://www.credly.com/badges/9691facf-0e48-4b10-b8a9-fdbc4e974601/linked_in_profile)"
-  - title: "AWS Learning: Serverless"
-    awarder: Amazon Web Services (AWS)
-    date: "2023-01-31"
-    summary: "[Verification Link](https://www.credly.com/badges/f1301487-2a67-4eca-8afd-3d478c670130/linked_in_profile)"
-  - title: "HashiCorp Certified: Terraform Associate (002)"
-    awarder: HashiCorp
-    date: "2025-01-31"
-    summary: "[Verification Link](https://www.credly.com/badges/bb3c4d95-56a0-4999-bc5e-e28e9a165b4a/linked_in_profile)"
+  - title: Google Apps Certified Administrator
+    awarder: Google
+    date: "2017-06-30"
+  - title: New Relic Certified Performance Pro
+    awarder: New Relic University
+    date: "2019-11-30"
+    summary: "[Verification Link](https://www.credential.net/ztgluthr)"
 
 
 # certificates:
@@ -329,6 +329,11 @@ awards:
 #     url: https://www.credly.com/badges/bb3c4d95-56a0-4999-bc5e-e28e9a165b4a/linked_in_profile
 
 interests:
+  - name: Technical Leadership
+    keywords:
+      - Strategy
+      - Architecture
+      - Culture
   - name: Developer Advocacy
     keywords:
       - Enablement
@@ -344,15 +349,28 @@ interests:
       - Learning
       - Educating
 skills:
-  - name: Programming
+  - name: Python
+    level: Expert
+    keywords:
+      - FastAPI
+      - Typer
+      - Poetry
+      - Pytest
+      - Requests
+      - boto3
+  - name: TypeScript
     level: Intermediate
     keywords:
-      - Python
-      - Ruby
-      - C#
+      - React
+      - Node.js
+      - Express
+      - AWS Amplify
+  - name: Scripting
+    level: Expert
+    keywords:
       - PowerShell
-      - Typescript
-  - name: DevOps
+      - Bash
+  - name: DevOps Tools
     level: Expert
     keywords:
       - PowerShell DSC
@@ -374,8 +392,22 @@ skills:
       - GitLab CI
       - GitHub Actions
       - AppVeyor
+      - Jenkins
       - Travis CI
       - Circle CI
+      - AWS CodePipeline
+      - AWS CodeBuild
+      - AWS CodeDeploy
+  - name: Infrastructure as Code
+    level: Expert
+    keywords:
+      - AWS CDK
+      - CloudFormation
+      - Terraform
+      - Pulumi
+      - CDKTF
+      - Helm
+      - CDK8s
   - name: Cloud Platforms
     level: Expert
     keywords:
@@ -383,21 +415,25 @@ skills:
       - Google Cloud Platform
       - Microsoft Azure
   - name: Containers
-    level: Intermediate
+    level: Expert
     keywords:
       - Docker
       - Kubernetes
       - AWS ECR
       - AWS ECS
+      - AWS EKS
+      - Azure AKS
+      - OCI Compatibility
+      - Podman
+      - Rancher
   - name: Serverless Architecture
     level: Expert
     keywords:
       - AWS Lambda
       - AWS API Gateway
-      - Azure Functions
-      - Serverless AuroraDB
-      - Pub/Sub
+      - AWS AppSync / GraphQL
       - AWS EventBridge
+      - AWS Fargate
 languages:
   - language: English
     fluency: Fluent
