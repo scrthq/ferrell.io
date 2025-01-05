@@ -4,9 +4,9 @@ title: Résumé
 description: >
   Nate lives in Allen, TX with his wife, kids and their 4 fur children.
   He is passionate about productivity, DevOps culture, and enabling his peers.
-  Outside of the office and IDE, he's typically building mechanical keyboards,
-  taking photos with his wife, or figuring out who makes the best T-Rex impression
-  between the boys.
+  Outside of the office and IDE, he's typically building mechanical keyboards, tinkering
+  with synthesizers and drum machines, taking photos with his wife, or exploring virtual
+  and real worlds with the kids.
 hide_description: true
 left_column:
   - volunteer
