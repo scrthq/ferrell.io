@@ -41,10 +41,10 @@ layout: base
     <div class="column column-3-5">
       {% for sec in l_col %}
         {% case sec %}
-        {% when 'work' %}
-          {% include pro/resume/work.html %}
         {% when 'volunteer' %}
           {% include pro/resume/volunteer.html %}
+        {% when 'work' %}
+          {% include pro/resume/work.html %}
         {% when 'education' %}
           {% include pro/resume/education.html %}
         {% when 'awards' %}
@@ -66,10 +66,10 @@ layout: base
     <div class="column column-2-5">
       {% for sec in r_col %}
         {% case sec %}
-        {% when 'work' %}
-          {% include pro/resume/work.html %}
         {% when 'volunteer' %}
           {% include pro/resume/volunteer.html %}
+        {% when 'work' %}
+          {% include pro/resume/work.html %}
         {% when 'education' %}
           {% include pro/resume/education.html %}
         {% when 'awards' %}
