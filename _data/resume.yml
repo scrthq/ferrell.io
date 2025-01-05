@@ -16,13 +16,13 @@ basics:
   profiles:
     - network: LinkedIn
       username: scrthq
-      website: https://www.linkedin.com/in/scrthq/
+      url: https://www.linkedin.com/in/scrthq/
     - network: GitHub
       username: scrthq
-      website: https://github.com/scrthq
+      url: https://github.com/scrthq
     - network: StackOverflow
       username: scrthq
-      website: https://stackoverflow.com/users/5302680/scrthq
+      url: https://stackoverflow.com/users/5302680/scrthq
 work:
   - company: AWS Professional Services - Global Financial Services
     position: Senior DevOps Architect, Consultant
