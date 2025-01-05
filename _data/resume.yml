@@ -349,6 +349,13 @@ interests:
       - Learning
       - Educating
 skills:
+  - name: Full Stack Development
+    level: Intermediate
+    keywords:
+      - React
+      - Node.js
+      - Deno
+      - Bun
   - name: Python
     level: Expert
     keywords:
@@ -358,26 +365,25 @@ skills:
       - Pytest
       - Requests
       - boto3
-  - name: TypeScript
-    level: Intermediate
-    keywords:
-      - React
-      - Node.js
-      - Express
-      - AWS Amplify
   - name: Scripting
     level: Expert
     keywords:
       - PowerShell
       - Bash
-  - name: DevOps Tools
+      - Python
+      - Ruby
+      - TypeScript/JavaScript
+  - name: DevOps Tools, Culture, and Practices
     level: Expert
     keywords:
-      - PowerShell DSC
-      - Bash
+      - CI/CD
+      - Infrastructure as Code
+      - DevSecOps
+      - Observability
       - Chef
-      - SonarQube
+      - SonarCloud
       - YAML
+      - PowerShell DSC
   - name: Version Control
     level: Expert
     keywords:
@@ -402,12 +408,16 @@ skills:
     level: Expert
     keywords:
       - AWS CDK
-      - CloudFormation
-      - Terraform
-      - Pulumi
-      - CDKTF
-      - Helm
       - CDK8s
+      - CDKTF
+      - AWS CloudFormation
+      - Terraform
+      - Terraform Enterprise
+      - Terragrunt
+      - Terratest
+      - Pulumi
+      - Helm
+      - ARM Templates / Bicep
   - name: Cloud Platforms
     level: Expert
     keywords:
