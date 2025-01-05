@@ -2,11 +2,9 @@
 basics:
   name: Nate Ferrell
   label: Developer Advocate, Systems Architect, Cloud Platform Engineer
-  image: https://storage.rxresu.me/cm5ivn5kl52wydbpop34we10d/pictures/cm5ivn5kl52wydbpop34we10d.jpg
-  email: resume@ferrell.io
-  url: https://ferrell.io/
-  summary: >
-    Nate lives in Allen, TX with his wife, 3 kids and their 2 fur children.
+  picture: /assets/img/128x128.png
+  website: https://ferrell.io/
+  summary: Nate lives in Allen, TX with his wife, 3 kids and their 2 dogs.
     He is passionate about productivity, DevOps culture, and enabling his peers.
     Outside of the office and IDE, he's typically building mechanical keyboards,
     taking photos with his wife, or figuring out who makes the best T-Rex
@@ -18,17 +16,17 @@ basics:
   profiles:
     - network: LinkedIn
       username: scrthq
-      url: https://www.linkedin.com/in/scrthq/
+      website: https://www.linkedin.com/in/scrthq/
     - network: GitHub
       username: scrthq
-      url: https://github.com/scrthq
+      website: https://github.com/scrthq
     - network: StackOverflow
       username: scrthq
-      url: https://stackoverflow.com/users/5302680/scrthq
+      website: https://stackoverflow.com/users/5302680/scrthq
 work:
   - company: Amazon Web Services
     position: Consultant, Senior DevOps Architect
-    url: https://www.linkedin.com/company/amazon-web-services/
+    website: https://www.linkedin.com/company/amazon-web-services/
     startDate: 2022-11-07
     summary: As a Senior DevOps Architect, I am responsible for working with
       customers to enable their DevOps culture and practices. This includes
@@ -58,7 +56,7 @@ work:
         Infrastructure-as-Code coverage across the existing enterprise, planning
         and development to enable migration to Terraform Enterprise, and
         strategic planning for future state CI/CD pipelines.
-  - name: Secret Headquarters, LLC
+  - company: Secret Headquarters, LLC
     position: Founder
     startDate: 2015-12-31
     highlights:
@@ -74,11 +72,11 @@ work:
         https://www.powershellgallery.com/profiles/nferrell"
     summary: Founder & sole proprietor. Developed and released open source tools
       such as PowerShell modules and Python CLI tools.
-    url: https://www.linkedin.com/company/secret-headquarters-llc/
+    website: https://www.linkedin.com/company/secret-headquarters-llc/
     location: Allen, Texas, United States
-  - name: Pennymac
+  - company: Pennymac
     position: VP, Architect, Cloud Platform Engineering
-    url: https://www.linkedin.com/company/pennymac/
+    website: https://www.linkedin.com/company/pennymac/
     startDate: 2020-09-01
     endDate: 2022-11-04
     summary: >
@@ -98,9 +96,9 @@ work:
         templates.
       - Migrated the company's largest development division from TFS 2015 to
         Azure DevOps Server 2020.1.1.
-  - name: Pennymac
+  - company: Pennymac
     position: Sr. Systems/DevOps Engineer
-    url: https://www.linkedin.com/company/pennymac/
+    website: https://www.linkedin.com/company/pennymac/
     startDate: 2019-01-01
     endDate: 2020-09-01
     summary: >
@@ -120,9 +118,9 @@ work:
         Servicing team to treat customer-contact centers as code and align with
         a traditional SDLC, including routing, bots and queue management as
         code.
-  - name: Pennymac
+  - company: Pennymac
     position: Systems Engineer
-    url: https://www.linkedin.com/company/pennymac/
+    website: https://www.linkedin.com/company/pennymac/
     startDate: 2015-10-15
     endDate: 2019-01-01
     summary: >
@@ -138,9 +136,9 @@ work:
       - Integrated SQL server job failures with ServiceNow's Event Management.
       - Implemented custom automation to manage entitlement provisioning in
         various systems where there was no way to accomplish it out-of-the-box.
-  - name: Pennymac
+  - company: Pennymac
     position: Operations Engineer
-    url: https://www.linkedin.com/company/pennymac/
+    website: https://www.linkedin.com/company/pennymac/
     startDate: 2015-04-13
     endDate: 2015-10-15
     summary: >
@@ -160,9 +158,9 @@ work:
       - Built a Windows Rundeck node to fill a knowledge gap and enable other
         team members to easily run jobs and scripts in a safe, contained
         environment.
-  - name: Broadvoice
+  - company: Broadvoice
     position: Enterprise Sales & Support Engineer
-    url: https://www.broadvoice.com/
+    website: https://www.broadvoice.com/
     startDate: 2014-02-01
     endDate: 2015-04-10
     summary: >
@@ -183,7 +181,7 @@ work:
         considerably longer than myself at that point.
 volunteer:
   - organization: Issara Institute
-    url: https://www.linkedin.com/company/issarainstitute/
+    website: https://www.linkedin.com/company/issarainstitute/
     startDate: 2023-11-01
     position: Resident Architect, Technical Advisor
     summary: As a Resident Architect and Technical Advisor, I am responsible for
@@ -202,75 +200,62 @@ volunteer:
       - Assisted with business resiliency strategy definition and implementation.
       - Assisted with planning and execution of migration to right-sized
         infrastructure resources for cost optimization.
-certificates:
+awards:
   - name: Google Apps Certified Administrator
-    issuer: Google
-    endDate: 2017-06-30
-    startDate: 2015-12-31
+    awarder: Google
+    date: 2017-06-30
   - name: New Relic Certified Performance Pro
-    issuer: New Relic University
-    endDate: 2019-11-30
-    startDate: 2017-11-30
-    url: https://www.credential.net/ztgluthr
+    awarder: New Relic University
+    date: 2019-11-30
+    website: https://www.credential.net/ztgluthr
   - name: AWS Certified Cloud Practitioner
-    issuer: Amazon Web Services (AWS)
-    endDate: 2025-11-30
-    startDate: 2022-11-30
-    url: https://www.credly.com/badges/454b0004-b5d3-4510-8317-df42ed466439/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2025-11-30
+    website: https://www.credly.com/badges/454b0004-b5d3-4510-8317-df42ed466439/linked_in_profile
   - name: AWS Certified AI Practitioner
-    issuer: Amazon Web Services (AWS)
-    endDate: 2027-10-31
-    startDate: 2024-10-31
-    url: https://www.credly.com/badges/e461f22a-c859-43af-b00c-0dba8818281d/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2027-10-31
+    website: https://www.credly.com/badges/e461f22a-c859-43af-b00c-0dba8818281d/linked_in_profile
   - name: AWS Certified Machine Learning Engineer - Associate
-    issuer: Amazon Web Services (AWS)
-    endDate: 2027-10-31
-    startDate: 2024-10-31
-    url: https://www.credly.com/badges/aa7bf20a-1081-463f-8490-f50e0e2ea49a/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2027-10-31
+    website: https://www.credly.com/badges/aa7bf20a-1081-463f-8490-f50e0e2ea49a/linked_in_profile
   - name: AWS Certified Data Engineer - Associate
-    issuer: Amazon Web Services (AWS)
-    endDate: 2027-11-30
-    startDate: 2024-11-30
-    url: https://www.credly.com/badges/d94578c0-78a5-4d50-9ecf-83f5ae9859cd/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2027-11-30
+    website: https://www.credly.com/badges/d94578c0-78a5-4d50-9ecf-83f5ae9859cd/linked_in_profile
   - name: AWS Certified Developer - Associate
-    issuer: Amazon Web Services (AWS)
-    endDate: 2025-11-30
-    startDate: 2022-11-30
-    url: https://www.credly.com/badges/072334b3-e5a5-43fe-a8c5-34aaa10de8d4/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2025-11-30
+    website: https://www.credly.com/badges/072334b3-e5a5-43fe-a8c5-34aaa10de8d4/linked_in_profile
   - name: AWS Certified SysOps Administrator - Associate
-    issuer: Amazon Web Services (AWS)
-    endDate: 2025-11-30
-    startDate: 2022-11-30
-    url: https://www.credly.com/badges/9687154d-fda8-4ee2-960c-809f100e087d/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2025-11-30
+    website: https://www.credly.com/badges/9687154d-fda8-4ee2-960c-809f100e087d/linked_in_profile
   - name: AWS Certified Solutions Architect - Associate
-    issuer: Amazon Web Services (AWS)
-    endDate: 2025-11-30
-    startDate: 2022-11-30
-    url: https://www.credly.com/badges/c4dd27a6-8ed2-46e1-9b05-53f6b7b537f4/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2025-11-30
+    website: https://www.credly.com/badges/c4dd27a6-8ed2-46e1-9b05-53f6b7b537f4/linked_in_profile
   - name: AWS Certified DevOps Engineer - Professional
-    issuer: Amazon Web Services (AWS)
-    endDate: 2026-01-31
-    startDate: 2023-01-31
-    url: https://www.credly.com/badges/3e01c61f-6431-467b-92a4-b14a370a6b38/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2026-01-31
+    website: https://www.credly.com/badges/3e01c61f-6431-467b-92a4-b14a370a6b38/linked_in_profile
   - name: AWS Certified Solutions Architect - Professional
-    issuer: Amazon Web Services (AWS)
-    endDate: 2026-01-31
-    startDate: 2023-01-31
-    url: https://www.credly.com/badges/695592bb-d262-41e5-9f57-d52457190ca8/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2026-01-31
+    website: https://www.credly.com/badges/695592bb-d262-41e5-9f57-d52457190ca8/linked_in_profile
   - name: AWS Certified Security - Specialty
-    issuer: Amazon Web Services (AWS)
-    endDate: 2026-01-31
-    startDate: 2023-01-31
-    url: https://www.credly.com/badges/9691facf-0e48-4b10-b8a9-fdbc4e974601/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2026-01-31
+    website: https://www.credly.com/badges/9691facf-0e48-4b10-b8a9-fdbc4e974601/linked_in_profile
   - name: "AWS Learning: Serverless"
-    issuer: Amazon Web Services (AWS)
-    startDate: 2023-01-31
-    url: https://www.credly.com/badges/f1301487-2a67-4eca-8afd-3d478c670130/linked_in_profile
+    awarder: Amazon Web Services (AWS)
+    date: 2023-01-31
+    website: https://www.credly.com/badges/f1301487-2a67-4eca-8afd-3d478c670130/linked_in_profile
   - name: "HashiCorp Certified: Terraform Associate (002)"
-    issuer: HashiCorp
-    startDate: 2026-01-31
-    endDate: 2025-01-31
-    url: https://www.credly.com/badges/bb3c4d95-56a0-4999-bc5e-e28e9a165b4a/linked_in_profile
+    awarder: HashiCorp
+    date: 2025-01-31
+    website: https://www.credly.com/badges/bb3c4d95-56a0-4999-bc5e-e28e9a165b4a/linked_in_profile
 interests:
   - name: Developer Advocacy
     keywords:
