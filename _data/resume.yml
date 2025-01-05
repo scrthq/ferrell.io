@@ -24,7 +24,7 @@ basics:
       username: scrthq
       url: https://stackoverflow.com/users/5302680/scrthq
 work:
-  - company: AWS Professional Services - Global Financial Services
+  - name: AWS Professional Services - Global Financial Services
     position: Senior DevOps Architect, Consultant
     website: https://www.linkedin.com/company/amazon-web-services/
     startDate: "2022-11-07"
@@ -56,7 +56,7 @@ work:
         Infrastructure-as-Code coverage across the existing enterprise, planning
         and development to enable migration to Terraform Enterprise, and
         strategic planning for future state CI/CD pipelines.
-  - company: Secret Headquarters, LLC
+  - name: Secret Headquarters, LLC
     position: Founder
     startDate: "2015-12-31"
     highlights:
@@ -74,7 +74,7 @@ work:
       such as PowerShell modules and Python CLI tools.
     website: https://www.linkedin.com/company/secret-headquarters-llc/
     location: Allen, Texas, United States
-  - company: Pennymac
+  - name: Pennymac
     position: VP, Architect, Cloud Platform Engineering
     website: https://www.linkedin.com/company/pennymac/
     startDate: "2015-04-13"
@@ -121,7 +121,7 @@ work:
       - Built a Windows Rundeck node to fill a knowledge gap and enable other
         team members to easily run jobs and scripts in a safe, contained
         environment.
-  - company: Broadvoice
+  - name: Broadvoice
     position: Enterprise Sales & Support Engineer
     website: https://www.broadvoice.com/
     startDate: "2014-02-01"
