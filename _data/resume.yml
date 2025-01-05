@@ -352,10 +352,12 @@ skills:
   - name: Full Stack Development
     level: Intermediate
     keywords:
+      - AWS Amplify
+      - TypeScript/JavaScript
       - React
       - Node.js
-      - Deno
-      - Bun
+      - GraphQL
+      - Serverless
   - name: Python
     level: Expert
     keywords:
