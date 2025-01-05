@@ -93,13 +93,13 @@
     </dd>
   {% endif %}
 
-  {% if basics.website.size > 0 %}
+  {% if basics.url.size > 0 %}
     <dt class="faded">
       <span class="{{ icons.website | default:'icon-home3' }}" title="{{ strings.resume.website | default:'Website' }}"></span>
       <span class="sr-only">{{ strings.resume.website | default:"Website" }}</span>
     </dt>
     <dd class="bold">
-      <a href="{{ basics.website }}" class="external no-print-link url u-url" property="sameAs">{{ basics.website }}</a>
+      <a href="{{ basics.url }}" class="external no-print-link url u-url" property="sameAs">{{ basics.url }}</a>
     </dd>
   {% endif %}
 </dl>

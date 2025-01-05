@@ -21,7 +21,7 @@
         <meta property="name" content="{{ work.name }}"/>
         {% capture position %}<span class="bc">{{ work.position }}</span>{% endcapture %}
         {% capture company_class %}{% if work.endDate.size > 0 %}{% else %}org p-org h-card{% endif %}{% endcapture %}
-        {% capture company %}{% include components/link.html title=work.name href=work.website class=company_class span_class="bc" property="sameAs" %}{% endcapture %}
+        {% capture company %}{% include components/link.html title=work.name href=work.url class=company_class span_class="bc" property="sameAs" %}{% endcapture %}
         {{ strings.resume.work_title
           | default:"<!--position--> at <!--company-->"
           | replace:"<!--position-->", position

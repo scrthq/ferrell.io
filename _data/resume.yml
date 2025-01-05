@@ -2,8 +2,8 @@
 basics:
   name: Nate Ferrell
   label: Developer Advocate, Systems Architect, Cloud Platform Engineer
-  picture: /assets/img/128x128.png
-  website: https://ferrell.io/
+  image: /assets/img/128x128.png
+  url: https://ferrell.io/
   summary: Nate lives in Allen, TX with his wife, 3 kids and their 2 dogs.
     He is passionate about non-profits, productivity, DevOps, and enabling everyone
     around him. Outside of the office and IDE, he's typically building mechanical
@@ -26,8 +26,9 @@ basics:
 work:
   - name: AWS Professional Services - Global Financial Services
     position: Senior DevOps Architect, Consultant
-    website: https://www.linkedin.com/company/amazon-web-services/
     startDate: "2022-11-07"
+    url: https://www.linkedin.com/company/amazon-web-services/
+    location: Remote
     summary: As a Senior DevOps Architect, I am responsible for working with
       customers to enable their DevOps culture and practices. This includes
       working with customers to build out their CI/CD pipelines,
@@ -59,6 +60,10 @@ work:
   - name: Secret Headquarters, LLC
     position: Founder
     startDate: "2015-12-31"
+    url: https://www.linkedin.com/company/secret-headquarters-llc/
+    location: Remote
+    summary: Founder & sole proprietor. Developed and released open source tools
+      such as PowerShell modules and Python CLI tools.
     highlights:
       - Developed VaporShell, a PowerShell module to assist in AWS
         CloudFormation template building and stack management.
@@ -70,13 +75,9 @@ work:
       - "As of January 5th, 2025, PowerShellGallery.com shows 195 packages
         published with 264,968 total packages downloaded:
         https://www.powershellgallery.com/profiles/nferrell"
-    summary: Founder & sole proprietor. Developed and released open source tools
-      such as PowerShell modules and Python CLI tools.
-    website: https://www.linkedin.com/company/secret-headquarters-llc/
-    location: Allen, Texas, United States
   - name: Pennymac
     position: VP, Architect, Cloud Platform Engineering
-    website: https://www.linkedin.com/company/pennymac/
+    url: https://www.linkedin.com/company/pennymac/
     startDate: "2015-04-13"
     endDate: "2022-11-04"
     summary: >
@@ -123,7 +124,7 @@ work:
         environment.
   - name: Broadvoice
     position: Enterprise Sales & Support Engineer
-    website: https://www.broadvoice.com/
+    url: https://www.broadvoice.com/
     startDate: "2014-02-01"
     endDate: "2015-04-10"
     summary: >
@@ -144,9 +145,9 @@ work:
         considerably longer than myself at that point.
 volunteer:
   - organization: Issara Institute
-    website: https://www.linkedin.com/company/issarainstitute/
+    url: https://www.linkedin.com/company/issarainstitute/
     startDate: "2023-11-01"
-    position: Resident Architect, Technical Advisor
+    position: Resident Architect & Technical Advisor
     summary: As a Resident Architect and Technical Advisor, I am responsible for
       working with the Issara Institute to help them optimize for cost and
       security in their cloud infrastructure. This includes working with their
