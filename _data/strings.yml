@@ -74,7 +74,7 @@
   resume:
     location:            Location
     location_separator:  ", "
-    from_to_separator:   "–"
+    from_to_separator:   "-"
     present:             present
     email:               Email
     phone:               Phone
@@ -106,7 +106,7 @@
       work:              icon-briefcase
       volunteer:         icon-earth
       education:         icon-library
-      awards:            icon-trophy
+      awards:            icon-certificate
       publications:      icon-book
       references:        icon-quotes-right
       languages:         icon-bubbles
