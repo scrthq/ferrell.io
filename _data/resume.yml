@@ -77,9 +77,12 @@ work:
   - company: Pennymac
     position: VP, Architect, Cloud Platform Engineering
     website: https://www.linkedin.com/company/pennymac/
-    startDate: "2020-09-01"
+    startDate: "2015-04-13"
     endDate: "2022-11-04"
     summary: >
+      Started as an Operations Engineer, moved to Systems Engineer, then Sr.
+      Systems/DevOps Engineer, and finally to VP, Architect, Cloud Platform Engineering.
+
       As a member of the Cloud Platform Engineering team, I was the owner,
       developer and SME for multiple cloud platforms such as Azure DevOps, Chef,
       Amazon Web Services, GitLab/GitLab CI, and Google Cloud Platform. As an
@@ -96,20 +99,6 @@ work:
         templates.
       - Migrated the company's largest development division from TFS 2015 to
         Azure DevOps Server 2020.1.1.
-  - company: Pennymac
-    position: Sr. Systems/DevOps Engineer
-    website: https://www.linkedin.com/company/pennymac/
-    startDate: "2019-01-01"
-    endDate: "2020-09-01"
-    summary: >
-      As a senior Systems and DevOps engineer, my primary focus was working with
-      development teams building infrastructure-as-code and maintaining CI/CD
-      pipelines. I was also responsible for maintaining our identity platforms
-      such as OneLogin, Active Directory, and AWS IAM, as well as involved with
-      our architectural review committee.
-
-      My daily workload involved heavy Python for infrastructure-as-code and supporting microservices, Ruby for configuration management, and PowerShell and Bash for CI/CD and general automation depending on the OS I was working on.
-    highlights:
       - Built out a multi-tier Azure DevOps Server environment to increase
         internal development agility.
       - Built patterns for consuming secrets securely from AWS Secrets Manager
@@ -118,37 +107,11 @@ work:
         Servicing team to treat customer-contact centers as code and align with
         a traditional SDLC, including routing, bots and queue management as
         code.
-  - company: Pennymac
-    position: Systems Engineer
-    website: https://www.linkedin.com/company/pennymac/
-    startDate: "2015-10-15"
-    endDate: "2019-01-01"
-    summary: >
-      As a Systems Engineer, my primary focus was building and maintaining our
-      Windows Server infrastructure across both our on-premises data centers
-      running vSphere as well as AWS. I was also the primary owner/admin for our
-      Google Workspace domain, including automating much of that via PSGSuite.
-
-      My daily workload primarily focused on PowerShell for automating deployments and anything else, Ruby for configuration management via Chef, and Python for writing infrastructure-as-code. I was also heavily involved with automating tasks and reporting surrounding Active Directory.
-    highlights:
       - Automated malicious email quarantine and notification to dramatically
         decrease risk of infection to end users.
       - Integrated SQL server job failures with ServiceNow's Event Management.
       - Implemented custom automation to manage entitlement provisioning in
         various systems where there was no way to accomplish it out-of-the-box.
-  - company: Pennymac
-    position: Operations Engineer
-    website: https://www.linkedin.com/company/pennymac/
-    startDate: "2015-04-13"
-    endDate: "2015-10-15"
-    summary: >
-      As an Operations Engineer, my primary focus was monitoring,
-      troubleshooting and escalating issues that occurred across our
-      infrastructure. While I was in this role, I moved from graveyard to swing
-      to day shift where the responsibilities differed significantly.
-
-      My time was spent primarily writing PowerShell and Python in order to make the daily manual tasks easier to perform so I could focus on learning more PowerShell and Python. I was in only this initial position for a short period of time until I was promoted to Systems Engineer and had my workload adjusted based on performance.
-    highlights:
       - Developed automation for provisioning/deprovisioning resources in Google
         and Active Directory to meet SLAs.
       - Automated email collection via Gmail API for customer-contact tracking
