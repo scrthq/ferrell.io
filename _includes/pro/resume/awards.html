@@ -8,7 +8,7 @@
   {% for awa in resume.awards %}
   <section>
     <header class="{% unless forloop.first %}mt2{% endunless %}">
-      {% if awa.date %}
+      {% if awa.date.size > 0 %}
         <p class="faded">
           <time datetime="{{ awa.date | date_to_xmlschema }}">{{ awa.date | date:from_to_format }}</time>
         </p>

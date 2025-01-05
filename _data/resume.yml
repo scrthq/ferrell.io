@@ -27,7 +27,7 @@ work:
   - company: Amazon Web Services
     position: Consultant, Senior DevOps Architect
     website: https://www.linkedin.com/company/amazon-web-services/
-    startDate: 2022-11-07
+    startdate: "2022-11-07"
     summary: As a Senior DevOps Architect, I am responsible for working with
       customers to enable their DevOps culture and practices. This includes
       working with customers to build out their CI/CD pipelines,
@@ -58,7 +58,7 @@ work:
         strategic planning for future state CI/CD pipelines.
   - company: Secret Headquarters, LLC
     position: Founder
-    startDate: 2015-12-31
+    startdate: "2015-12-31"
     highlights:
       - Developed VaporShell, a PowerShell module to assist in AWS
         CloudFormation template building and stack management.
@@ -77,8 +77,8 @@ work:
   - company: Pennymac
     position: VP, Architect, Cloud Platform Engineering
     website: https://www.linkedin.com/company/pennymac/
-    startDate: 2020-09-01
-    endDate: 2022-11-04
+    startdate: "2020-09-01"
+    enddate: "2022-11-04"
     summary: >
       As a member of the Cloud Platform Engineering team, I was the owner,
       developer and SME for multiple cloud platforms such as Azure DevOps, Chef,
@@ -99,8 +99,8 @@ work:
   - company: Pennymac
     position: Sr. Systems/DevOps Engineer
     website: https://www.linkedin.com/company/pennymac/
-    startDate: 2019-01-01
-    endDate: 2020-09-01
+    startdate: "2019-01-01"
+    enddate: "2020-09-01"
     summary: >
       As a senior Systems and DevOps engineer, my primary focus was working with
       development teams building infrastructure-as-code and maintaining CI/CD
@@ -121,8 +121,8 @@ work:
   - company: Pennymac
     position: Systems Engineer
     website: https://www.linkedin.com/company/pennymac/
-    startDate: 2015-10-15
-    endDate: 2019-01-01
+    startdate: "2015-10-15"
+    enddate: "2019-01-01"
     summary: >
       As a Systems Engineer, my primary focus was building and maintaining our
       Windows Server infrastructure across both our on-premises data centers
@@ -139,8 +139,8 @@ work:
   - company: Pennymac
     position: Operations Engineer
     website: https://www.linkedin.com/company/pennymac/
-    startDate: 2015-04-13
-    endDate: 2015-10-15
+    startdate: "2015-04-13"
+    enddate: "2015-10-15"
     summary: >
       As an Operations Engineer, my primary focus was monitoring,
       troubleshooting and escalating issues that occurred across our
@@ -161,8 +161,8 @@ work:
   - company: Broadvoice
     position: Enterprise Sales & Support Engineer
     website: https://www.broadvoice.com/
-    startDate: 2014-02-01
-    endDate: 2015-04-10
+    startdate: "2014-02-01"
+    enddate: "2015-04-10"
     summary: >
       As a Sales and Support Engineer for our enterprise customers, I was
       involved with working with our Sales team to information around the
@@ -182,7 +182,7 @@ work:
 volunteer:
   - organization: Issara Institute
     website: https://www.linkedin.com/company/issarainstitute/
-    startDate: 2023-11-01
+    startdate: "2023-11-01"
     position: Resident Architect, Technical Advisor
     summary: As a Resident Architect and Technical Advisor, I am responsible for
       working with the Issara Institute to help them optimize for cost and
@@ -203,129 +203,129 @@ volunteer:
 awards:
   - title: Google Apps Certified Administrator
     awarder: Google
-    date: 2017-06-30
+    date: "2017-06-30"
   - title: New Relic Certified Performance Pro
     awarder: New Relic University
-    date: 2019-11-30
+    date: "2019-11-30"
     summary: "[Verification Link](https://www.credential.net/ztgluthr)"
   - title: AWS Certified Cloud Practitioner
     awarder: Amazon Web Services (AWS)
-    date: 2025-11-30
+    date: "2025-11-30"
     summary: "[Verification Link](https://www.credly.com/badges/454b0004-b5d3-4510-8317-df42ed466439/linked_in_profile)"
   - title: AWS Certified AI Practitioner
     awarder: Amazon Web Services (AWS)
-    date: 2027-10-31
+    date: "2027-10-31"
     summary: "[Verification Link](https://www.credly.com/badges/e461f22a-c859-43af-b00c-0dba8818281d/linked_in_profile)"
   - title: AWS Certified Machine Learning Engineer - Associate
     awarder: Amazon Web Services (AWS)
-    date: 2027-10-31
+    date: "2027-10-31"
     summary: "[Verification Link](https://www.credly.com/badges/aa7bf20a-1081-463f-8490-f50e0e2ea49a/linked_in_profile)"
   - title: AWS Certified Data Engineer - Associate
     awarder: Amazon Web Services (AWS)
-    date: 2027-11-30
+    date: "2027-11-30"
     summary: "[Verification Link](https://www.credly.com/badges/d94578c0-78a5-4d50-9ecf-83f5ae9859cd/linked_in_profile)"
   - title: AWS Certified Developer - Associate
     awarder: Amazon Web Services (AWS)
-    date: 2025-11-30
+    date: "2025-11-30"
     summary: "[Verification Link](https://www.credly.com/badges/072334b3-e5a5-43fe-a8c5-34aaa10de8d4/linked_in_profile)"
   - title: AWS Certified SysOps Administrator - Associate
     awarder: Amazon Web Services (AWS)
-    date: 2025-11-30
+    date: "2025-11-30"
     summary: "[Verification Link](https://www.credly.com/badges/9687154d-fda8-4ee2-960c-809f100e087d/linked_in_profile)"
   - title: AWS Certified Solutions Architect - Associate
     awarder: Amazon Web Services (AWS)
-    date: 2025-11-30
+    date: "2025-11-30"
     summary: "[Verification Link](https://www.credly.com/badges/c4dd27a6-8ed2-46e1-9b05-53f6b7b537f4/linked_in_profile)"
   - title: AWS Certified DevOps Engineer - Professional
     awarder: Amazon Web Services (AWS)
-    date: 2026-01-31
+    date: "2026-01-31"
     summary: "[Verification Link](https://www.credly.com/badges/3e01c61f-6431-467b-92a4-b14a370a6b38/linked_in_profile)"
   - title: AWS Certified Solutions Architect - Professional
     awarder: Amazon Web Services (AWS)
-    date: 2026-01-31
+    date: "2026-01-31"
     summary: "[Verification Link](https://www.credly.com/badges/695592bb-d262-41e5-9f57-d52457190ca8/linked_in_profile)"
   - title: AWS Certified Security - Specialty
     awarder: Amazon Web Services (AWS)
-    date: 2026-01-31
+    date: "2026-01-31"
     summary: "[Verification Link](https://www.credly.com/badges/9691facf-0e48-4b10-b8a9-fdbc4e974601/linked_in_profile)"
   - title: "AWS Learning: Serverless"
     awarder: Amazon Web Services (AWS)
-    date: 2023-01-31
+    date: "2023-01-31"
     summary: "[Verification Link](https://www.credly.com/badges/f1301487-2a67-4eca-8afd-3d478c670130/linked_in_profile)"
   - title: "HashiCorp Certified: Terraform Associate (002)"
     awarder: HashiCorp
-    date: 2025-01-31
+    date: "2025-01-31"
     summary: "[Verification Link](https://www.credly.com/badges/bb3c4d95-56a0-4999-bc5e-e28e9a165b4a/linked_in_profile)"
 
 
 # certificates:
 #   - name: Google Apps Certified Administrator
 #     issuer: Google
-#     endDate: 2017-06-30
-#     startDate: 2015-12-31
+#     enddate: "2017-06-30"
+#     startdate: "2015-12-31"
 #   - name: New Relic Certified Performance Pro
 #     issuer: New Relic University
-#     endDate: 2019-11-30
-#     startDate: 2017-11-30
+#     enddate: "2019-11-30"
+#     startdate: "2017-11-30"
 #     url: https://www.credential.net/ztgluthr
 #   - name: AWS Certified Cloud Practitioner
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2025-11-30
-#     startDate: 2022-11-30
+#     enddate: "2025-11-30"
+#     startdate: "2022-11-30"
 #     url: https://www.credly.com/badges/454b0004-b5d3-4510-8317-df42ed466439/linked_in_profile
 #   - name: AWS Certified AI Practitioner
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2027-10-31
-#     startDate: 2024-10-31
+#     enddate: "2027-10-31"
+#     startdate: "2024-10-31"
 #     url: https://www.credly.com/badges/e461f22a-c859-43af-b00c-0dba8818281d/linked_in_profile
 #   - name: AWS Certified Machine Learning Engineer - Associate
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2027-10-31
-#     startDate: 2024-10-31
+#     enddate: "2027-10-31"
+#     startdate: "2024-10-31"
 #     url: https://www.credly.com/badges/aa7bf20a-1081-463f-8490-f50e0e2ea49a/linked_in_profile
 #   - name: AWS Certified Data Engineer - Associate
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2027-11-30
-#     startDate: 2024-11-30
+#     enddate: "2027-11-30"
+#     startdate: "2024-11-30"
 #     url: https://www.credly.com/badges/d94578c0-78a5-4d50-9ecf-83f5ae9859cd/linked_in_profile
 #   - name: AWS Certified Developer - Associate
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2025-11-30
-#     startDate: 2022-11-30
+#     enddate: "2025-11-30"
+#     startdate: "2022-11-30"
 #     url: https://www.credly.com/badges/072334b3-e5a5-43fe-a8c5-34aaa10de8d4/linked_in_profile
 #   - name: AWS Certified SysOps Administrator - Associate
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2025-11-30
-#     startDate: 2022-11-30
+#     enddate: "2025-11-30"
+#     startdate: "2022-11-30"
 #     url: https://www.credly.com/badges/9687154d-fda8-4ee2-960c-809f100e087d/linked_in_profile
 #   - name: AWS Certified Solutions Architect - Associate
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2025-11-30
-#     startDate: 2022-11-30
+#     enddate: "2025-11-30"
+#     startdate: "2022-11-30"
 #     url: https://www.credly.com/badges/c4dd27a6-8ed2-46e1-9b05-53f6b7b537f4/linked_in_profile
 #   - name: AWS Certified DevOps Engineer - Professional
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2026-01-31
-#     startDate: 2023-01-31
+#     enddate: "2026-01-31"
+#     startdate: "2023-01-31"
 #     url: https://www.credly.com/badges/3e01c61f-6431-467b-92a4-b14a370a6b38/linked_in_profile
 #   - name: AWS Certified Solutions Architect - Professional
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2026-01-31
-#     startDate: 2023-01-31
+#     enddate: "2026-01-31"
+#     startdate: "2023-01-31"
 #     url: https://www.credly.com/badges/695592bb-d262-41e5-9f57-d52457190ca8/linked_in_profile
 #   - name: AWS Certified Security - Specialty
 #     issuer: Amazon Web Services (AWS)
-#     endDate: 2026-01-31
-#     startDate: 2023-01-31
+#     enddate: "2026-01-31"
+#     startdate: "2023-01-31"
 #     url: https://www.credly.com/badges/9691facf-0e48-4b10-b8a9-fdbc4e974601/linked_in_profile
 #   - name: "AWS Learning: Serverless"
 #     issuer: Amazon Web Services (AWS)
-#     startDate: 2023-01-31
+#     startdate: "2023-01-31"
 #     url: https://www.credly.com/badges/f1301487-2a67-4eca-8afd-3d478c670130/linked_in_profile
 #   - name: "HashiCorp Certified: Terraform Associate (002)"
 #     issuer: HashiCorp
-#     startDate: 2026-01-31
-#     endDate: 2025-01-31
+#     startdate: "2026-01-31"
+#     enddate: "2025-01-31"
 #     url: https://www.credly.com/badges/bb3c4d95-56a0-4999-bc5e-e28e9a165b4a/linked_in_profile
 
 interests:
