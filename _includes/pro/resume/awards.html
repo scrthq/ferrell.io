@@ -16,11 +16,21 @@
       <h3 class="h4 faded" property="award">
         {% capture title %}<span class="bc">{{ awa.title }}</span>{% endcapture %}
         {% capture awarder %}<span class="bc">{{ awa.awarder }}</span>{% endcapture %}
-        {{ strings.resume.awards_title
-          | default:"<!--title--> from <!--awarder-->"
-          | replace:"<!--title-->", title
-          | replace:"<!--awarder-->", awarder
-        }}
+        {% if awa.url %}
+          <a href="{{ awa.url }}" rel="external" property="url">
+            {{ strings.resume.awards_title
+              | default:"<!--title--> from <!--awarder-->"
+              | replace:"<!--title-->", title
+              | replace:"<!--awarder-->", awarder
+            }}
+          </a>
+        {% else %}
+          {{ strings.resume.awards_title
+            | default:"<!--title--> from <!--awarder-->"
+            | replace:"<!--title-->", title
+            | replace:"<!--awarder-->", awarder
+          }}
+        {% endif %}
       </h3>
     </header>
 
