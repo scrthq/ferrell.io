@@ -80,6 +80,7 @@ work:
     url: https://www.linkedin.com/company/pennymac/
     startDate: "2015-04-13"
     endDate: "2022-11-04"
+    location: Remote
     summary: >
       Started as an Operations Engineer, moved to Systems Engineer, then Sr.
       Systems/DevOps Engineer, and finally to VP, Architect, Cloud Platform Engineering.
@@ -127,6 +128,7 @@ work:
     url: https://www.broadvoice.com/
     startDate: "2014-02-01"
     endDate: "2015-04-10"
+    location: Canoga Park, CA
     summary: >
       As a Sales and Support Engineer for our enterprise customers, I was
       involved with working with our Sales team to information around the
