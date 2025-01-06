@@ -1,7 +1,7 @@
 $schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 basics:
   name: Nate Ferrell
-  label: Developer Advocate, Systems Architect, Cloud Platform Engineer
+  label: "10x AWS Certified || Architecture, Performance, Resiliency, Governance, Security"
   image: https://ferrell.io/assets/img/128x128.png
   url: https://ferrell.io/
   email: ingress@ferrell.io
@@ -75,9 +75,10 @@ work:
       - Developed PSGSuite, a PowerShell module that wraps Google's various
         API's, enabling automation capabilities with G Suite / Google Drive for
         system administrators
-      - "As of January 5th, 2025, PowerShellGallery.com shows 195 packages
+      - >
+        As of January 5th, 2025, PowerShellGallery.com shows 195 packages
         published with 264,968 total packages downloaded:
-        https://www.powershellgallery.com/profiles/nferrell"
+        https://www.powershellgallery.com/profiles/nferrell
   - name: Pennymac
     position: VP, Architect, Cloud Platform Engineering
     url: https://www.linkedin.com/company/pennymac/
