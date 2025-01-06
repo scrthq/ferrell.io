@@ -194,7 +194,7 @@ certificates:
     url: https://www.credly.com/badges/aa7bf20a-1081-463f-8490-f50e0e2ea49a/linked_in_profile
   - name: AWS Certified Data Engineer - Associate
     issuer: Amazon Web Services (AWS)
-    date: "2024-11-1"
+    date: "2024-11-01"
     url: https://www.credly.com/badges/d94578c0-78a5-4d50-9ecf-83f5ae9859cd/linked_in_profile
   - name: AWS Certified Developer - Associate
     issuer: Amazon Web Services (AWS)
