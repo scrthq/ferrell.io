@@ -1,11 +1,11 @@
-{% if resume.awards.size > 0 %}
+{% if resume.certificates.size > 0 %}
 <section>
   <div class="npb">
   <h2 id="awards" class="h3 hr-bottom">
-    {{ strings.resume.awards | default:"Awards" }}
+    {{ strings.resume.awards | default:"Certifications" }}
     <span class="symbol {{ icons.awards | default:'icon-trophy' }}"></span>
   </h2>
-  {% for awa in resume.awards %}
+  {% for awa in resume.certificates %}
   <section>
     <header class="{% unless forloop.first %}mt2{% endunless %}">
       {% if awa.date.size > 0 %}
@@ -14,8 +14,8 @@
         </p>
       {% endif %}
       <h3 class="h4 faded" property="award">
-        {% capture title %}<span class="bc">{{ awa.title }}</span>{% endcapture %}
-        {% capture awarder %}<span class="bc">{{ awa.awarder }}</span>{% endcapture %}
+        {% capture title %}<span class="bc">{{ awa.name }}</span>{% endcapture %}
+        {% capture awarder %}<span class="bc">{{ awa.issuer }}</span>{% endcapture %}
         {% if awa.url %}
           <a href="{{ awa.url }}" rel="external" property="url">
             {{ strings.resume.awards_title
