@@ -63,8 +63,10 @@ work:
     startDate: "2015-12-31"
     url: https://www.linkedin.com/company/secret-headquarters-llc/
     location: Remote
-    summary: Founder & sole proprietor. Developed and released open source tools
-      such as PowerShell modules and Python CLI tools.
+    summary: >
+      Secret Headquarters (a.k.a. SCRT HQ), founded by Nate Ferrell in 2015 and incorporated in 2024, is focused on building tools and processes to help organizations and individuals automate and streamline their workflows. Our goal is to be your "secret headquarters" that you can leverage to amplify your effectiveness and efficiency.
+
+      We especially love working with non-profits and other organizations that are focused on making the world a better place. We believe that technology can be a powerful force for good, and we want to help you harness that power to make a positive impact in the world. Please reach out if you think we can help you with your mission!
     highlights:
       - Developed VaporShell, a PowerShell module to assist in AWS
         CloudFormation template building and stack management.
@@ -171,35 +173,35 @@ volunteer:
 certificates:
   - name: "HashiCorp Certified: Terraform Associate (002)"
     issuer: HashiCorp
-    date: "2026-01-31"
+    date: "2023-01-28"
     url: https://www.credly.com/badges/bb3c4d95-56a0-4999-bc5e-e28e9a165b4a/linked_in_profile
   - name: "AWS Learning: Serverless"
     issuer: Amazon Web Services (AWS)
-    date: "2023-01-31"
+    date: "2023-01-07"
     url: https://www.credly.com/badges/f1301487-2a67-4eca-8afd-3d478c670130/linked_in_profile
   - name: AWS Certified Cloud Practitioner
     issuer: Amazon Web Services (AWS)
-    date: "2022-11-30"
+    date: "2022-11-18"
     url: https://www.credly.com/badges/454b0004-b5d3-4510-8317-df42ed466439/linked_in_profile
   - name: AWS Certified AI Practitioner
     issuer: Amazon Web Services (AWS)
-    date: "2024-10-31"
+    date: "2024-10-18"
     url: https://www.credly.com/badges/e461f22a-c859-43af-b00c-0dba8818281d/linked_in_profile
   - name: AWS Certified Machine Learning Engineer - Associate
     issuer: Amazon Web Services (AWS)
-    date: "2024-10-31"
+    date: "2024-10-25"
     url: https://www.credly.com/badges/aa7bf20a-1081-463f-8490-f50e0e2ea49a/linked_in_profile
   - name: AWS Certified Data Engineer - Associate
     issuer: Amazon Web Services (AWS)
-    date: "2024-11-30"
+    date: "2024-11-1"
     url: https://www.credly.com/badges/d94578c0-78a5-4d50-9ecf-83f5ae9859cd/linked_in_profile
   - name: AWS Certified Developer - Associate
     issuer: Amazon Web Services (AWS)
-    date: "2022-11-30"
+    date: "2022-11-28"
     url: https://www.credly.com/badges/072334b3-e5a5-43fe-a8c5-34aaa10de8d4/linked_in_profile
   - name: AWS Certified SysOps Administrator - Associate
     issuer: Amazon Web Services (AWS)
-    date: "2022-11-30"
+    date: "2022-11-29"
     url: https://www.credly.com/badges/9687154d-fda8-4ee2-960c-809f100e087d/linked_in_profile
   - name: AWS Certified Solutions Architect - Associate
     issuer: Amazon Web Services (AWS)
@@ -207,15 +209,15 @@ certificates:
     url: https://www.credly.com/badges/c4dd27a6-8ed2-46e1-9b05-53f6b7b537f4/linked_in_profile
   - name: AWS Certified DevOps Engineer - Professional
     issuer: Amazon Web Services (AWS)
-    date: "2023-01-31"
+    date: "2023-01-07"
     url: https://www.credly.com/badges/3e01c61f-6431-467b-92a4-b14a370a6b38/linked_in_profile
   - name: AWS Certified Solutions Architect - Professional
     issuer: Amazon Web Services (AWS)
-    date: "2023-01-31"
+    date: "2023-01-14"
     url: https://www.credly.com/badges/695592bb-d262-41e5-9f57-d52457190ca8/linked_in_profile
   - name: AWS Certified Security - Specialty
     issuer: Amazon Web Services (AWS)
-    date: "2023-01-31"
+    date: "2023-01-10"
     url: https://www.credly.com/badges/9691facf-0e48-4b10-b8a9-fdbc4e974601/linked_in_profile
   - name: Google Apps Certified Administrator
     issuer: Google
